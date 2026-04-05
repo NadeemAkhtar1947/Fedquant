@@ -1,0 +1,15 @@
+`flash-attention` package not found, consider installing for better performance: No module named 'flash_attn'.
+Current `flash-attention` does not support `window_size`. Either upgrade or use `attn_implementation='eager'`.
+Starting download...
+Step 1: Downloading tokenizer...
+Tokenizer downloaded 
+
+Step 2: Downloading model...
+Loading checkpoint shards:   0%|          | 0/2 [00:00<?, ?it/s]Loading checkpoint shards:  50%|█████     | 1/2 [00:03<00:03,  3.11s/it]Loading checkpoint shards: 100%|██████████| 2/2 [00:04<00:00,  2.19s/it]Loading checkpoint shards: 100%|██████████| 2/2 [00:04<00:00,  2.33s/it]
+Model downloaded 
+
+Step 3: Saving to models folder...
+Saved to ./models/phi3-mini 
+
+Phi-3-mini is ready!
+Done!

@@ -1,0 +1,31 @@
+#!/bin/bash
+#PBS -N merge_convert
+#PBS -l select=1:ncpus=4:mem=32gb
+#PBS -l walltime=02:00:00
+#PBS -j oe
+#PBS -o /Data2/ds_24901720/Nadeem/fedquant/merge_convert_$PBS_JOBID.log
+
+cd /Data2/ds_24901720/Nadeem/fedquant
+
+source /apps/compilers/anaconda3/etc/profile.d/conda.sh
+conda activate fedquant
+
+export CUDA_VISIBLE_DEVICES=MIG-4d38d5cf-c802-5308-80b8-251f3cec7480
+
+echo "=== Step 1: Merging adapter ==="
+python3 merge_adapter.py
+
+echo "=== Step 2: Cloning llama.cpp ==="
+cd /Data2/ds_24901720/Nadeem
+git clone https://github.com/ggerganov/llama.cpp --depth 1
+cd llama.cpp
+pip install -r requirements.txt -q
+
+echo "=== Step 3: Converting to GGUF ==="
+python3 convert_hf_to_gguf.py \
+    /Data2/ds_24901720/Nadeem/fedquant/merged_model \
+    --outfile /Data2/ds_24901720/Nadeem/fedquant/phi3-fedquant.gguf \
+    --outtype q4_0
+
+echo "=== Done! ==="
+ls -lh /Data2/ds_24901720/Nadeem/fedquant/phi3-fedquant.gguf

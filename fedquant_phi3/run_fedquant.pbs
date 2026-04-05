@@ -1,0 +1,40 @@
+#!/bin/bash
+#PBS -N fedquant_training
+#PBS -l select=1:ncpus=2:mem=8gb
+#PBS -l walltime=10:00:00
+#PBS -j oe
+#PBS -o /Data2/ds_24901720/Nadeem/fedquant/output_$PBS_JOBID.log
+
+cd /Data2/ds_24901720/Nadeem/fedquant
+
+# Activate conda properly
+source /apps/compilers/anaconda3/etc/profile.d/conda.sh
+conda activate fedquant
+
+echo "Python being used:"
+which python3
+
+export CUDA_VISIBLE_DEVICES=MIG-4d38d5cf-c802-5308-80b8-251f3cec7480
+
+echo "==============================="
+echo "FedQuant Training Started"
+echo "==============================="
+
+echo "[1/5] Running Client 2..."
+python3 clients/client2_sim_6gb.py
+
+echo "[2/5] Running Client 3..."
+python3 clients/client3_sim_6gb.py
+
+echo "[3/5] Running Client 4..."
+python3 clients/client4_sim_8gb.py
+
+echo "[4/5] Running Client 5..."
+python3 clients/client5_sim_12gb.py
+
+echo "[5/5] Running Aggregation Server..."
+python3 server/aggregator.py
+
+echo "==============================="
+echo "Round 1 Complete!"
+echo "==============================="

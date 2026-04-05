@@ -1,0 +1,6567 @@
+===============================
+Starting Mistral-7B 20-round FedQuant training...
+===============================
+==================================================
+CLIENT 2 — Simulated 6GB Phone (Mistral-7B)
+==================================================
+
+[Step 1] Loading data...
+Loaded 30000 examples
+
+[Step 2] Loading Mistral-7B in BF16...
+Loading checkpoint shards:   0%|          | 0/3 [00:00<?, ?it/s]Loading checkpoint shards:  67%|██████▋   | 2/3 [00:00<00:00, 19.55it/s]Loading checkpoint shards: 100%|██████████| 3/3 [00:00<00:00, 20.41it/s]
+Model loaded
+  GPU RAM used: 13.50 GB
+
+[Step 3] Attaching LoRA adapter...
+Trainable parameters: 6,815,744 out of 7,254,839,296
+  Round 1 - starting from base model
+
+[Step 4] Preparing training data...
+30000 examples formatted
+
+[Step 5] Training (1 FL round = 100 steps)...
+  Step 1/140 — Loss: 1.8759
+  Step 2/140 — Loss: 1.5688
+  Step 3/140 — Loss: 2.0374
+  Step 4/140 — Loss: 2.3119
+  Step 5/140 — Loss: 1.1427
+  Step 6/140 — Loss: 2.6697
+  Step 7/140 — Loss: 1.6562
+  Step 8/140 — Loss: 1.4382
+  Step 9/140 — Loss: 0.9165
+  Step 10/140 — Loss: 1.4581
+  Step 11/140 — Loss: 1.0997
+  Step 12/140 — Loss: 1.7623
+  Step 13/140 — Loss: 1.4965
+  Step 14/140 — Loss: 1.3209
+  Step 15/140 — Loss: 1.1625
+  Step 16/140 — Loss: 0.6383
+  Step 17/140 — Loss: 1.3203
+  Step 18/140 — Loss: 0.4723
+  Step 19/140 — Loss: 0.5938
+  Step 20/140 — Loss: 0.9570
+  Step 21/140 — Loss: 0.6205
+  Step 22/140 — Loss: 0.7452
+  Step 23/140 — Loss: 0.9210
+  Step 24/140 — Loss: 1.3387
+  Step 25/140 — Loss: 0.8244
+  Step 26/140 — Loss: 0.8412
+  Step 27/140 — Loss: 1.8814
+  Step 28/140 — Loss: 1.8522
+  Step 29/140 — Loss: 0.8267
+  Step 30/140 — Loss: 1.0804
+  Step 31/140 — Loss: 1.4982
+  Step 32/140 — Loss: 0.5804
+  Step 33/140 — Loss: 0.7066
+  Step 34/140 — Loss: 0.9220
+  Step 35/140 — Loss: 0.9134
+  Step 36/140 — Loss: 1.7867
+  Step 37/140 — Loss: 1.3232
+  Step 38/140 — Loss: 0.8563
+  Step 39/140 — Loss: 1.5328
+  Step 40/140 — Loss: 0.5060
+  Step 41/140 — Loss: 0.9144
+  Step 42/140 — Loss: 0.4741
+  Step 43/140 — Loss: 1.0546
+  Step 44/140 — Loss: 0.8929
+  Step 45/140 — Loss: 0.9811
+  Step 46/140 — Loss: 0.6684
+  Step 47/140 — Loss: 2.8899
+  Step 48/140 — Loss: 2.5066
+  Step 49/140 — Loss: 0.5792
+  Step 50/140 — Loss: 0.7059
+  Step 51/140 — Loss: 2.0154
+  Step 52/140 — Loss: 2.2122
+  Step 53/140 — Loss: 1.2711
+  Step 54/140 — Loss: 1.4114
+  Step 55/140 — Loss: 0.7511
+  Step 56/140 — Loss: 0.9247
+  Step 57/140 — Loss: 1.6512
+  Step 58/140 — Loss: 0.6795
+  Step 59/140 — Loss: 0.7435
+  Step 60/140 — Loss: 0.3648
+  Step 61/140 — Loss: 1.2627
+  Step 62/140 — Loss: 1.3393
+  Step 63/140 — Loss: 0.9418
+  Step 64/140 — Loss: 1.2414
+  Step 65/140 — Loss: 1.4456
+  Step 66/140 — Loss: 1.1433
+  Step 67/140 — Loss: 1.3352
+  Step 68/140 — Loss: 0.5715
+  Step 69/140 — Loss: 2.0240
+  Step 70/140 — Loss: 1.1177
+  Step 71/140 — Loss: 1.2896
+  Step 72/140 — Loss: 0.3569
+  Step 73/140 — Loss: 2.2035
+  Step 74/140 — Loss: 0.5520
+  Step 75/140 — Loss: 0.8171
+  Step 76/140 — Loss: 1.2216
+  Step 77/140 — Loss: 1.2444
+  Step 78/140 — Loss: 0.7472
+  Step 79/140 — Loss: 1.8301
+  Step 80/140 — Loss: 0.9891
+  Step 81/140 — Loss: 2.3478
+  Step 82/140 — Loss: 1.7493
+  Step 83/140 — Loss: 2.7236
+  Step 84/140 — Loss: 1.5723
+  Step 85/140 — Loss: 0.7091
+  Step 86/140 — Loss: 1.0675
+  Step 87/140 — Loss: 1.3152
+  Step 88/140 — Loss: 1.4084
+  Step 89/140 — Loss: 0.5802
+  Step 90/140 — Loss: 0.6809
+  Step 91/140 — Loss: 0.9549
+  Step 92/140 — Loss: 0.7627
+  Step 93/140 — Loss: 1.1006
+  Step 94/140 — Loss: 2.0166
+  Step 95/140 — Loss: 1.7412
+  Step 96/140 — Loss: 1.8627
+  Step 97/140 — Loss: 0.3517
+  Step 98/140 — Loss: 2.3524
+  Step 99/140 — Loss: 1.0419
+  Step 100/140 — Loss: 0.9591
+
+[Step 6] Saving LoRA adapter...
+Saved to ./results/adapters/client2
+
+==================================================
+CLIENT 2 DONE — Adapter ready to send to server
+==================================================
+==================================================
+CLIENT 3 — Simulated 6GB Phone (Mistral-7B)
+==================================================
+
+[Step 1] Loading data...
+Loaded 13000 examples
+
+[Step 2] Loading Mistral-7B in BF16...
+Loading checkpoint shards:   0%|          | 0/3 [00:00<?, ?it/s]Loading checkpoint shards:  67%|██████▋   | 2/3 [00:00<00:00, 19.73it/s]Loading checkpoint shards: 100%|██████████| 3/3 [00:00<00:00, 20.66it/s]
+Model loaded — GPU RAM: 13.50 GB
+
+[Step 3] Attaching LoRA adapter...
+Trainable parameters: 6,815,744 out of 7,254,839,296
+  Round 1 - starting from base model
+
+[Step 4] Preparing training data...
+13000 examples formatted
+
+[Step 5] Training...
+  Step 1/140 — Loss: 2.3905
+  Step 2/140 — Loss: 1.9394
+  Step 3/140 — Loss: 1.9719
+  Step 4/140 — Loss: 1.7406
+  Step 5/140 — Loss: 1.6310
+  Step 6/140 — Loss: 1.7550
+  Step 7/140 — Loss: 1.1204
+  Step 8/140 — Loss: 1.2843
+  Step 9/140 — Loss: 0.8703
+  Step 10/140 — Loss: 0.8949
+  Step 11/140 — Loss: 0.8085
+  Step 12/140 — Loss: 0.6581
+  Step 13/140 — Loss: 0.5691
+  Step 14/140 — Loss: 0.5122
+  Step 15/140 — Loss: 0.5925
+  Step 16/140 — Loss: 0.4733
+  Step 17/140 — Loss: 0.4424
+  Step 18/140 — Loss: 0.7668
+  Step 19/140 — Loss: 0.5206
+  Step 20/140 — Loss: 0.5987
+  Step 21/140 — Loss: 0.5529
+  Step 22/140 — Loss: 0.4655
+  Step 23/140 — Loss: 0.5113
+  Step 24/140 — Loss: 0.3270
+  Step 25/140 — Loss: 0.4277
+  Step 26/140 — Loss: 0.7097
+  Step 27/140 — Loss: 0.3211
+  Step 28/140 — Loss: 0.3620
+  Step 29/140 — Loss: 0.4602
+  Step 30/140 — Loss: 0.4898
+  Step 31/140 — Loss: 0.4887
+  Step 32/140 — Loss: 0.7318
+  Step 33/140 — Loss: 0.3332
+  Step 34/140 — Loss: 0.3452
+  Step 35/140 — Loss: 0.2558
+  Step 36/140 — Loss: 0.3135
+  Step 37/140 — Loss: 0.3254
+  Step 38/140 — Loss: 0.2406
+  Step 39/140 — Loss: 0.4057
+  Step 40/140 — Loss: 0.3378
+  Step 41/140 — Loss: 0.8799
+  Step 42/140 — Loss: 0.3053
+  Step 43/140 — Loss: 0.4310
+  Step 44/140 — Loss: 0.3726
+  Step 45/140 — Loss: 0.3751
+  Step 46/140 — Loss: 0.5980
+  Step 47/140 — Loss: 0.3455
+  Step 48/140 — Loss: 0.2761
+  Step 49/140 — Loss: 0.3182
+  Step 50/140 — Loss: 0.3280
+  Step 51/140 — Loss: 0.3016
+  Step 52/140 — Loss: 0.3299
+  Step 53/140 — Loss: 0.3187
+  Step 54/140 — Loss: 0.3386
+  Step 55/140 — Loss: 0.3853
+  Step 56/140 — Loss: 0.3110
+  Step 57/140 — Loss: 0.2730
+  Step 58/140 — Loss: 0.4936
+  Step 59/140 — Loss: 0.4263
+  Step 60/140 — Loss: 0.3925
+  Step 61/140 — Loss: 0.3361
+  Step 62/140 — Loss: 0.2839
+  Step 63/140 — Loss: 0.3353
+  Step 64/140 — Loss: 0.2751
+  Step 65/140 — Loss: 0.3079
+  Step 66/140 — Loss: 0.3113
+  Step 67/140 — Loss: 0.3137
+  Step 68/140 — Loss: 0.2666
+  Step 69/140 — Loss: 0.2608
+  Step 70/140 — Loss: 0.3152
+  Step 71/140 — Loss: 0.4087
+  Step 72/140 — Loss: 0.3115
+  Step 73/140 — Loss: 0.7965
+  Step 74/140 — Loss: 0.4958
+  Step 75/140 — Loss: 0.4300
+  Step 76/140 — Loss: 0.3455
+  Step 77/140 — Loss: 0.3454
+  Step 78/140 — Loss: 0.7283
+  Step 79/140 — Loss: 0.3966
+  Step 80/140 — Loss: 0.6314
+  Step 81/140 — Loss: 0.4551
+  Step 82/140 — Loss: 0.2509
+  Step 83/140 — Loss: 0.4120
+  Step 84/140 — Loss: 0.4437
+  Step 85/140 — Loss: 0.2660
+  Step 86/140 — Loss: 0.3813
+  Step 87/140 — Loss: 0.3200
+  Step 88/140 — Loss: 0.5309
+  Step 89/140 — Loss: 0.3280
+  Step 90/140 — Loss: 0.3791
+  Step 91/140 — Loss: 0.3895
+  Step 92/140 — Loss: 0.2975
+  Step 93/140 — Loss: 0.6329
+  Step 94/140 — Loss: 0.7826
+  Step 95/140 — Loss: 0.4250
+  Step 96/140 — Loss: 0.3628
+  Step 97/140 — Loss: 0.3149
+  Step 98/140 — Loss: 0.2716
+  Step 99/140 — Loss: 0.3203
+  Step 100/140 — Loss: 0.2565
+
+[Step 6] Saving LoRA adapter...
+CLIENT 3 DONE
+CLIENT 4 — Simulated 8GB Phone (Mistral-7B)
+
+[Step 1] Loading data...
+Loaded 8000 examples
+
+[Step 2] Loading Mistral-7B in BF16...
+Loading checkpoint shards:   0%|          | 0/3 [00:00<?, ?it/s]Loading checkpoint shards:  67%|██████▋   | 2/3 [00:00<00:00, 19.81it/s]Loading checkpoint shards: 100%|██████████| 3/3 [00:00<00:00, 20.68it/s]
+Model loaded — GPU RAM: 13.50 GB
+
+[Step 3] Attaching LoRA adapter r=16...
+Trainable parameters: 13,631,488 out of 7,261,655,040
+  Round 1 - starting from base model
+
+[Step 4] Preparing training data...
+8000 examples formatted
+
+[Step 5] Training...
+  Step 1/140 — Loss: 2.9087
+  Step 2/140 — Loss: 2.4282
+  Step 3/140 — Loss: 2.4408
+  Step 4/140 — Loss: 1.8619
+  Step 5/140 — Loss: 1.4462
+  Step 6/140 — Loss: 1.4594
+  Step 7/140 — Loss: 1.1949
+  Step 8/140 — Loss: 1.2139
+  Step 9/140 — Loss: 1.1554
+  Step 10/140 — Loss: 0.8963
+  Step 11/140 — Loss: 0.4922
+  Step 12/140 — Loss: 1.1346
+  Step 13/140 — Loss: 1.0295
+  Step 14/140 — Loss: 0.4565
+  Step 15/140 — Loss: 0.8010
+  Step 16/140 — Loss: 0.6116
+  Step 17/140 — Loss: 0.5724
+  Step 18/140 — Loss: 0.5488
+  Step 19/140 — Loss: 1.0186
+  Step 20/140 — Loss: 0.6374
+  Step 21/140 — Loss: 0.5752
+  Step 22/140 — Loss: 0.6349
+  Step 23/140 — Loss: 0.5364
+  Step 24/140 — Loss: 0.6377
+  Step 25/140 — Loss: 0.6383
+  Step 26/140 — Loss: 0.5799
+  Step 27/140 — Loss: 0.5775
+  Step 28/140 — Loss: 0.5326
+  Step 29/140 — Loss: 0.5516
+  Step 30/140 — Loss: 0.8086
+  Step 31/140 — Loss: 0.5681
+  Step 32/140 — Loss: 0.5215
+  Step 33/140 — Loss: 0.6549
+  Step 34/140 — Loss: 0.5471
+  Step 35/140 — Loss: 0.4875
+  Step 36/140 — Loss: 0.6596
+  Step 37/140 — Loss: 0.4898
+  Step 38/140 — Loss: 0.5229
+  Step 39/140 — Loss: 0.5197
+  Step 40/140 — Loss: 0.4956
+  Step 41/140 — Loss: 0.4756
+  Step 42/140 — Loss: 0.5233
+  Step 43/140 — Loss: 0.5028
+  Step 44/140 — Loss: 0.3504
+  Step 45/140 — Loss: 0.5946
+  Step 46/140 — Loss: 0.5376
+  Step 47/140 — Loss: 0.5846
+  Step 48/140 — Loss: 0.3774
+  Step 49/140 — Loss: 0.6077
+  Step 50/140 — Loss: 0.5361
+  Step 51/140 — Loss: 1.2140
+  Step 52/140 — Loss: 0.7789
+  Step 53/140 — Loss: 0.5551
+  Step 54/140 — Loss: 0.4693
+  Step 55/140 — Loss: 0.5502
+  Step 56/140 — Loss: 0.5580
+  Step 57/140 — Loss: 0.5521
+  Step 58/140 — Loss: 0.5114
+  Step 59/140 — Loss: 0.4146
+  Step 60/140 — Loss: 0.5414
+  Step 61/140 — Loss: 0.5518
+  Step 62/140 — Loss: 0.4201
+  Step 63/140 — Loss: 0.4965
+  Step 64/140 — Loss: 0.6084
+  Step 65/140 — Loss: 0.6237
+  Step 66/140 — Loss: 0.9432
+  Step 67/140 — Loss: 1.2638
+  Step 68/140 — Loss: 0.3943
+  Step 69/140 — Loss: 0.8111
+  Step 70/140 — Loss: 0.3933
+  Step 71/140 — Loss: 0.4528
+  Step 72/140 — Loss: 0.8303
+  Step 73/140 — Loss: 0.4657
+  Step 74/140 — Loss: 0.4753
+  Step 75/140 — Loss: 0.5657
+  Step 76/140 — Loss: 0.5152
+  Step 77/140 — Loss: 0.6448
+  Step 78/140 — Loss: 0.3837
+  Step 79/140 — Loss: 0.3702
+  Step 80/140 — Loss: 0.3262
+  Step 81/140 — Loss: 0.3632
+  Step 82/140 — Loss: 0.7067
+  Step 83/140 — Loss: 0.3248
+  Step 84/140 — Loss: 0.3785
+  Step 85/140 — Loss: 0.7790
+  Step 86/140 — Loss: 0.3032
+  Step 87/140 — Loss: 0.3901
+  Step 88/140 — Loss: 0.3560
+  Step 89/140 — Loss: 0.6606
+  Step 90/140 — Loss: 0.4637
+  Step 91/140 — Loss: 0.4598
+  Step 92/140 — Loss: 0.4778
+  Step 93/140 — Loss: 0.1427
+  Step 94/140 — Loss: 0.4177
+  Step 95/140 — Loss: 0.4049
+  Step 96/140 — Loss: 0.7809
+  Step 97/140 — Loss: 0.4038
+  Step 98/140 — Loss: 0.6631
+  Step 99/140 — Loss: 0.3725
+  Step 100/140 — Loss: 0.3545
+
+[Step 6] Saving LoRA adapter...
+CLIENT 4 DONE
+CLIENT 5 — Simulated 12GB Phone (Mistral-7B)
+
+[Step 1] Loading data...
+Loaded 13999 examples
+
+[Step 2] Loading Mistral-7B in BF16...
+Loading checkpoint shards:   0%|          | 0/3 [00:00<?, ?it/s]Loading checkpoint shards:  67%|██████▋   | 2/3 [00:00<00:00, 17.79it/s]Loading checkpoint shards: 100%|██████████| 3/3 [00:00<00:00, 18.58it/s]
+Model loaded — GPU RAM: 13.50 GB
+
+[Step 3] Attaching LoRA adapter r=32...
+Trainable parameters: 27,262,976 out of 7,275,286,528
+  Round 1 - starting from base model
+
+[Step 4] Preparing training data...
+13999 examples formatted
+
+[Step 5] Training...
+  Step 1/140 — Loss: 2.7933
+  Step 2/140 — Loss: 1.9129
+  Step 3/140 — Loss: 1.4991
+  Step 4/140 — Loss: 1.0245
+  Step 5/140 — Loss: 0.7122
+  Step 6/140 — Loss: 0.4879
+  Step 7/140 — Loss: 0.4115
+  Step 8/140 — Loss: 0.5569
+  Step 9/140 — Loss: 0.5217
+  Step 10/140 — Loss: 0.4307
+  Step 11/140 — Loss: 0.4049
+  Step 12/140 — Loss: 0.4207
+  Step 13/140 — Loss: 0.3149
+  Step 14/140 — Loss: 0.4696
+  Step 15/140 — Loss: 0.3513
+  Step 16/140 — Loss: 0.4592
+  Step 17/140 — Loss: 0.3805
+  Step 18/140 — Loss: 0.3139
+  Step 19/140 — Loss: 0.3206
+  Step 20/140 — Loss: 0.3125
+  Step 21/140 — Loss: 0.3695
+  Step 22/140 — Loss: 0.3074
+  Step 23/140 — Loss: 0.2859
+  Step 24/140 — Loss: 0.2755
+  Step 25/140 — Loss: 0.3112
+  Step 26/140 — Loss: 0.2713
+  Step 27/140 — Loss: 0.3557
+  Step 28/140 — Loss: 0.3066
+  Step 29/140 — Loss: 0.3008
+  Step 30/140 — Loss: 0.3541
+  Step 31/140 — Loss: 0.2658
+  Step 32/140 — Loss: 0.2694
+  Step 33/140 — Loss: 0.2443
+  Step 34/140 — Loss: 0.3146
+  Step 35/140 — Loss: 0.3081
+  Step 36/140 — Loss: 0.3002
+  Step 37/140 — Loss: 0.2919
+  Step 38/140 — Loss: 0.3191
+  Step 39/140 — Loss: 0.3298
+  Step 40/140 — Loss: 0.2627
+  Step 41/140 — Loss: 0.2847
+  Step 42/140 — Loss: 0.2610
+  Step 43/140 — Loss: 0.2717
+  Step 44/140 — Loss: 0.2621
+  Step 45/140 — Loss: 0.2682
+  Step 46/140 — Loss: 4.4805
+  Step 47/140 — Loss: 0.2343
+  Step 48/140 — Loss: 0.5189
+  Step 49/140 — Loss: 0.2606
+  Step 50/140 — Loss: 8.1875
+  Step 51/140 — Loss: 0.3574
+  Step 52/140 — Loss: 0.4606
+  Step 53/140 — Loss: 1.2118
+  Step 54/140 — Loss: 0.3791
+  Step 55/140 — Loss: 0.6428
+  Step 56/140 — Loss: 0.2269
+  Step 57/140 — Loss: 0.2394
+  Step 58/140 — Loss: 0.2755
+  Step 59/140 — Loss: 0.3394
+  Step 60/140 — Loss: 0.2405
+  Step 61/140 — Loss: 0.2348
+  Step 62/140 — Loss: 0.2100
+  Step 63/140 — Loss: 0.1918
+  Step 64/140 — Loss: 0.1684
+  Step 65/140 — Loss: 0.3919
+  Step 66/140 — Loss: 0.3253
+  Step 67/140 — Loss: 0.3840
+  Step 68/140 — Loss: 0.2489
+  Step 69/140 — Loss: 0.2757
+  Step 70/140 — Loss: 0.2224
+  Step 71/140 — Loss: 0.1947
+  Step 72/140 — Loss: 0.2454
+  Step 73/140 — Loss: 0.1519
+  Step 74/140 — Loss: 0.1739
+  Step 75/140 — Loss: 0.1949
+  Step 76/140 — Loss: 0.2307
+  Step 77/140 — Loss: 0.2012
+  Step 78/140 — Loss: 0.2141
+  Step 79/140 — Loss: 0.1595
+  Step 80/140 — Loss: 0.1862
+  Step 81/140 — Loss: 0.1784
+  Step 82/140 — Loss: 0.2122
+  Step 83/140 — Loss: 0.2852
+  Step 84/140 — Loss: 0.1916
+  Step 85/140 — Loss: 0.4084
+  Step 86/140 — Loss: 0.1613
+  Step 87/140 — Loss: 0.2174
+  Step 88/140 — Loss: 0.4118
+  Step 89/140 — Loss: 0.1798
+  Step 90/140 — Loss: 0.3055
+  Step 91/140 — Loss: 0.3088
+  Step 92/140 — Loss: 0.2013
+  Step 93/140 — Loss: 0.2042
+  Step 94/140 — Loss: 0.2206
+  Step 95/140 — Loss: 0.2307
+  Step 96/140 — Loss: 0.1965
+  Step 97/140 — Loss: 0.1814
+  Step 98/140 — Loss: 0.1800
+  Step 99/140 — Loss: 0.1804
+  Step 100/140 — Loss: 0.1710
+
+[Step 6] Saving LoRA adapter...
+CLIENT 5 DONE
+FEDQUANT SERVER — Aggregation Server
+
+[Step 1] Checking client adapters...
+client2: found
+client3: found
+client4: found
+client5: found
+
+[Step 2] Loading all adapters into memory...
+client2: loaded 256 weight tensors
+client3: loaded 256 weight tensors
+client4: loaded 256 weight tensors
+client5: loaded 256 weight tensors
+
+[Step 3] Mixed-Precision Aggregation...
+Target rank: r=8
+Layers successfully averaged: 256 out of 256
+
+[Step 4] Saving aggregated adapter...
+Saved to ./results/aggregated/
+
+[Step 5] Round Summary...
+  Clients aggregated: 4
+  Common layers averaged: 256
+  Client weights used:
+    client2: 0.2 (20%)
+    client3: 0.2 (20%)
+    client4: 0.3 (30%)
+    client5: 0.3 (30%)
+
+==================================================
+SERVER ROUND 1 COMPLETE
+Aggregated adapter saved to ./results/aggregated/
+This adapter can now be sent back to all clients
+==================================================
+CLIENT 2 — Simulated 6GB Phone (Mistral-7B)
+==================================================
+
+[Step 1] Loading data...
+Loaded 30000 examples
+
+[Step 2] Loading Mistral-7B in BF16...
+Loading checkpoint shards:   0%|          | 0/3 [00:00<?, ?it/s]Loading checkpoint shards:  67%|██████▋   | 2/3 [00:00<00:00, 19.03it/s]Loading checkpoint shards: 100%|██████████| 3/3 [00:00<00:00, 17.99it/s]
+Model loaded
+  GPU RAM used: 13.50 GB
+
+[Step 3] Attaching LoRA adapter...
+Trainable parameters: 6,815,744 out of 7,254,839,296
+  Loaded adapter from round: 2
+
+[Step 4] Preparing training data...
+30000 examples formatted
+
+[Step 5] Training (1 FL round = 100 steps)...
+  Step 1/140 — Loss: 1.6066
+  Step 2/140 — Loss: 1.1665
+  Step 3/140 — Loss: 1.5701
+  Step 4/140 — Loss: 1.9351
+  Step 5/140 — Loss: 0.7127
+  Step 6/140 — Loss: 2.0441
+  Step 7/140 — Loss: 1.0769
+  Step 8/140 — Loss: 1.1364
+  Step 9/140 — Loss: 0.6113
+  Step 10/140 — Loss: 1.2507
+  Step 11/140 — Loss: 0.7738
+  Step 12/140 — Loss: 1.5822
+  Step 13/140 — Loss: 1.2687
+  Step 14/140 — Loss: 0.9935
+  Step 15/140 — Loss: 1.0360
+  Step 16/140 — Loss: 0.5807
+  Step 17/140 — Loss: 1.2440
+  Step 18/140 — Loss: 0.4365
+  Step 19/140 — Loss: 0.4214
+  Step 20/140 — Loss: 0.9006
+  Step 21/140 — Loss: 0.5663
+  Step 22/140 — Loss: 0.5998
+  Step 23/140 — Loss: 0.8706
+  Step 24/140 — Loss: 1.1834
+  Step 25/140 — Loss: 0.7982
+  Step 26/140 — Loss: 0.7997
+  Step 27/140 — Loss: 1.8195
+  Step 28/140 — Loss: 1.8093
+  Step 29/140 — Loss: 0.7852
+  Step 30/140 — Loss: 1.0786
+  Step 31/140 — Loss: 1.4127
+  Step 32/140 — Loss: 0.5336
+  Step 33/140 — Loss: 0.7043
+  Step 34/140 — Loss: 0.8901
+  Step 35/140 — Loss: 0.8653
+  Step 36/140 — Loss: 1.7002
+  Step 37/140 — Loss: 1.2016
+  Step 38/140 — Loss: 0.7586
+  Step 39/140 — Loss: 1.4660
+  Step 40/140 — Loss: 0.4963
+  Step 41/140 — Loss: 0.8531
+  Step 42/140 — Loss: 0.4390
+  Step 43/140 — Loss: 1.0312
+  Step 44/140 — Loss: 0.8166
+  Step 45/140 — Loss: 0.9589
+  Step 46/140 — Loss: 0.5683
+  Step 47/140 — Loss: 2.7621
+  Step 48/140 — Loss: 2.3914
+  Step 49/140 — Loss: 0.4228
+  Step 50/140 — Loss: 0.6163
+  Step 51/140 — Loss: 1.9475
+  Step 52/140 — Loss: 2.1454
+  Step 53/140 — Loss: 1.1049
+  Step 54/140 — Loss: 1.3249
+  Step 55/140 — Loss: 0.6401
+  Step 56/140 — Loss: 0.8563
+  Step 57/140 — Loss: 1.5336
+  Step 58/140 — Loss: 0.6063
+  Step 59/140 — Loss: 0.7134
+  Step 60/140 — Loss: 0.3356
+  Step 61/140 — Loss: 1.1390
+  Step 62/140 — Loss: 1.2833
+  Step 63/140 — Loss: 0.8782
+  Step 64/140 — Loss: 1.1957
+  Step 65/140 — Loss: 1.3319
+  Step 66/140 — Loss: 1.0828
+  Step 67/140 — Loss: 1.2655
+  Step 68/140 — Loss: 0.5170
+  Step 69/140 — Loss: 1.8894
+  Step 70/140 — Loss: 1.0596
+  Step 71/140 — Loss: 1.1345
+  Step 72/140 — Loss: 0.2960
+  Step 73/140 — Loss: 2.0952
+  Step 74/140 — Loss: 0.4995
+  Step 75/140 — Loss: 0.7486
+  Step 76/140 — Loss: 1.1459
+  Step 77/140 — Loss: 1.1952
+  Step 78/140 — Loss: 0.6006
+  Step 79/140 — Loss: 1.7804
+  Step 80/140 — Loss: 0.9297
+  Step 81/140 — Loss: 2.3211
+  Step 82/140 — Loss: 1.6274
+  Step 83/140 — Loss: 2.6458
+  Step 84/140 — Loss: 1.3844
+  Step 85/140 — Loss: 0.6242
+  Step 86/140 — Loss: 0.9213
+  Step 87/140 — Loss: 1.2449
+  Step 88/140 — Loss: 1.3169
+  Step 89/140 — Loss: 0.5013
+  Step 90/140 — Loss: 0.5312
+  Step 91/140 — Loss: 0.8422
+  Step 92/140 — Loss: 0.6345
+  Step 93/140 — Loss: 0.9745
+  Step 94/140 — Loss: 1.9309
+  Step 95/140 — Loss: 1.6501
+  Step 96/140 — Loss: 1.8151
+  Step 97/140 — Loss: 0.3410
+  Step 98/140 — Loss: 2.2194
+  Step 99/140 — Loss: 1.0036
+  Step 100/140 — Loss: 0.8801
+
+[Step 6] Saving LoRA adapter...
+Saved to ./results/adapters/client2
+
+==================================================
+CLIENT 2 DONE — Adapter ready to send to server
+==================================================
+==================================================
+CLIENT 3 — Simulated 6GB Phone (Mistral-7B)
+==================================================
+
+[Step 1] Loading data...
+Loaded 13000 examples
+
+[Step 2] Loading Mistral-7B in BF16...
+Loading checkpoint shards:   0%|          | 0/3 [00:00<?, ?it/s]Loading checkpoint shards:  67%|██████▋   | 2/3 [00:00<00:00, 19.53it/s]Loading checkpoint shards: 100%|██████████| 3/3 [00:00<00:00, 20.35it/s]
+Model loaded — GPU RAM: 13.50 GB
+
+[Step 3] Attaching LoRA adapter...
+Trainable parameters: 6,815,744 out of 7,254,839,296
+  Loaded adapter from round: 2
+
+[Step 4] Preparing training data...
+13000 examples formatted
+
+[Step 5] Training...
+  Step 1/140 — Loss: 1.6739
+  Step 2/140 — Loss: 1.4128
+  Step 3/140 — Loss: 1.0333
+  Step 4/140 — Loss: 1.1139
+  Step 5/140 — Loss: 0.5596
+  Step 6/140 — Loss: 0.7954
+  Step 7/140 — Loss: 0.5122
+  Step 8/140 — Loss: 0.5037
+  Step 9/140 — Loss: 0.4058
+  Step 10/140 — Loss: 0.3331
+  Step 11/140 — Loss: 0.3885
+  Step 12/140 — Loss: 0.3100
+  Step 13/140 — Loss: 0.3491
+  Step 14/140 — Loss: 0.3985
+  Step 15/140 — Loss: 0.4509
+  Step 16/140 — Loss: 0.2706
+  Step 17/140 — Loss: 0.3113
+  Step 18/140 — Loss: 0.4829
+  Step 19/140 — Loss: 0.3384
+  Step 20/140 — Loss: 0.4180
+  Step 21/140 — Loss: 0.3873
+  Step 22/140 — Loss: 0.3373
+  Step 23/140 — Loss: 0.4162
+  Step 24/140 — Loss: 0.2965
+  Step 25/140 — Loss: 0.3920
+  Step 26/140 — Loss: 0.6818
+  Step 27/140 — Loss: 0.2984
+  Step 28/140 — Loss: 0.2833
+  Step 29/140 — Loss: 0.3926
+  Step 30/140 — Loss: 0.4160
+  Step 31/140 — Loss: 0.4531
+  Step 32/140 — Loss: 0.6434
+  Step 33/140 — Loss: 0.3117
+  Step 34/140 — Loss: 0.3081
+  Step 35/140 — Loss: 0.2268
+  Step 36/140 — Loss: 0.2758
+  Step 37/140 — Loss: 0.2679
+  Step 38/140 — Loss: 0.2269
+  Step 39/140 — Loss: 0.3969
+  Step 40/140 — Loss: 0.3048
+  Step 41/140 — Loss: 0.8237
+  Step 42/140 — Loss: 0.2811
+  Step 43/140 — Loss: 0.3505
+  Step 44/140 — Loss: 0.3289
+  Step 45/140 — Loss: 0.2964
+  Step 46/140 — Loss: 0.5479
+  Step 47/140 — Loss: 0.3202
+  Step 48/140 — Loss: 0.2517
+  Step 49/140 — Loss: 0.2941
+  Step 50/140 — Loss: 0.2797
+  Step 51/140 — Loss: 0.2773
+  Step 52/140 — Loss: 0.2677
+  Step 53/140 — Loss: 0.2614
+  Step 54/140 — Loss: 0.3451
+  Step 55/140 — Loss: 0.3396
+  Step 56/140 — Loss: 0.2728
+  Step 57/140 — Loss: 0.2727
+  Step 58/140 — Loss: 0.4359
+  Step 59/140 — Loss: 0.3961
+  Step 60/140 — Loss: 0.3949
+  Step 61/140 — Loss: 0.3038
+  Step 62/140 — Loss: 0.2551
+  Step 63/140 — Loss: 0.2988
+  Step 64/140 — Loss: 0.2467
+  Step 65/140 — Loss: 0.2771
+  Step 66/140 — Loss: 0.2755
+  Step 67/140 — Loss: 0.2564
+  Step 68/140 — Loss: 0.2548
+  Step 69/140 — Loss: 0.2113
+  Step 70/140 — Loss: 0.2893
+  Step 71/140 — Loss: 0.4089
+  Step 72/140 — Loss: 0.2585
+  Step 73/140 — Loss: 0.6564
+  Step 74/140 — Loss: 0.4410
+  Step 75/140 — Loss: 0.3844
+  Step 76/140 — Loss: 0.3136
+  Step 77/140 — Loss: 0.2707
+  Step 78/140 — Loss: 0.6754
+  Step 79/140 — Loss: 0.3541
+  Step 80/140 — Loss: 0.5967
+  Step 81/140 — Loss: 0.4284
+  Step 82/140 — Loss: 0.1954
+  Step 83/140 — Loss: 0.3809
+  Step 84/140 — Loss: 0.3639
+  Step 85/140 — Loss: 0.1886
+  Step 86/140 — Loss: 0.3351
+  Step 87/140 — Loss: 0.2399
+  Step 88/140 — Loss: 0.4841
+  Step 89/140 — Loss: 0.2428
+  Step 90/140 — Loss: 0.3384
+  Step 91/140 — Loss: 0.3123
+  Step 92/140 — Loss: 0.2352
+  Step 93/140 — Loss: 0.5697
+  Step 94/140 — Loss: 0.7295
+  Step 95/140 — Loss: 0.3575
+  Step 96/140 — Loss: 0.3222
+  Step 97/140 — Loss: 0.2850
+  Step 98/140 — Loss: 0.2415
+  Step 99/140 — Loss: 0.2909
+  Step 100/140 — Loss: 0.2226
+
+[Step 6] Saving LoRA adapter...
+CLIENT 3 DONE
+CLIENT 4 — Simulated 8GB Phone (Mistral-7B)
+
+[Step 1] Loading data...
+Loaded 8000 examples
+
+[Step 2] Loading Mistral-7B in BF16...
+Loading checkpoint shards:   0%|          | 0/3 [00:00<?, ?it/s]Loading checkpoint shards:  67%|██████▋   | 2/3 [00:00<00:00, 18.13it/s]Loading checkpoint shards: 100%|██████████| 3/3 [00:00<00:00, 18.88it/s]
+Model loaded — GPU RAM: 13.50 GB
+
+[Step 3] Attaching LoRA adapter r=16...
+Trainable parameters: 13,631,488 out of 7,261,655,040
+  Loaded + padded adapter to r=16
+
+[Step 4] Preparing training data...
+8000 examples formatted
+
+[Step 5] Training...
+  Step 1/140 — Loss: 1.8763
+  Step 2/140 — Loss: 1.7374
+  Step 3/140 — Loss: 1.0394
+  Step 4/140 — Loss: 1.0916
+  Step 5/140 — Loss: 0.8950
+  Step 6/140 — Loss: 0.8010
+  Step 7/140 — Loss: 0.7170
+  Step 8/140 — Loss: 0.6840
+  Step 9/140 — Loss: 0.6596
+  Step 10/140 — Loss: 0.5535
+  Step 11/140 — Loss: 0.4084
+  Step 12/140 — Loss: 0.6917
+  Step 13/140 — Loss: 0.7382
+  Step 14/140 — Loss: 0.3349
+  Step 15/140 — Loss: 0.6530
+  Step 16/140 — Loss: 0.3905
+  Step 17/140 — Loss: 0.3718
+  Step 18/140 — Loss: 0.4334
+  Step 19/140 — Loss: 1.0160
+  Step 20/140 — Loss: 0.5428
+  Step 21/140 — Loss: 0.5148
+  Step 22/140 — Loss: 0.4991
+  Step 23/140 — Loss: 0.4477
+  Step 24/140 — Loss: 0.5591
+  Step 25/140 — Loss: 0.5994
+  Step 26/140 — Loss: 0.6115
+  Step 27/140 — Loss: 0.5228
+  Step 28/140 — Loss: 0.4472
+  Step 29/140 — Loss: 0.4319
+  Step 30/140 — Loss: 0.6747
+  Step 31/140 — Loss: 0.5035
+  Step 32/140 — Loss: 0.3991
+  Step 33/140 — Loss: 0.5295
+  Step 34/140 — Loss: 0.5245
+  Step 35/140 — Loss: 0.4427
+  Step 36/140 — Loss: 0.5256
+  Step 37/140 — Loss: 0.4765
+  Step 38/140 — Loss: 0.4362
+  Step 39/140 — Loss: 0.4943
+  Step 40/140 — Loss: 0.4725
+  Step 41/140 — Loss: 0.3483
+  Step 42/140 — Loss: 0.4689
+  Step 43/140 — Loss: 0.4289
+  Step 44/140 — Loss: 0.3116
+  Step 45/140 — Loss: 0.4701
+  Step 46/140 — Loss: 0.3883
+  Step 47/140 — Loss: 0.4627
+  Step 48/140 — Loss: 0.2543
+  Step 49/140 — Loss: 0.4614
+  Step 50/140 — Loss: 0.4337
+  Step 51/140 — Loss: 0.9371
+  Step 52/140 — Loss: 0.7035
+  Step 53/140 — Loss: 0.3947
+  Step 54/140 — Loss: 0.3845
+  Step 55/140 — Loss: 0.4424
+  Step 56/140 — Loss: 0.4518
+  Step 57/140 — Loss: 0.4616
+  Step 58/140 — Loss: 0.4447
+  Step 59/140 — Loss: 0.3852
+  Step 60/140 — Loss: 0.4153
+  Step 61/140 — Loss: 0.3789
+  Step 62/140 — Loss: 0.2671
+  Step 63/140 — Loss: 0.5861
+  Step 64/140 — Loss: 0.5190
+  Step 65/140 — Loss: 0.5913
+  Step 66/140 — Loss: 0.9000
+  Step 67/140 — Loss: 1.1219
+  Step 68/140 — Loss: 0.3797
+  Step 69/140 — Loss: 0.8764
+  Step 70/140 — Loss: 0.3384
+  Step 71/140 — Loss: 0.3610
+  Step 72/140 — Loss: 0.8918
+  Step 73/140 — Loss: 0.3916
+  Step 74/140 — Loss: 0.4051
+  Step 75/140 — Loss: 0.4830
+  Step 76/140 — Loss: 0.4880
+  Step 77/140 — Loss: 0.8820
+  Step 78/140 — Loss: 0.3009
+  Step 79/140 — Loss: 0.2118
+  Step 80/140 — Loss: 0.3378
+  Step 81/140 — Loss: 0.4171
+  Step 82/140 — Loss: 0.5824
+  Step 83/140 — Loss: 0.2786
+  Step 84/140 — Loss: 0.3190
+  Step 85/140 — Loss: 0.8143
+  Step 86/140 — Loss: 0.3745
+  Step 87/140 — Loss: 0.3346
+  Step 88/140 — Loss: 0.3224
+  Step 89/140 — Loss: 0.6471
+  Step 90/140 — Loss: 0.4239
+  Step 91/140 — Loss: 0.3400
+  Step 92/140 — Loss: 0.4320
+  Step 93/140 — Loss: 0.1343
+  Step 94/140 — Loss: 0.3943
+  Step 95/140 — Loss: 0.3502
+  Step 96/140 — Loss: 0.6421
+  Step 97/140 — Loss: 0.3340
+  Step 98/140 — Loss: 0.5975
+  Step 99/140 — Loss: 0.3300
+  Step 100/140 — Loss: 0.3347
+
+[Step 6] Saving LoRA adapter...
+CLIENT 4 DONE
+CLIENT 5 — Simulated 12GB Phone (Mistral-7B)
+
+[Step 1] Loading data...
+Loaded 13999 examples
+
+[Step 2] Loading Mistral-7B in BF16...
+Loading checkpoint shards:   0%|          | 0/3 [00:00<?, ?it/s]Loading checkpoint shards:  67%|██████▋   | 2/3 [00:00<00:00, 19.49it/s]Loading checkpoint shards: 100%|██████████| 3/3 [00:00<00:00, 20.33it/s]
+Model loaded — GPU RAM: 13.50 GB
+
+[Step 3] Attaching LoRA adapter r=32...
+Trainable parameters: 27,262,976 out of 7,275,286,528
+  Loaded + padded adapter to r=32
+
+[Step 4] Preparing training data...
+13999 examples formatted
+
+[Step 5] Training...
+  Step 1/140 — Loss: 2.0202
+  Step 2/140 — Loss: 1.4633
+  Step 3/140 — Loss: 1.1582
+  Step 4/140 — Loss: 0.7831
+  Step 5/140 — Loss: 0.4615
+  Step 6/140 — Loss: 0.3846
+  Step 7/140 — Loss: 0.3638
+  Step 8/140 — Loss: 0.4111
+  Step 9/140 — Loss: 0.4622
+  Step 10/140 — Loss: 0.4191
+  Step 11/140 — Loss: 0.3897
+  Step 12/140 — Loss: 0.4094
+  Step 13/140 — Loss: 0.2849
+  Step 14/140 — Loss: 0.4453
+  Step 15/140 — Loss: 0.3331
+  Step 16/140 — Loss: 0.3771
+  Step 17/140 — Loss: 0.4197
+  Step 18/140 — Loss: 0.3302
+  Step 19/140 — Loss: 0.3240
+  Step 20/140 — Loss: 0.3195
+  Step 21/140 — Loss: 0.3380
+  Step 22/140 — Loss: 0.3055
+  Step 23/140 — Loss: 0.2845
+  Step 24/140 — Loss: 0.2825
+  Step 25/140 — Loss: 0.3275
+  Step 26/140 — Loss: 0.2823
+  Step 27/140 — Loss: 0.3389
+  Step 28/140 — Loss: 0.3235
+  Step 29/140 — Loss: 0.2903
+  Step 30/140 — Loss: 0.3263
+  Step 31/140 — Loss: 0.2905
+  Step 32/140 — Loss: 0.2451
+  Step 33/140 — Loss: 0.2474
+  Step 34/140 — Loss: 0.3160
+  Step 35/140 — Loss: 0.2827
+  Step 36/140 — Loss: 0.2551
+  Step 37/140 — Loss: 0.3210
+  Step 38/140 — Loss: 0.2802
+  Step 39/140 — Loss: 0.2984
+  Step 40/140 — Loss: 0.2639
+  Step 41/140 — Loss: 0.2714
+  Step 42/140 — Loss: 0.2417
+  Step 43/140 — Loss: 0.2573
+  Step 44/140 — Loss: 0.2766
+  Step 45/140 — Loss: 0.2666
+  Step 46/140 — Loss: 0.2712
+  Step 47/140 — Loss: 0.2312
+  Step 48/140 — Loss: 0.2900
+  Step 49/140 — Loss: 0.2533
+  Step 50/140 — Loss: 0.2445
+  Step 51/140 — Loss: 0.2525
+  Step 52/140 — Loss: 0.2455
+  Step 53/140 — Loss: 0.2274
+  Step 54/140 — Loss: 0.2216
+  Step 55/140 — Loss: 0.2294
+  Step 56/140 — Loss: 0.1875
+  Step 57/140 — Loss: 0.2350
+  Step 58/140 — Loss: 0.2711
+  Step 59/140 — Loss: 0.2467
+  Step 60/140 — Loss: 0.2472
+  Step 61/140 — Loss: 0.2549
+  Step 62/140 — Loss: 0.2311
+  Step 63/140 — Loss: 0.1949
+  Step 64/140 — Loss: 0.1714
+  Step 65/140 — Loss: 0.2219
+  Step 66/140 — Loss: 0.1908
+  Step 67/140 — Loss: 0.2331
+  Step 68/140 — Loss: 0.1898
+  Step 69/140 — Loss: 0.2207
+  Step 70/140 — Loss: 0.1682
+  Step 71/140 — Loss: 0.1465
+  Step 72/140 — Loss: 0.1793
+  Step 73/140 — Loss: 0.1300
+  Step 74/140 — Loss: 0.1892
+  Step 75/140 — Loss: 0.1794
+  Step 76/140 — Loss: 0.1960
+  Step 77/140 — Loss: 0.2016
+  Step 78/140 — Loss: 0.2077
+  Step 79/140 — Loss: 0.1151
+  Step 80/140 — Loss: 0.1598
+  Step 81/140 — Loss: 0.1728
+  Step 82/140 — Loss: 0.1705
+  Step 83/140 — Loss: 0.2027
+  Step 84/140 — Loss: 0.1583
+  Step 85/140 — Loss: 0.2395
+  Step 86/140 — Loss: 0.1506
+  Step 87/140 — Loss: 0.2300
+  Step 88/140 — Loss: 0.1932
+  Step 89/140 — Loss: 0.1444
+  Step 90/140 — Loss: 0.1767
+  Step 91/140 — Loss: 0.1848
+  Step 92/140 — Loss: 0.1869
+  Step 93/140 — Loss: 0.1912
+  Step 94/140 — Loss: 0.1572
+  Step 95/140 — Loss: 0.1926
+  Step 96/140 — Loss: 0.1811
+  Step 97/140 — Loss: 0.1591
+  Step 98/140 — Loss: 0.1599
+  Step 99/140 — Loss: 0.1845
+  Step 100/140 — Loss: 0.1525
+
+[Step 6] Saving LoRA adapter...
+CLIENT 5 DONE
+FEDQUANT SERVER — Aggregation Server
+
+[Step 1] Checking client adapters...
+client2: found
+client3: found
+client4: found
+client5: found
+
+[Step 2] Loading all adapters into memory...
+client2: loaded 256 weight tensors
+client3: loaded 256 weight tensors
+client4: loaded 256 weight tensors
+client5: loaded 256 weight tensors
+
+[Step 3] Mixed-Precision Aggregation...
+Target rank: r=8
+Layers successfully averaged: 256 out of 256
+
+[Step 4] Saving aggregated adapter...
+Saved to ./results/aggregated/
+
+[Step 5] Round Summary...
+  Clients aggregated: 4
+  Common layers averaged: 256
+  Client weights used:
+    client2: 0.2 (20%)
+    client3: 0.2 (20%)
+    client4: 0.3 (30%)
+    client5: 0.3 (30%)
+
+==================================================
+SERVER ROUND 1 COMPLETE
+Aggregated adapter saved to ./results/aggregated/
+This adapter can now be sent back to all clients
+==================================================
+CLIENT 2 — Simulated 6GB Phone (Mistral-7B)
+==================================================
+
+[Step 1] Loading data...
+Loaded 30000 examples
+
+[Step 2] Loading Mistral-7B in BF16...
+Loading checkpoint shards:   0%|          | 0/3 [00:00<?, ?it/s]Loading checkpoint shards: 100%|██████████| 3/3 [00:00<00:00, 19.10it/s]Loading checkpoint shards: 100%|██████████| 3/3 [00:00<00:00, 19.07it/s]
+Model loaded
+  GPU RAM used: 13.50 GB
+
+[Step 3] Attaching LoRA adapter...
+Trainable parameters: 6,815,744 out of 7,254,839,296
+  Loaded adapter from round: 3
+
+[Step 4] Preparing training data...
+30000 examples formatted
+
+[Step 5] Training (1 FL round = 100 steps)...
+  Step 1/140 — Loss: 1.0455
+  Step 2/140 — Loss: 0.7143
+  Step 3/140 — Loss: 0.7926
+  Step 4/140 — Loss: 1.4683
+  Step 5/140 — Loss: 0.4323
+  Step 6/140 — Loss: 1.7803
+  Step 7/140 — Loss: 0.8880
+  Step 8/140 — Loss: 0.9411
+  Step 9/140 — Loss: 0.5133
+  Step 10/140 — Loss: 1.1178
+  Step 11/140 — Loss: 0.5263
+  Step 12/140 — Loss: 1.3942
+  Step 13/140 — Loss: 1.1989
+  Step 14/140 — Loss: 0.7930
+  Step 15/140 — Loss: 0.8393
+  Step 16/140 — Loss: 0.5019
+  Step 17/140 — Loss: 1.1008
+  Step 18/140 — Loss: 0.3061
+  Step 19/140 — Loss: 0.3313
+  Step 20/140 — Loss: 0.7022
+  Step 21/140 — Loss: 0.3663
+  Step 22/140 — Loss: 0.4865
+  Step 23/140 — Loss: 0.7507
+  Step 24/140 — Loss: 0.9505
+  Step 25/140 — Loss: 0.6884
+  Step 26/140 — Loss: 0.6521
+  Step 27/140 — Loss: 1.7112
+  Step 28/140 — Loss: 1.6694
+  Step 29/140 — Loss: 0.6948
+  Step 30/140 — Loss: 0.9703
+  Step 31/140 — Loss: 1.1699
+  Step 32/140 — Loss: 0.3768
+  Step 33/140 — Loss: 0.6011
+  Step 34/140 — Loss: 0.8028
+  Step 35/140 — Loss: 0.7995
+  Step 36/140 — Loss: 1.5712
+  Step 37/140 — Loss: 1.0088
+  Step 38/140 — Loss: 0.5618
+  Step 39/140 — Loss: 1.3663
+  Step 40/140 — Loss: 0.4638
+  Step 41/140 — Loss: 0.8110
+  Step 42/140 — Loss: 0.3838
+  Step 43/140 — Loss: 0.9464
+  Step 44/140 — Loss: 0.6508
+  Step 45/140 — Loss: 0.8369
+  Step 46/140 — Loss: 0.4347
+  Step 47/140 — Loss: 2.6388
+  Step 48/140 — Loss: 2.2675
+  Step 49/140 — Loss: 0.2913
+  Step 50/140 — Loss: 0.4127
+  Step 51/140 — Loss: 1.7807
+  Step 52/140 — Loss: 2.0856
+  Step 53/140 — Loss: 0.9018
+  Step 54/140 — Loss: 1.1377
+  Step 55/140 — Loss: 0.4918
+  Step 56/140 — Loss: 0.7577
+  Step 57/140 — Loss: 1.4701
+  Step 58/140 — Loss: 0.4546
+  Step 59/140 — Loss: 0.6839
+  Step 60/140 — Loss: 0.2550
+  Step 61/140 — Loss: 1.0823
+  Step 62/140 — Loss: 1.2509
+  Step 63/140 — Loss: 0.7538
+  Step 64/140 — Loss: 1.1077
+  Step 65/140 — Loss: 1.2566
+  Step 66/140 — Loss: 1.0282
+  Step 67/140 — Loss: 1.1959
+  Step 68/140 — Loss: 0.3958
+  Step 69/140 — Loss: 1.7259
+  Step 70/140 — Loss: 0.9571
+  Step 71/140 — Loss: 0.9872
+  Step 72/140 — Loss: 0.1896
+  Step 73/140 — Loss: 2.0147
+  Step 74/140 — Loss: 0.4157
+  Step 75/140 — Loss: 0.6506
+  Step 76/140 — Loss: 1.0129
+  Step 77/140 — Loss: 1.0817
+  Step 78/140 — Loss: 0.4957
+  Step 79/140 — Loss: 1.6501
+  Step 80/140 — Loss: 0.8873
+  Step 81/140 — Loss: 2.2864
+  Step 82/140 — Loss: 1.4304
+  Step 83/140 — Loss: 2.5848
+  Step 84/140 — Loss: 1.2207
+  Step 85/140 — Loss: 0.5893
+  Step 86/140 — Loss: 0.8116
+  Step 87/140 — Loss: 1.1516
+  Step 88/140 — Loss: 1.2668
+  Step 89/140 — Loss: 0.4996
+  Step 90/140 — Loss: 0.4665
+  Step 91/140 — Loss: 0.7870
+  Step 92/140 — Loss: 0.6249
+  Step 93/140 — Loss: 0.9185
+  Step 94/140 — Loss: 1.9103
+  Step 95/140 — Loss: 1.6057
+  Step 96/140 — Loss: 1.7040
+  Step 97/140 — Loss: 0.3108
+  Step 98/140 — Loss: 2.2403
+  Step 99/140 — Loss: 0.9896
+  Step 100/140 — Loss: 0.7128
+
+[Step 6] Saving LoRA adapter...
+Saved to ./results/adapters/client2
+
+==================================================
+CLIENT 2 DONE — Adapter ready to send to server
+==================================================
+==================================================
+CLIENT 3 — Simulated 6GB Phone (Mistral-7B)
+==================================================
+
+[Step 1] Loading data...
+Loaded 13000 examples
+
+[Step 2] Loading Mistral-7B in BF16...
+Loading checkpoint shards:   0%|          | 0/3 [00:00<?, ?it/s]Loading checkpoint shards:  67%|██████▋   | 2/3 [00:00<00:00, 20.00it/s]Loading checkpoint shards: 100%|██████████| 3/3 [00:00<00:00, 20.98it/s]
+Model loaded — GPU RAM: 13.50 GB
+
+[Step 3] Attaching LoRA adapter...
+Trainable parameters: 6,815,744 out of 7,254,839,296
+  Loaded adapter from round: 3
+
+[Step 4] Preparing training data...
+13000 examples formatted
+
+[Step 5] Training...
+  Step 1/140 — Loss: 0.7452
+  Step 2/140 — Loss: 0.7196
+  Step 3/140 — Loss: 0.2671
+  Step 4/140 — Loss: 0.5897
+  Step 5/140 — Loss: 0.2551
+  Step 6/140 — Loss: 0.4873
+  Step 7/140 — Loss: 0.3467
+  Step 8/140 — Loss: 0.2895
+  Step 9/140 — Loss: 0.2572
+  Step 10/140 — Loss: 0.2278
+  Step 11/140 — Loss: 0.2733
+  Step 12/140 — Loss: 0.1973
+  Step 13/140 — Loss: 0.2300
+  Step 14/140 — Loss: 0.2969
+  Step 15/140 — Loss: 0.3200
+  Step 16/140 — Loss: 0.1729
+  Step 17/140 — Loss: 0.2243
+  Step 18/140 — Loss: 0.4007
+  Step 19/140 — Loss: 0.2507
+  Step 20/140 — Loss: 0.3464
+  Step 21/140 — Loss: 0.2698
+  Step 22/140 — Loss: 0.2577
+  Step 23/140 — Loss: 0.3694
+  Step 24/140 — Loss: 0.2033
+  Step 25/140 — Loss: 0.2610
+  Step 26/140 — Loss: 0.5078
+  Step 27/140 — Loss: 0.2372
+  Step 28/140 — Loss: 0.2207
+  Step 29/140 — Loss: 0.2855
+  Step 30/140 — Loss: 0.2760
+  Step 31/140 — Loss: 0.4108
+  Step 32/140 — Loss: 0.5286
+  Step 33/140 — Loss: 0.2074
+  Step 34/140 — Loss: 0.1998
+  Step 35/140 — Loss: 0.1426
+  Step 36/140 — Loss: 0.1902
+  Step 37/140 — Loss: 0.1988
+  Step 38/140 — Loss: 0.1451
+  Step 39/140 — Loss: 0.3581
+  Step 40/140 — Loss: 0.2664
+  Step 41/140 — Loss: 0.7396
+  Step 42/140 — Loss: 0.1927
+  Step 43/140 — Loss: 0.2676
+  Step 44/140 — Loss: 0.2431
+  Step 45/140 — Loss: 0.2182
+  Step 46/140 — Loss: 0.4842
+  Step 47/140 — Loss: 0.2524
+  Step 48/140 — Loss: 0.1811
+  Step 49/140 — Loss: 0.2209
+  Step 50/140 — Loss: 0.2062
+  Step 51/140 — Loss: 0.2075
+  Step 52/140 — Loss: 0.2002
+  Step 53/140 — Loss: 0.1939
+  Step 54/140 — Loss: 0.2709
+  Step 55/140 — Loss: 0.2593
+  Step 56/140 — Loss: 0.2146
+  Step 57/140 — Loss: 0.1920
+  Step 58/140 — Loss: 0.3711
+  Step 59/140 — Loss: 0.2747
+  Step 60/140 — Loss: 0.3306
+  Step 61/140 — Loss: 0.2550
+  Step 62/140 — Loss: 0.1675
+  Step 63/140 — Loss: 0.2360
+  Step 64/140 — Loss: 0.2342
+  Step 65/140 — Loss: 0.2294
+  Step 66/140 — Loss: 0.2361
+  Step 67/140 — Loss: 0.2062
+  Step 68/140 — Loss: 0.1887
+  Step 69/140 — Loss: 0.1876
+  Step 70/140 — Loss: 0.2207
+  Step 71/140 — Loss: 0.3389
+  Step 72/140 — Loss: 0.2233
+  Step 73/140 — Loss: 0.6293
+  Step 74/140 — Loss: 0.4067
+  Step 75/140 — Loss: 0.3238
+  Step 76/140 — Loss: 0.2764
+  Step 77/140 — Loss: 0.2336
+  Step 78/140 — Loss: 0.6007
+  Step 79/140 — Loss: 0.3022
+  Step 80/140 — Loss: 0.5827
+  Step 81/140 — Loss: 0.3903
+  Step 82/140 — Loss: 0.1805
+  Step 83/140 — Loss: 0.3396
+  Step 84/140 — Loss: 0.3388
+  Step 85/140 — Loss: 0.1642
+  Step 86/140 — Loss: 0.2653
+  Step 87/140 — Loss: 0.2074
+  Step 88/140 — Loss: 0.4194
+  Step 89/140 — Loss: 0.2162
+  Step 90/140 — Loss: 0.2920
+  Step 91/140 — Loss: 0.2726
+  Step 92/140 — Loss: 0.2276
+  Step 93/140 — Loss: 0.5423
+  Step 94/140 — Loss: 0.7243
+  Step 95/140 — Loss: 0.3472
+  Step 96/140 — Loss: 0.2856
+  Step 97/140 — Loss: 0.2814
+  Step 98/140 — Loss: 0.2338
+  Step 99/140 — Loss: 0.2740
+  Step 100/140 — Loss: 0.2001
+
+[Step 6] Saving LoRA adapter...
+CLIENT 3 DONE
+CLIENT 4 — Simulated 8GB Phone (Mistral-7B)
+
+[Step 1] Loading data...
+Loaded 8000 examples
+
+[Step 2] Loading Mistral-7B in BF16...
+Loading checkpoint shards:   0%|          | 0/3 [00:00<?, ?it/s]Loading checkpoint shards:  67%|██████▋   | 2/3 [00:00<00:00, 17.96it/s]Loading checkpoint shards: 100%|██████████| 3/3 [00:00<00:00, 17.90it/s]
+Model loaded — GPU RAM: 13.50 GB
+
+[Step 3] Attaching LoRA adapter r=16...
+Trainable parameters: 13,631,488 out of 7,261,655,040
+  Loaded + padded adapter to r=16
+
+[Step 4] Preparing training data...
+8000 examples formatted
+
+[Step 5] Training...
+  Step 1/140 — Loss: 0.5049
+  Step 2/140 — Loss: 0.3547
+  Step 3/140 — Loss: 0.5257
+  Step 4/140 — Loss: 0.3525
+  Step 5/140 — Loss: 0.3542
+  Step 6/140 — Loss: 0.2881
+  Step 7/140 — Loss: 0.5073
+  Step 8/140 — Loss: 0.3554
+  Step 9/140 — Loss: 0.3135
+  Step 10/140 — Loss: 0.3937
+  Step 11/140 — Loss: 0.2272
+  Step 12/140 — Loss: 0.4406
+  Step 13/140 — Loss: 0.4886
+  Step 14/140 — Loss: 0.1714
+  Step 15/140 — Loss: 0.3542
+  Step 16/140 — Loss: 0.2340
+  Step 17/140 — Loss: 0.1646
+  Step 18/140 — Loss: 0.2623
+  Step 19/140 — Loss: 0.8416
+  Step 20/140 — Loss: 0.1939
+  Step 21/140 — Loss: 0.3097
+  Step 22/140 — Loss: 0.3779
+  Step 23/140 — Loss: 0.3028
+  Step 24/140 — Loss: 0.4069
+  Step 25/140 — Loss: 0.4668
+  Step 26/140 — Loss: 0.3639
+  Step 27/140 — Loss: 0.3465
+  Step 28/140 — Loss: 0.2681
+  Step 29/140 — Loss: 0.3554
+  Step 30/140 — Loss: 0.3984
+  Step 31/140 — Loss: 0.3708
+  Step 32/140 — Loss: 0.2766
+  Step 33/140 — Loss: 0.3566
+  Step 34/140 — Loss: 0.3589
+  Step 35/140 — Loss: 0.2918
+  Step 36/140 — Loss: 0.3826
+  Step 37/140 — Loss: 0.2801
+  Step 38/140 — Loss: 0.2863
+  Step 39/140 — Loss: 0.3583
+  Step 40/140 — Loss: 0.3237
+  Step 41/140 — Loss: 0.2440
+  Step 42/140 — Loss: 0.3414
+  Step 43/140 — Loss: 0.2939
+  Step 44/140 — Loss: 0.1929
+  Step 45/140 — Loss: 0.3808
+  Step 46/140 — Loss: 0.2658
+  Step 47/140 — Loss: 0.2853
+  Step 48/140 — Loss: 0.1606
+  Step 49/140 — Loss: 0.2388
+  Step 50/140 — Loss: 0.3009
+  Step 51/140 — Loss: 0.7742
+  Step 52/140 — Loss: 0.4523
+  Step 53/140 — Loss: 0.3288
+  Step 54/140 — Loss: 0.2418
+  Step 55/140 — Loss: 0.3563
+  Step 56/140 — Loss: 0.4042
+  Step 57/140 — Loss: 0.3549
+  Step 58/140 — Loss: 0.2825
+  Step 59/140 — Loss: 0.1734
+  Step 60/140 — Loss: 0.3331
+  Step 61/140 — Loss: 0.3508
+  Step 62/140 — Loss: 0.2214
+  Step 63/140 — Loss: 0.3173
+  Step 64/140 — Loss: 0.4418
+  Step 65/140 — Loss: 0.3452
+  Step 66/140 — Loss: 0.6208
+  Step 67/140 — Loss: 1.0116
+  Step 68/140 — Loss: 0.2875
+  Step 69/140 — Loss: 0.7030
+  Step 70/140 — Loss: 0.2949
+  Step 71/140 — Loss: 0.2292
+  Step 72/140 — Loss: 0.7066
+  Step 73/140 — Loss: 0.3273
+  Step 74/140 — Loss: 0.3922
+  Step 75/140 — Loss: 0.4365
+  Step 76/140 — Loss: 0.4059
+  Step 77/140 — Loss: 0.5278
+  Step 78/140 — Loss: 0.2658
+  Step 79/140 — Loss: 0.2050
+  Step 80/140 — Loss: 0.3245
+  Step 81/140 — Loss: 0.3450
+  Step 82/140 — Loss: 0.5035
+  Step 83/140 — Loss: 0.2306
+  Step 84/140 — Loss: 0.3204
+  Step 85/140 — Loss: 0.7212
+  Step 86/140 — Loss: 0.2560
+  Step 87/140 — Loss: 0.3964
+  Step 88/140 — Loss: 0.3662
+  Step 89/140 — Loss: 0.4476
+  Step 90/140 — Loss: 0.4386
+  Step 91/140 — Loss: 0.4196
+  Step 92/140 — Loss: 0.3739
+  Step 93/140 — Loss: 0.1892
+  Step 94/140 — Loss: 0.3999
+  Step 95/140 — Loss: 0.3338
+  Step 96/140 — Loss: 0.5038
+  Step 97/140 — Loss: 0.2913
+  Step 98/140 — Loss: 0.6662
+  Step 99/140 — Loss: 0.3188
+  Step 100/140 — Loss: 0.3227
+
+[Step 6] Saving LoRA adapter...
+CLIENT 4 DONE
+CLIENT 5 — Simulated 12GB Phone (Mistral-7B)
+
+[Step 1] Loading data...
+Loaded 13999 examples
+
+[Step 2] Loading Mistral-7B in BF16...
+Loading checkpoint shards:   0%|          | 0/3 [00:00<?, ?it/s]Loading checkpoint shards:  67%|██████▋   | 2/3 [00:00<00:00, 19.60it/s]Loading checkpoint shards: 100%|██████████| 3/3 [00:00<00:00, 20.49it/s]
+Model loaded — GPU RAM: 13.50 GB
+
+[Step 3] Attaching LoRA adapter r=32...
+Trainable parameters: 27,262,976 out of 7,275,286,528
+  Loaded + padded adapter to r=32
+
+[Step 4] Preparing training data...
+13999 examples formatted
+
+[Step 5] Training...
+  Step 1/140 — Loss: 0.6384
+  Step 2/140 — Loss: 0.2856
+  Step 3/140 — Loss: 0.2314
+  Step 4/140 — Loss: 0.2494
+  Step 5/140 — Loss: 0.1712
+  Step 6/140 — Loss: 0.1561
+  Step 7/140 — Loss: 0.2226
+  Step 8/140 — Loss: 0.2408
+  Step 9/140 — Loss: 0.2694
+  Step 10/140 — Loss: 0.2382
+  Step 11/140 — Loss: 0.1912
+  Step 12/140 — Loss: 0.2339
+  Step 13/140 — Loss: 0.1562
+  Step 14/140 — Loss: 0.2374
+  Step 15/140 — Loss: 0.2050
+  Step 16/140 — Loss: 0.2327
+  Step 17/140 — Loss: 0.1993
+  Step 18/140 — Loss: 0.1840
+  Step 19/140 — Loss: 0.1632
+  Step 20/140 — Loss: 0.1683
+  Step 21/140 — Loss: 0.2463
+  Step 22/140 — Loss: 0.1798
+  Step 23/140 — Loss: 0.1994
+  Step 24/140 — Loss: 0.1815
+  Step 25/140 — Loss: 0.2374
+  Step 26/140 — Loss: 0.1935
+  Step 27/140 — Loss: 0.2579
+  Step 28/140 — Loss: 0.1734
+  Step 29/140 — Loss: 0.1634
+  Step 30/140 — Loss: 0.2314
+  Step 31/140 — Loss: 0.2125
+  Step 32/140 — Loss: 0.1656
+  Step 33/140 — Loss: 0.1501
+  Step 34/140 — Loss: 0.2281
+  Step 35/140 — Loss: 0.1863
+  Step 36/140 — Loss: 0.1751
+  Step 37/140 — Loss: 0.2406
+  Step 38/140 — Loss: 0.1802
+  Step 39/140 — Loss: 0.2056
+  Step 40/140 — Loss: 0.1733
+  Step 41/140 — Loss: 0.1919
+  Step 42/140 — Loss: 0.1499
+  Step 43/140 — Loss: 0.2021
+  Step 44/140 — Loss: 0.1163
+  Step 45/140 — Loss: 0.1936
+  Step 46/140 — Loss: 0.1971
+  Step 47/140 — Loss: 0.1656
+  Step 48/140 — Loss: 0.2143
+  Step 49/140 — Loss: 0.1408
+  Step 50/140 — Loss: 0.1349
+  Step 51/140 — Loss: 0.1479
+  Step 52/140 — Loss: 0.1500
+  Step 53/140 — Loss: 0.1744
+  Step 54/140 — Loss: 0.3047
+  Step 55/140 — Loss: 0.1256
+  Step 56/140 — Loss: 0.1240
+  Step 57/140 — Loss: 0.1485
+  Step 58/140 — Loss: 0.1518
+  Step 59/140 — Loss: 0.1924
+  Step 60/140 — Loss: 0.1857
+  Step 61/140 — Loss: 0.2046
+  Step 62/140 — Loss: 0.1350
+  Step 63/140 — Loss: 0.1873
+  Step 64/140 — Loss: 0.1189
+  Step 65/140 — Loss: 0.1725
+  Step 66/140 — Loss: 0.1526
+  Step 67/140 — Loss: 0.1869
+  Step 68/140 — Loss: 0.1515
+  Step 69/140 — Loss: 0.1802
+  Step 70/140 — Loss: 0.1357
+  Step 71/140 — Loss: 0.0990
+  Step 72/140 — Loss: 0.0991
+  Step 73/140 — Loss: 0.0940
+  Step 74/140 — Loss: 0.1844
+  Step 75/140 — Loss: 0.2210
+  Step 76/140 — Loss: 0.2120
+  Step 77/140 — Loss: 0.1427
+  Step 78/140 — Loss: 0.1898
+  Step 79/140 — Loss: 0.0797
+  Step 80/140 — Loss: 0.1314
+  Step 81/140 — Loss: 0.1853
+  Step 82/140 — Loss: 0.1295
+  Step 83/140 — Loss: 0.1834
+  Step 84/140 — Loss: 0.1162
+  Step 85/140 — Loss: 0.1248
+  Step 86/140 — Loss: 0.1310
+  Step 87/140 — Loss: 0.2007
+  Step 88/140 — Loss: 0.1165
+  Step 89/140 — Loss: 0.0803
+  Step 90/140 — Loss: 0.1767
+  Step 91/140 — Loss: 0.1990
+  Step 92/140 — Loss: 0.1284
+  Step 93/140 — Loss: 0.1456
+  Step 94/140 — Loss: 0.1152
+  Step 95/140 — Loss: 0.1417
+  Step 96/140 — Loss: 0.1247
+  Step 97/140 — Loss: 0.1395
+  Step 98/140 — Loss: 0.1459
+  Step 99/140 — Loss: 0.1528
+  Step 100/140 — Loss: 0.1306
+
+[Step 6] Saving LoRA adapter...
+CLIENT 5 DONE
+FEDQUANT SERVER — Aggregation Server
+
+[Step 1] Checking client adapters...
+client2: found
+client3: found
+client4: found
+client5: found
+
+[Step 2] Loading all adapters into memory...
+client2: loaded 256 weight tensors
+client3: loaded 256 weight tensors
+client4: loaded 256 weight tensors
+client5: loaded 256 weight tensors
+
+[Step 3] Mixed-Precision Aggregation...
+Target rank: r=8
+Layers successfully averaged: 256 out of 256
+
+[Step 4] Saving aggregated adapter...
+Saved to ./results/aggregated/
+
+[Step 5] Round Summary...
+  Clients aggregated: 4
+  Common layers averaged: 256
+  Client weights used:
+    client2: 0.2 (20%)
+    client3: 0.2 (20%)
+    client4: 0.3 (30%)
+    client5: 0.3 (30%)
+
+==================================================
+SERVER ROUND 1 COMPLETE
+Aggregated adapter saved to ./results/aggregated/
+This adapter can now be sent back to all clients
+==================================================
+CLIENT 2 — Simulated 6GB Phone (Mistral-7B)
+==================================================
+
+[Step 1] Loading data...
+Loaded 30000 examples
+
+[Step 2] Loading Mistral-7B in BF16...
+Loading checkpoint shards:   0%|          | 0/3 [00:00<?, ?it/s]Loading checkpoint shards:  67%|██████▋   | 2/3 [00:00<00:00, 18.92it/s]Loading checkpoint shards: 100%|██████████| 3/3 [00:00<00:00, 19.78it/s]
+Model loaded
+  GPU RAM used: 13.50 GB
+
+[Step 3] Attaching LoRA adapter...
+Trainable parameters: 6,815,744 out of 7,254,839,296
+  Loaded adapter from round: 4
+
+[Step 4] Preparing training data...
+30000 examples formatted
+
+[Step 5] Training (1 FL round = 100 steps)...
+  Step 1/140 — Loss: 0.7277
+  Step 2/140 — Loss: 0.5198
+  Step 3/140 — Loss: 0.7262
+  Step 4/140 — Loss: 1.3272
+  Step 5/140 — Loss: 0.3287
+  Step 6/140 — Loss: 1.6754
+  Step 7/140 — Loss: 0.7862
+  Step 8/140 — Loss: 0.8552
+  Step 9/140 — Loss: 0.4600
+  Step 10/140 — Loss: 1.0181
+  Step 11/140 — Loss: 0.4180
+  Step 12/140 — Loss: 1.3196
+  Step 13/140 — Loss: 0.9850
+  Step 14/140 — Loss: 0.7124
+  Step 15/140 — Loss: 0.7774
+  Step 16/140 — Loss: 0.4687
+  Step 17/140 — Loss: 1.0077
+  Step 18/140 — Loss: 0.2768
+  Step 19/140 — Loss: 0.2478
+  Step 20/140 — Loss: 0.5992
+  Step 21/140 — Loss: 0.3187
+  Step 22/140 — Loss: 0.4253
+  Step 23/140 — Loss: 0.6625
+  Step 24/140 — Loss: 0.8461
+  Step 25/140 — Loss: 0.5816
+  Step 26/140 — Loss: 0.5794
+  Step 27/140 — Loss: 1.6007
+  Step 28/140 — Loss: 1.5481
+  Step 29/140 — Loss: 0.6195
+  Step 30/140 — Loss: 0.8848
+  Step 31/140 — Loss: 1.0637
+  Step 32/140 — Loss: 0.3108
+  Step 33/140 — Loss: 0.4945
+  Step 34/140 — Loss: 0.7824
+  Step 35/140 — Loss: 0.7102
+  Step 36/140 — Loss: 1.4711
+  Step 37/140 — Loss: 0.9166
+  Step 38/140 — Loss: 0.4812
+  Step 39/140 — Loss: 1.2971
+  Step 40/140 — Loss: 0.4275
+  Step 41/140 — Loss: 0.6829
+  Step 42/140 — Loss: 0.3289
+  Step 43/140 — Loss: 0.8852
+  Step 44/140 — Loss: 0.5276
+  Step 45/140 — Loss: 0.8179
+  Step 46/140 — Loss: 0.3680
+  Step 47/140 — Loss: 2.5485
+  Step 48/140 — Loss: 2.1632
+  Step 49/140 — Loss: 0.2644
+  Step 50/140 — Loss: 0.3691
+  Step 51/140 — Loss: 1.7294
+  Step 52/140 — Loss: 1.9431
+  Step 53/140 — Loss: 0.8177
+  Step 54/140 — Loss: 1.0488
+  Step 55/140 — Loss: 0.4520
+  Step 56/140 — Loss: 0.6746
+  Step 57/140 — Loss: 1.2666
+  Step 58/140 — Loss: 0.4406
+  Step 59/140 — Loss: 0.6630
+  Step 60/140 — Loss: 0.2262
+  Step 61/140 — Loss: 0.9947
+  Step 62/140 — Loss: 1.1533
+  Step 63/140 — Loss: 0.7188
+  Step 64/140 — Loss: 1.0782
+  Step 65/140 — Loss: 1.1025
+  Step 66/140 — Loss: 0.9712
+  Step 67/140 — Loss: 1.1166
+  Step 68/140 — Loss: 0.3453
+  Step 69/140 — Loss: 1.7145
+  Step 70/140 — Loss: 0.9160
+  Step 71/140 — Loss: 0.8757
+  Step 72/140 — Loss: 0.1785
+  Step 73/140 — Loss: 1.8699
+  Step 74/140 — Loss: 0.3844
+  Step 75/140 — Loss: 0.5563
+  Step 76/140 — Loss: 0.9514
+  Step 77/140 — Loss: 1.0471
+  Step 78/140 — Loss: 0.4348
+  Step 79/140 — Loss: 1.5939
+  Step 80/140 — Loss: 0.7812
+  Step 81/140 — Loss: 2.3108
+  Step 82/140 — Loss: 1.2981
+  Step 83/140 — Loss: 2.5723
+  Step 84/140 — Loss: 1.0789
+  Step 85/140 — Loss: 0.5617
+  Step 86/140 — Loss: 0.8016
+  Step 87/140 — Loss: 1.0183
+  Step 88/140 — Loss: 1.2022
+  Step 89/140 — Loss: 0.4234
+  Step 90/140 — Loss: 0.4432
+  Step 91/140 — Loss: 0.7802
+  Step 92/140 — Loss: 0.6155
+  Step 93/140 — Loss: 0.9036
+  Step 94/140 — Loss: 1.9572
+  Step 95/140 — Loss: 1.5185
+  Step 96/140 — Loss: 1.7327
+  Step 97/140 — Loss: 0.3509
+  Step 98/140 — Loss: 2.2041
+  Step 99/140 — Loss: 1.0420
+  Step 100/140 — Loss: 0.6993
+
+[Step 6] Saving LoRA adapter...
+Saved to ./results/adapters/client2
+
+==================================================
+CLIENT 2 DONE — Adapter ready to send to server
+==================================================
+==================================================
+CLIENT 3 — Simulated 6GB Phone (Mistral-7B)
+==================================================
+
+[Step 1] Loading data...
+Loaded 13000 examples
+
+[Step 2] Loading Mistral-7B in BF16...
+Loading checkpoint shards:   0%|          | 0/3 [00:00<?, ?it/s]Loading checkpoint shards:  67%|██████▋   | 2/3 [00:00<00:00, 16.97it/s]Loading checkpoint shards: 100%|██████████| 3/3 [00:00<00:00, 17.65it/s]
+Model loaded — GPU RAM: 13.50 GB
+
+[Step 3] Attaching LoRA adapter...
+Trainable parameters: 6,815,744 out of 7,254,839,296
+  Loaded adapter from round: 4
+
+[Step 4] Preparing training data...
+13000 examples formatted
+
+[Step 5] Training...
+  Step 1/140 — Loss: 0.4266
+  Step 2/140 — Loss: 0.5643
+  Step 3/140 — Loss: 0.2065
+  Step 4/140 — Loss: 0.5018
+  Step 5/140 — Loss: 0.2448
+  Step 6/140 — Loss: 0.3901
+  Step 7/140 — Loss: 0.3225
+  Step 8/140 — Loss: 0.2834
+  Step 9/140 — Loss: 0.3203
+  Step 10/140 — Loss: 0.1946
+  Step 11/140 — Loss: 0.2443
+  Step 12/140 — Loss: 0.2291
+  Step 13/140 — Loss: 0.2352
+  Step 14/140 — Loss: 0.2628
+  Step 15/140 — Loss: 0.3021
+  Step 16/140 — Loss: 0.1606
+  Step 17/140 — Loss: 0.2208
+  Step 18/140 — Loss: 0.3972
+  Step 19/140 — Loss: 0.2841
+  Step 20/140 — Loss: 0.3006
+  Step 21/140 — Loss: 0.2321
+  Step 22/140 — Loss: 0.2591
+  Step 23/140 — Loss: 0.3588
+  Step 24/140 — Loss: 0.2046
+  Step 25/140 — Loss: 0.2412
+  Step 26/140 — Loss: 0.4812
+  Step 27/140 — Loss: 0.2271
+  Step 28/140 — Loss: 0.1983
+  Step 29/140 — Loss: 0.2908
+  Step 30/140 — Loss: 0.1976
+  Step 31/140 — Loss: 0.3925
+  Step 32/140 — Loss: 0.4925
+  Step 33/140 — Loss: 0.2072
+  Step 34/140 — Loss: 0.1785
+  Step 35/140 — Loss: 0.1236
+  Step 36/140 — Loss: 0.1675
+  Step 37/140 — Loss: 0.2200
+  Step 38/140 — Loss: 0.1222
+  Step 39/140 — Loss: 0.3172
+  Step 40/140 — Loss: 0.2641
+  Step 41/140 — Loss: 0.6936
+  Step 42/140 — Loss: 0.1704
+  Step 43/140 — Loss: 0.2339
+  Step 44/140 — Loss: 0.2086
+  Step 45/140 — Loss: 0.1935
+  Step 46/140 — Loss: 0.4482
+  Step 47/140 — Loss: 0.2176
+  Step 48/140 — Loss: 0.1604
+  Step 49/140 — Loss: 0.2066
+  Step 50/140 — Loss: 0.2029
+  Step 51/140 — Loss: 0.2016
+  Step 52/140 — Loss: 0.1825
+  Step 53/140 — Loss: 0.1724
+  Step 54/140 — Loss: 0.2572
+  Step 55/140 — Loss: 0.2253
+  Step 56/140 — Loss: 0.2188
+  Step 57/140 — Loss: 0.1942
+  Step 58/140 — Loss: 0.3500
+  Step 59/140 — Loss: 0.2547
+  Step 60/140 — Loss: 0.3054
+  Step 61/140 — Loss: 0.2663
+  Step 62/140 — Loss: 0.1582
+  Step 63/140 — Loss: 0.2117
+  Step 64/140 — Loss: 0.1827
+  Step 65/140 — Loss: 0.1992
+  Step 66/140 — Loss: 0.2075
+  Step 67/140 — Loss: 0.1869
+  Step 68/140 — Loss: 0.1905
+  Step 69/140 — Loss: 0.1728
+  Step 70/140 — Loss: 0.2296
+  Step 71/140 — Loss: 0.3118
+  Step 72/140 — Loss: 0.2109
+  Step 73/140 — Loss: 0.5934
+  Step 74/140 — Loss: 0.3964
+  Step 75/140 — Loss: 0.3052
+  Step 76/140 — Loss: 0.2506
+  Step 77/140 — Loss: 0.2090
+  Step 78/140 — Loss: 0.5652
+  Step 79/140 — Loss: 0.2614
+  Step 80/140 — Loss: 0.5256
+  Step 81/140 — Loss: 0.3850
+  Step 82/140 — Loss: 0.1681
+  Step 83/140 — Loss: 0.3071
+  Step 84/140 — Loss: 0.3337
+  Step 85/140 — Loss: 0.1642
+  Step 86/140 — Loss: 0.2873
+  Step 87/140 — Loss: 0.2056
+  Step 88/140 — Loss: 0.3993
+  Step 89/140 — Loss: 0.2031
+  Step 90/140 — Loss: 0.3122
+  Step 91/140 — Loss: 0.2621
+  Step 92/140 — Loss: 0.1916
+  Step 93/140 — Loss: 0.5217
+  Step 94/140 — Loss: 0.6892
+  Step 95/140 — Loss: 0.3301
+  Step 96/140 — Loss: 0.2699
+  Step 97/140 — Loss: 0.2876
+  Step 98/140 — Loss: 0.2302
+  Step 99/140 — Loss: 0.2655
+  Step 100/140 — Loss: 0.1948
+
+[Step 6] Saving LoRA adapter...
+CLIENT 3 DONE
+CLIENT 4 — Simulated 8GB Phone (Mistral-7B)
+
+[Step 1] Loading data...
+Loaded 8000 examples
+
+[Step 2] Loading Mistral-7B in BF16...
+Loading checkpoint shards:   0%|          | 0/3 [00:00<?, ?it/s]Loading checkpoint shards:  67%|██████▋   | 2/3 [00:00<00:00, 17.75it/s]Loading checkpoint shards: 100%|██████████| 3/3 [00:00<00:00, 18.54it/s]
+Model loaded — GPU RAM: 13.50 GB
+
+[Step 3] Attaching LoRA adapter r=16...
+Trainable parameters: 13,631,488 out of 7,261,655,040
+  Loaded + padded adapter to r=16
+
+[Step 4] Preparing training data...
+8000 examples formatted
+
+[Step 5] Training...
+  Step 1/140 — Loss: 0.2388
+  Step 2/140 — Loss: 0.2908
+  Step 3/140 — Loss: 0.3563
+  Step 4/140 — Loss: 0.3094
+  Step 5/140 — Loss: 0.2070
+  Step 6/140 — Loss: 0.2448
+  Step 7/140 — Loss: 0.3679
+  Step 8/140 — Loss: 0.2855
+  Step 9/140 — Loss: 0.2366
+  Step 10/140 — Loss: 0.3485
+  Step 11/140 — Loss: 0.2105
+  Step 12/140 — Loss: 0.3976
+  Step 13/140 — Loss: 0.4517
+  Step 14/140 — Loss: 0.1882
+  Step 15/140 — Loss: 0.3690
+  Step 16/140 — Loss: 0.1800
+  Step 17/140 — Loss: 0.1556
+  Step 18/140 — Loss: 0.2231
+  Step 19/140 — Loss: 0.6842
+  Step 20/140 — Loss: 0.1529
+  Step 21/140 — Loss: 0.2713
+  Step 22/140 — Loss: 0.3402
+  Step 23/140 — Loss: 0.2128
+  Step 24/140 — Loss: 0.3152
+  Step 25/140 — Loss: 0.3012
+  Step 26/140 — Loss: 0.3485
+  Step 27/140 — Loss: 0.2725
+  Step 28/140 — Loss: 0.2138
+  Step 29/140 — Loss: 0.2949
+  Step 30/140 — Loss: 0.3016
+  Step 31/140 — Loss: 0.3428
+  Step 32/140 — Loss: 0.2298
+  Step 33/140 — Loss: 0.2925
+  Step 34/140 — Loss: 0.3917
+  Step 35/140 — Loss: 0.2985
+  Step 36/140 — Loss: 0.3558
+  Step 37/140 — Loss: 0.2348
+  Step 38/140 — Loss: 0.2165
+  Step 39/140 — Loss: 0.3438
+  Step 40/140 — Loss: 0.3179
+  Step 41/140 — Loss: 0.2102
+  Step 42/140 — Loss: 0.2782
+  Step 43/140 — Loss: 0.2338
+  Step 44/140 — Loss: 0.2050
+  Step 45/140 — Loss: 0.2864
+  Step 46/140 — Loss: 0.2656
+  Step 47/140 — Loss: 0.2049
+  Step 48/140 — Loss: 0.3001
+  Step 49/140 — Loss: 0.1408
+  Step 50/140 — Loss: 0.3123
+  Step 51/140 — Loss: 0.6884
+  Step 52/140 — Loss: 0.3807
+  Step 53/140 — Loss: 0.2667
+  Step 54/140 — Loss: 0.3661
+  Step 55/140 — Loss: 0.3843
+  Step 56/140 — Loss: 0.4880
+  Step 57/140 — Loss: 0.3642
+  Step 58/140 — Loss: 0.2957
+  Step 59/140 — Loss: 0.1753
+  Step 60/140 — Loss: 0.4052
+  Step 61/140 — Loss: 0.3057
+  Step 62/140 — Loss: 0.2018
+  Step 63/140 — Loss: 0.3066
+  Step 64/140 — Loss: 0.3910
+  Step 65/140 — Loss: 0.2866
+  Step 66/140 — Loss: 0.5430
+  Step 67/140 — Loss: 0.8140
+  Step 68/140 — Loss: 0.2930
+  Step 69/140 — Loss: 0.5765
+  Step 70/140 — Loss: 0.2877
+  Step 71/140 — Loss: 0.2313
+  Step 72/140 — Loss: 0.5308
+  Step 73/140 — Loss: 0.3347
+  Step 74/140 — Loss: 0.3197
+  Step 75/140 — Loss: 0.3805
+  Step 76/140 — Loss: 0.3507
+  Step 77/140 — Loss: 0.4304
+  Step 78/140 — Loss: 0.2202
+  Step 79/140 — Loss: 0.1774
+  Step 80/140 — Loss: 0.3041
+  Step 81/140 — Loss: 0.3542
+  Step 82/140 — Loss: 0.4171
+  Step 83/140 — Loss: 0.2760
+  Step 84/140 — Loss: 0.3152
+  Step 85/140 — Loss: 0.6415
+  Step 86/140 — Loss: 0.2401
+  Step 87/140 — Loss: 0.3383
+  Step 88/140 — Loss: 0.3081
+  Step 89/140 — Loss: 0.3627
+  Step 90/140 — Loss: 0.3225
+  Step 91/140 — Loss: 0.3489
+  Step 92/140 — Loss: 0.3419
+  Step 93/140 — Loss: 0.1161
+  Step 94/140 — Loss: 0.3948
+  Step 95/140 — Loss: 0.3220
+  Step 96/140 — Loss: 0.4186
+  Step 97/140 — Loss: 0.2723
+  Step 98/140 — Loss: 0.7726
+  Step 99/140 — Loss: 0.3325
+  Step 100/140 — Loss: 0.3288
+
+[Step 6] Saving LoRA adapter...
+CLIENT 4 DONE
+CLIENT 5 — Simulated 12GB Phone (Mistral-7B)
+
+[Step 1] Loading data...
+Loaded 13999 examples
+
+[Step 2] Loading Mistral-7B in BF16...
+Loading checkpoint shards:   0%|          | 0/3 [00:00<?, ?it/s]Loading checkpoint shards:  67%|██████▋   | 2/3 [00:00<00:00, 18.58it/s]Loading checkpoint shards: 100%|██████████| 3/3 [00:00<00:00, 19.15it/s]
+Model loaded — GPU RAM: 13.50 GB
+
+[Step 3] Attaching LoRA adapter r=32...
+Trainable parameters: 27,262,976 out of 7,275,286,528
+  Loaded + padded adapter to r=32
+
+[Step 4] Preparing training data...
+13999 examples formatted
+
+[Step 5] Training...
+  Step 1/140 — Loss: 0.2137
+  Step 2/140 — Loss: 0.1798
+  Step 3/140 — Loss: 0.2007
+  Step 4/140 — Loss: 0.1686
+  Step 5/140 — Loss: 0.1595
+  Step 6/140 — Loss: 0.1396
+  Step 7/140 — Loss: 0.2204
+  Step 8/140 — Loss: 0.1962
+  Step 9/140 — Loss: 0.2225
+  Step 10/140 — Loss: 0.1958
+  Step 11/140 — Loss: 0.1709
+  Step 12/140 — Loss: 0.2394
+  Step 13/140 — Loss: 0.1783
+  Step 14/140 — Loss: 0.1755
+  Step 15/140 — Loss: 0.1155
+  Step 16/140 — Loss: 0.1985
+  Step 17/140 — Loss: 0.1665
+  Step 18/140 — Loss: 0.1452
+  Step 19/140 — Loss: 0.1620
+  Step 20/140 — Loss: 0.1338
+  Step 21/140 — Loss: 0.1437
+  Step 22/140 — Loss: 0.1333
+  Step 23/140 — Loss: 0.1411
+  Step 24/140 — Loss: 0.1559
+  Step 25/140 — Loss: 0.2233
+  Step 26/140 — Loss: 0.1550
+  Step 27/140 — Loss: 0.2350
+  Step 28/140 — Loss: 0.1238
+  Step 29/140 — Loss: 0.1543
+  Step 30/140 — Loss: 0.1828
+  Step 31/140 — Loss: 0.2008
+  Step 32/140 — Loss: 0.1880
+  Step 33/140 — Loss: 0.1721
+  Step 34/140 — Loss: 0.2099
+  Step 35/140 — Loss: 0.1986
+  Step 36/140 — Loss: 0.1732
+  Step 37/140 — Loss: 0.1960
+  Step 38/140 — Loss: 0.1788
+  Step 39/140 — Loss: 0.2235
+  Step 40/140 — Loss: 0.1272
+  Step 41/140 — Loss: 0.1596
+  Step 42/140 — Loss: 0.1173
+  Step 43/140 — Loss: 0.1772
+  Step 44/140 — Loss: 0.1095
+  Step 45/140 — Loss: 0.1626
+  Step 46/140 — Loss: 0.1605
+  Step 47/140 — Loss: 0.1492
+  Step 48/140 — Loss: 0.1859
+  Step 49/140 — Loss: 0.0903
+  Step 50/140 — Loss: 0.1291
+  Step 51/140 — Loss: 0.1133
+  Step 52/140 — Loss: 0.1360
+  Step 53/140 — Loss: 0.1291
+  Step 54/140 — Loss: 0.1246
+  Step 55/140 — Loss: 0.1130
+  Step 56/140 — Loss: 0.1014
+  Step 57/140 — Loss: 0.1103
+  Step 58/140 — Loss: 0.1932
+  Step 59/140 — Loss: 0.1748
+  Step 60/140 — Loss: 0.1831
+  Step 61/140 — Loss: 0.1398
+  Step 62/140 — Loss: 0.1160
+  Step 63/140 — Loss: 0.1233
+  Step 64/140 — Loss: 0.1118
+  Step 65/140 — Loss: 0.1052
+  Step 66/140 — Loss: 0.1303
+  Step 67/140 — Loss: 0.1443
+  Step 68/140 — Loss: 0.0973
+  Step 69/140 — Loss: 0.1285
+  Step 70/140 — Loss: 0.1033
+  Step 71/140 — Loss: 0.0909
+  Step 72/140 — Loss: 0.0933
+  Step 73/140 — Loss: 0.0902
+  Step 74/140 — Loss: 0.1556
+  Step 75/140 — Loss: 0.0900
+  Step 76/140 — Loss: 0.1758
+  Step 77/140 — Loss: 0.1533
+  Step 78/140 — Loss: 0.1555
+  Step 79/140 — Loss: 0.0758
+  Step 80/140 — Loss: 0.0974
+  Step 81/140 — Loss: 0.1434
+  Step 82/140 — Loss: 0.0842
+  Step 83/140 — Loss: 0.3075
+  Step 84/140 — Loss: 0.1014
+  Step 85/140 — Loss: 0.1159
+  Step 86/140 — Loss: 0.1517
+  Step 87/140 — Loss: 0.1356
+  Step 88/140 — Loss: 0.1080
+  Step 89/140 — Loss: 0.0863
+  Step 90/140 — Loss: 0.1582
+  Step 91/140 — Loss: 0.1452
+  Step 92/140 — Loss: 0.0978
+  Step 93/140 — Loss: 0.1015
+  Step 94/140 — Loss: 0.0865
+  Step 95/140 — Loss: 0.1658
+  Step 96/140 — Loss: 0.0972
+  Step 97/140 — Loss: 0.1162
+  Step 98/140 — Loss: 0.1496
+  Step 99/140 — Loss: 0.0804
+  Step 100/140 — Loss: 0.1109
+
+[Step 6] Saving LoRA adapter...
+CLIENT 5 DONE
+FEDQUANT SERVER — Aggregation Server
+
+[Step 1] Checking client adapters...
+client2: found
+client3: found
+client4: found
+client5: found
+
+[Step 2] Loading all adapters into memory...
+client2: loaded 256 weight tensors
+client3: loaded 256 weight tensors
+client4: loaded 256 weight tensors
+client5: loaded 256 weight tensors
+
+[Step 3] Mixed-Precision Aggregation...
+Target rank: r=8
+Layers successfully averaged: 256 out of 256
+
+[Step 4] Saving aggregated adapter...
+Saved to ./results/aggregated/
+
+[Step 5] Round Summary...
+  Clients aggregated: 4
+  Common layers averaged: 256
+  Client weights used:
+    client2: 0.2 (20%)
+    client3: 0.2 (20%)
+    client4: 0.3 (30%)
+    client5: 0.3 (30%)
+
+==================================================
+SERVER ROUND 1 COMPLETE
+Aggregated adapter saved to ./results/aggregated/
+This adapter can now be sent back to all clients
+==================================================
+CLIENT 2 — Simulated 6GB Phone (Mistral-7B)
+==================================================
+
+[Step 1] Loading data...
+Loaded 30000 examples
+
+[Step 2] Loading Mistral-7B in BF16...
+Loading checkpoint shards:   0%|          | 0/3 [00:00<?, ?it/s]Loading checkpoint shards: 100%|██████████| 3/3 [00:00<00:00, 21.11it/s]Loading checkpoint shards: 100%|██████████| 3/3 [00:00<00:00, 21.09it/s]
+Model loaded
+  GPU RAM used: 13.50 GB
+
+[Step 3] Attaching LoRA adapter...
+Trainable parameters: 6,815,744 out of 7,254,839,296
+  Loaded adapter from round: 5
+
+[Step 4] Preparing training data...
+30000 examples formatted
+
+[Step 5] Training (1 FL round = 100 steps)...
+  Step 1/140 — Loss: 0.6315
+  Step 2/140 — Loss: 0.4198
+  Step 3/140 — Loss: 0.6374
+  Step 4/140 — Loss: 1.2552
+  Step 5/140 — Loss: 0.2514
+  Step 6/140 — Loss: 1.5551
+  Step 7/140 — Loss: 0.6826
+  Step 8/140 — Loss: 0.7913
+  Step 9/140 — Loss: 0.4274
+  Step 10/140 — Loss: 0.9266
+  Step 11/140 — Loss: 0.3761
+  Step 12/140 — Loss: 1.1731
+  Step 13/140 — Loss: 0.9001
+  Step 14/140 — Loss: 0.5669
+  Step 15/140 — Loss: 0.6044
+  Step 16/140 — Loss: 0.4663
+  Step 17/140 — Loss: 0.9315
+  Step 18/140 — Loss: 0.1836
+  Step 19/140 — Loss: 0.2546
+  Step 20/140 — Loss: 0.5712
+  Step 21/140 — Loss: 0.2533
+  Step 22/140 — Loss: 0.3755
+  Step 23/140 — Loss: 0.5559
+  Step 24/140 — Loss: 0.7823
+  Step 25/140 — Loss: 0.4930
+  Step 26/140 — Loss: 0.4473
+  Step 27/140 — Loss: 1.4804
+  Step 28/140 — Loss: 1.5027
+  Step 29/140 — Loss: 0.5665
+  Step 30/140 — Loss: 0.8474
+  Step 31/140 — Loss: 0.9429
+  Step 32/140 — Loss: 0.2691
+  Step 33/140 — Loss: 0.4530
+  Step 34/140 — Loss: 0.7120
+  Step 35/140 — Loss: 0.6058
+  Step 36/140 — Loss: 1.3819
+  Step 37/140 — Loss: 0.8249
+  Step 38/140 — Loss: 0.4026
+  Step 39/140 — Loss: 1.2324
+  Step 40/140 — Loss: 0.3668
+  Step 41/140 — Loss: 0.6353
+  Step 42/140 — Loss: 0.3163
+  Step 43/140 — Loss: 0.8168
+  Step 44/140 — Loss: 0.4491
+  Step 45/140 — Loss: 0.7597
+  Step 46/140 — Loss: 0.3250
+  Step 47/140 — Loss: 2.3710
+  Step 48/140 — Loss: 2.0849
+  Step 49/140 — Loss: 0.2846
+  Step 50/140 — Loss: 0.2736
+  Step 51/140 — Loss: 1.6027
+  Step 52/140 — Loss: 1.8219
+  Step 53/140 — Loss: 0.7296
+  Step 54/140 — Loss: 0.9828
+  Step 55/140 — Loss: 0.3924
+  Step 56/140 — Loss: 0.6524
+  Step 57/140 — Loss: 1.2146
+  Step 58/140 — Loss: 0.4591
+  Step 59/140 — Loss: 0.6212
+  Step 60/140 — Loss: 0.2476
+  Step 61/140 — Loss: 0.9048
+  Step 62/140 — Loss: 1.1086
+  Step 63/140 — Loss: 0.6497
+  Step 64/140 — Loss: 1.0245
+  Step 65/140 — Loss: 0.9768
+  Step 66/140 — Loss: 0.9344
+  Step 67/140 — Loss: 1.0553
+  Step 68/140 — Loss: 0.3497
+  Step 69/140 — Loss: 1.5982
+  Step 70/140 — Loss: 0.8417
+  Step 71/140 — Loss: 0.7361
+  Step 72/140 — Loss: 0.1593
+  Step 73/140 — Loss: 1.7732
+  Step 74/140 — Loss: 0.3344
+  Step 75/140 — Loss: 0.4097
+  Step 76/140 — Loss: 0.8748
+  Step 77/140 — Loss: 0.9547
+  Step 78/140 — Loss: 0.3976
+  Step 79/140 — Loss: 1.4658
+  Step 80/140 — Loss: 0.7390
+  Step 81/140 — Loss: 2.2516
+  Step 82/140 — Loss: 1.1621
+  Step 83/140 — Loss: 2.3873
+  Step 84/140 — Loss: 0.9277
+  Step 85/140 — Loss: 0.4854
+  Step 86/140 — Loss: 0.6799
+  Step 87/140 — Loss: 0.9515
+  Step 88/140 — Loss: 1.1016
+  Step 89/140 — Loss: 0.4369
+  Step 90/140 — Loss: 0.3772
+  Step 91/140 — Loss: 0.6849
+  Step 92/140 — Loss: 0.5284
+  Step 93/140 — Loss: 0.8397
+  Step 94/140 — Loss: 1.8941
+  Step 95/140 — Loss: 1.4406
+  Step 96/140 — Loss: 1.6390
+  Step 97/140 — Loss: 0.3417
+  Step 98/140 — Loss: 2.2302
+  Step 99/140 — Loss: 1.0384
+  Step 100/140 — Loss: 0.5923
+
+[Step 6] Saving LoRA adapter...
+Saved to ./results/adapters/client2
+
+==================================================
+CLIENT 2 DONE — Adapter ready to send to server
+==================================================
+==================================================
+CLIENT 3 — Simulated 6GB Phone (Mistral-7B)
+==================================================
+
+[Step 1] Loading data...
+Loaded 13000 examples
+
+[Step 2] Loading Mistral-7B in BF16...
+Loading checkpoint shards:   0%|          | 0/3 [00:00<?, ?it/s]Loading checkpoint shards: 100%|██████████| 3/3 [00:00<00:00, 21.30it/s]Loading checkpoint shards: 100%|██████████| 3/3 [00:00<00:00, 21.27it/s]
+Model loaded — GPU RAM: 13.50 GB
+
+[Step 3] Attaching LoRA adapter...
+Trainable parameters: 6,815,744 out of 7,254,839,296
+  Loaded adapter from round: 5
+
+[Step 4] Preparing training data...
+13000 examples formatted
+
+[Step 5] Training...
+  Step 1/140 — Loss: 0.2175
+  Step 2/140 — Loss: 0.4829
+  Step 3/140 — Loss: 0.2115
+  Step 4/140 — Loss: 0.4692
+  Step 5/140 — Loss: 0.2359
+  Step 6/140 — Loss: 0.3418
+  Step 7/140 — Loss: 0.3134
+  Step 8/140 — Loss: 0.2398
+  Step 9/140 — Loss: 0.2683
+  Step 10/140 — Loss: 0.1850
+  Step 11/140 — Loss: 0.2182
+  Step 12/140 — Loss: 0.1981
+  Step 13/140 — Loss: 0.2261
+  Step 14/140 — Loss: 0.2263
+  Step 15/140 — Loss: 0.2764
+  Step 16/140 — Loss: 0.1576
+  Step 17/140 — Loss: 0.1939
+  Step 18/140 — Loss: 0.3573
+  Step 19/140 — Loss: 0.2002
+  Step 20/140 — Loss: 0.2978
+  Step 21/140 — Loss: 0.2164
+  Step 22/140 — Loss: 0.2415
+  Step 23/140 — Loss: 0.3290
+  Step 24/140 — Loss: 0.2029
+  Step 25/140 — Loss: 0.2455
+  Step 26/140 — Loss: 0.4590
+  Step 27/140 — Loss: 0.2122
+  Step 28/140 — Loss: 0.1819
+  Step 29/140 — Loss: 0.2590
+  Step 30/140 — Loss: 0.1654
+  Step 31/140 — Loss: 0.3476
+  Step 32/140 — Loss: 0.4392
+  Step 33/140 — Loss: 0.2013
+  Step 34/140 — Loss: 0.1754
+  Step 35/140 — Loss: 0.1285
+  Step 36/140 — Loss: 0.1729
+  Step 37/140 — Loss: 0.2096
+  Step 38/140 — Loss: 0.1114
+  Step 39/140 — Loss: 0.2590
+  Step 40/140 — Loss: 0.1917
+  Step 41/140 — Loss: 0.6560
+  Step 42/140 — Loss: 0.1692
+  Step 43/140 — Loss: 0.2115
+  Step 44/140 — Loss: 0.1959
+  Step 45/140 — Loss: 0.1814
+  Step 46/140 — Loss: 0.4268
+  Step 47/140 — Loss: 0.2152
+  Step 48/140 — Loss: 0.1583
+  Step 49/140 — Loss: 0.1900
+  Step 50/140 — Loss: 0.2081
+  Step 51/140 — Loss: 0.1871
+  Step 52/140 — Loss: 0.1863
+  Step 53/140 — Loss: 0.1717
+  Step 54/140 — Loss: 0.2537
+  Step 55/140 — Loss: 0.2058
+  Step 56/140 — Loss: 0.1989
+  Step 57/140 — Loss: 0.1791
+  Step 58/140 — Loss: 0.3391
+  Step 59/140 — Loss: 0.2188
+  Step 60/140 — Loss: 0.3357
+  Step 61/140 — Loss: 0.2573
+  Step 62/140 — Loss: 0.1290
+  Step 63/140 — Loss: 0.2045
+  Step 64/140 — Loss: 0.2011
+  Step 65/140 — Loss: 0.1942
+  Step 66/140 — Loss: 0.2081
+  Step 67/140 — Loss: 0.1747
+  Step 68/140 — Loss: 0.2001
+  Step 69/140 — Loss: 0.1582
+  Step 70/140 — Loss: 0.2220
+  Step 71/140 — Loss: 0.3107
+  Step 72/140 — Loss: 0.1914
+  Step 73/140 — Loss: 0.5717
+  Step 74/140 — Loss: 0.3770
+  Step 75/140 — Loss: 0.2851
+  Step 76/140 — Loss: 0.2508
+  Step 77/140 — Loss: 0.2283
+  Step 78/140 — Loss: 0.5388
+  Step 79/140 — Loss: 0.2424
+  Step 80/140 — Loss: 0.4933
+  Step 81/140 — Loss: 0.3711
+  Step 82/140 — Loss: 0.1772
+  Step 83/140 — Loss: 0.3229
+  Step 84/140 — Loss: 0.3693
+  Step 85/140 — Loss: 0.1655
+  Step 86/140 — Loss: 0.2608
+  Step 87/140 — Loss: 0.1931
+  Step 88/140 — Loss: 0.4263
+  Step 89/140 — Loss: 0.1859
+  Step 90/140 — Loss: 0.2721
+  Step 91/140 — Loss: 0.2722
+  Step 92/140 — Loss: 0.1964
+  Step 93/140 — Loss: 0.5026
+  Step 94/140 — Loss: 0.6394
+  Step 95/140 — Loss: 0.3053
+  Step 96/140 — Loss: 0.2599
+  Step 97/140 — Loss: 0.2727
+  Step 98/140 — Loss: 0.2120
+  Step 99/140 — Loss: 0.2854
+  Step 100/140 — Loss: 0.2086
+
+[Step 6] Saving LoRA adapter...
+CLIENT 3 DONE
+CLIENT 4 — Simulated 8GB Phone (Mistral-7B)
+
+[Step 1] Loading data...
+Loaded 8000 examples
+
+[Step 2] Loading Mistral-7B in BF16...
+Loading checkpoint shards:   0%|          | 0/3 [00:00<?, ?it/s]Loading checkpoint shards: 100%|██████████| 3/3 [00:00<00:00, 21.11it/s]Loading checkpoint shards: 100%|██████████| 3/3 [00:00<00:00, 21.09it/s]
+Model loaded — GPU RAM: 13.50 GB
+
+[Step 3] Attaching LoRA adapter r=16...
+Trainable parameters: 13,631,488 out of 7,261,655,040
+  Loaded + padded adapter to r=16
+
+[Step 4] Preparing training data...
+8000 examples formatted
+
+[Step 5] Training...
+  Step 1/140 — Loss: 0.1313
+  Step 2/140 — Loss: 0.3305
+  Step 3/140 — Loss: 0.2103
+  Step 4/140 — Loss: 0.3306
+  Step 5/140 — Loss: 0.1780
+  Step 6/140 — Loss: 0.2219
+  Step 7/140 — Loss: 0.3147
+  Step 8/140 — Loss: 0.2273
+  Step 9/140 — Loss: 0.2300
+  Step 10/140 — Loss: 0.2669
+  Step 11/140 — Loss: 0.1658
+  Step 12/140 — Loss: 0.2988
+  Step 13/140 — Loss: 0.3923
+  Step 14/140 — Loss: 0.1995
+  Step 15/140 — Loss: 0.3326
+  Step 16/140 — Loss: 0.1582
+  Step 17/140 — Loss: 0.1537
+  Step 18/140 — Loss: 0.1656
+  Step 19/140 — Loss: 0.7070
+  Step 20/140 — Loss: 0.1599
+  Step 21/140 — Loss: 0.2620
+  Step 22/140 — Loss: 0.3052
+  Step 23/140 — Loss: 0.1858
+  Step 24/140 — Loss: 0.3259
+  Step 25/140 — Loss: 0.2565
+  Step 26/140 — Loss: 0.2918
+  Step 27/140 — Loss: 0.2020
+  Step 28/140 — Loss: 0.2129
+  Step 29/140 — Loss: 0.3222
+  Step 30/140 — Loss: 0.1745
+  Step 31/140 — Loss: 0.3376
+  Step 32/140 — Loss: 0.2199
+  Step 33/140 — Loss: 0.2454
+  Step 34/140 — Loss: 0.2011
+  Step 35/140 — Loss: 0.3122
+  Step 36/140 — Loss: 0.3022
+  Step 37/140 — Loss: 0.1871
+  Step 38/140 — Loss: 0.2411
+  Step 39/140 — Loss: 0.3363
+  Step 40/140 — Loss: 0.2750
+  Step 41/140 — Loss: 0.1410
+  Step 42/140 — Loss: 0.2406
+  Step 43/140 — Loss: 0.2310
+  Step 44/140 — Loss: 0.1037
+  Step 45/140 — Loss: 0.2953
+  Step 46/140 — Loss: 0.2517
+  Step 47/140 — Loss: 0.2592
+  Step 48/140 — Loss: 0.2766
+  Step 49/140 — Loss: 0.1362
+  Step 50/140 — Loss: 0.2361
+  Step 51/140 — Loss: 0.7270
+  Step 52/140 — Loss: 0.3615
+  Step 53/140 — Loss: 0.2590
+  Step 54/140 — Loss: 0.2039
+  Step 55/140 — Loss: 0.3089
+  Step 56/140 — Loss: 0.3174
+  Step 57/140 — Loss: 0.3356
+  Step 58/140 — Loss: 0.2223
+  Step 59/140 — Loss: 0.1356
+  Step 60/140 — Loss: 0.3649
+  Step 61/140 — Loss: 0.2752
+  Step 62/140 — Loss: 0.1926
+  Step 63/140 — Loss: 0.3001
+  Step 64/140 — Loss: 0.4129
+  Step 65/140 — Loss: 0.2946
+  Step 66/140 — Loss: 0.4558
+  Step 67/140 — Loss: 0.7575
+  Step 68/140 — Loss: 0.2660
+  Step 69/140 — Loss: 0.4798
+  Step 70/140 — Loss: 0.2919
+  Step 71/140 — Loss: 0.1750
+  Step 72/140 — Loss: 0.4057
+  Step 73/140 — Loss: 0.3108
+  Step 74/140 — Loss: 0.3465
+  Step 75/140 — Loss: 0.3678
+  Step 76/140 — Loss: 0.3007
+  Step 77/140 — Loss: 0.2950
+  Step 78/140 — Loss: 0.2194
+  Step 79/140 — Loss: 0.2113
+  Step 80/140 — Loss: 0.3292
+  Step 81/140 — Loss: 0.3510
+  Step 82/140 — Loss: 0.4202
+  Step 83/140 — Loss: 0.2561
+  Step 84/140 — Loss: 0.2423
+  Step 85/140 — Loss: 0.5370
+  Step 86/140 — Loss: 0.2092
+  Step 87/140 — Loss: 0.3486
+  Step 88/140 — Loss: 0.3144
+  Step 89/140 — Loss: 0.4500
+  Step 90/140 — Loss: 0.3767
+  Step 91/140 — Loss: 0.3274
+  Step 92/140 — Loss: 0.3079
+  Step 93/140 — Loss: 0.0939
+  Step 94/140 — Loss: 0.3811
+  Step 95/140 — Loss: 0.3300
+  Step 96/140 — Loss: 0.3733
+  Step 97/140 — Loss: 0.3219
+  Step 98/140 — Loss: 0.4951
+  Step 99/140 — Loss: 0.2725
+  Step 100/140 — Loss: 0.2985
+
+[Step 6] Saving LoRA adapter...
+CLIENT 4 DONE
+CLIENT 5 — Simulated 12GB Phone (Mistral-7B)
+
+[Step 1] Loading data...
+Loaded 13999 examples
+
+[Step 2] Loading Mistral-7B in BF16...
+Loading checkpoint shards:   0%|          | 0/3 [00:00<?, ?it/s]Loading checkpoint shards: 100%|██████████| 3/3 [00:00<00:00, 19.22it/s]Loading checkpoint shards: 100%|██████████| 3/3 [00:00<00:00, 19.19it/s]
+Model loaded — GPU RAM: 13.50 GB
+
+[Step 3] Attaching LoRA adapter r=32...
+Trainable parameters: 27,262,976 out of 7,275,286,528
+  Loaded + padded adapter to r=32
+
+[Step 4] Preparing training data...
+13999 examples formatted
+
+[Step 5] Training...
+  Step 1/140 — Loss: 0.1569
+  Step 2/140 — Loss: 0.1481
+  Step 3/140 — Loss: 0.1576
+  Step 4/140 — Loss: 0.2103
+  Step 5/140 — Loss: 0.1571
+  Step 6/140 — Loss: 0.1963
+  Step 7/140 — Loss: 0.1642
+  Step 8/140 — Loss: 0.2013
+  Step 9/140 — Loss: 0.1912
+  Step 10/140 — Loss: 0.1957
+  Step 11/140 — Loss: 0.1501
+  Step 12/140 — Loss: 0.1754
+  Step 13/140 — Loss: 0.1365
+  Step 14/140 — Loss: 0.1293
+  Step 15/140 — Loss: 0.1182
+  Step 16/140 — Loss: 0.2097
+  Step 17/140 — Loss: 0.2129
+  Step 18/140 — Loss: 0.1684
+  Step 19/140 — Loss: 0.1765
+  Step 20/140 — Loss: 0.1929
+  Step 21/140 — Loss: 0.1014
+  Step 22/140 — Loss: 0.1208
+  Step 23/140 — Loss: 0.1436
+  Step 24/140 — Loss: 0.1358
+  Step 25/140 — Loss: 0.1634
+  Step 26/140 — Loss: 0.1406
+  Step 27/140 — Loss: 0.1932
+  Step 28/140 — Loss: 0.1045
+  Step 29/140 — Loss: 0.1315
+  Step 30/140 — Loss: 0.1451
+  Step 31/140 — Loss: 0.2129
+  Step 32/140 — Loss: 0.1703
+  Step 33/140 — Loss: 0.1858
+  Step 34/140 — Loss: 0.1500
+  Step 35/140 — Loss: 0.1329
+  Step 36/140 — Loss: 0.1282
+  Step 37/140 — Loss: 0.1312
+  Step 38/140 — Loss: 0.1523
+  Step 39/140 — Loss: 0.1906
+  Step 40/140 — Loss: 0.1001
+  Step 41/140 — Loss: 0.1283
+  Step 42/140 — Loss: 0.1032
+  Step 43/140 — Loss: 0.1570
+  Step 44/140 — Loss: 0.0918
+  Step 45/140 — Loss: 0.1628
+  Step 46/140 — Loss: 0.1170
+  Step 47/140 — Loss: 0.1060
+  Step 48/140 — Loss: 0.1922
+  Step 49/140 — Loss: 0.0998
+  Step 50/140 — Loss: 0.1081
+  Step 51/140 — Loss: 0.0902
+  Step 52/140 — Loss: 0.1199
+  Step 53/140 — Loss: 0.0930
+  Step 54/140 — Loss: 0.0800
+  Step 55/140 — Loss: 0.0912
+  Step 56/140 — Loss: 0.1103
+  Step 57/140 — Loss: 0.0995
+  Step 58/140 — Loss: 0.1577
+  Step 59/140 — Loss: 0.1465
+  Step 60/140 — Loss: 0.1795
+  Step 61/140 — Loss: 0.1234
+  Step 62/140 — Loss: 0.0952
+  Step 63/140 — Loss: 0.0968
+  Step 64/140 — Loss: 0.0937
+  Step 65/140 — Loss: 0.1092
+  Step 66/140 — Loss: 0.1311
+  Step 67/140 — Loss: 0.1338
+  Step 68/140 — Loss: 0.1140
+  Step 69/140 — Loss: 0.1132
+  Step 70/140 — Loss: 0.0935
+  Step 71/140 — Loss: 0.0883
+  Step 72/140 — Loss: 0.1038
+  Step 73/140 — Loss: 0.0952
+  Step 74/140 — Loss: 0.1174
+  Step 75/140 — Loss: 0.0938
+  Step 76/140 — Loss: 0.2129
+  Step 77/140 — Loss: 0.1128
+  Step 78/140 — Loss: 0.1320
+  Step 79/140 — Loss: 0.0644
+  Step 80/140 — Loss: 0.0966
+  Step 81/140 — Loss: 0.1300
+  Step 82/140 — Loss: 0.0812
+  Step 83/140 — Loss: 0.1635
+  Step 84/140 — Loss: 0.1013
+  Step 85/140 — Loss: 0.1158
+  Step 86/140 — Loss: 0.1458
+  Step 87/140 — Loss: 0.1473
+  Step 88/140 — Loss: 0.0957
+  Step 89/140 — Loss: 0.0777
+  Step 90/140 — Loss: 0.1501
+  Step 91/140 — Loss: 0.1435
+  Step 92/140 — Loss: 0.1042
+  Step 93/140 — Loss: 0.1035
+  Step 94/140 — Loss: 0.0938
+  Step 95/140 — Loss: 0.1208
+  Step 96/140 — Loss: 0.0989
+  Step 97/140 — Loss: 0.1254
+  Step 98/140 — Loss: 0.1072
+  Step 99/140 — Loss: 0.0874
+  Step 100/140 — Loss: 0.1079
+
+[Step 6] Saving LoRA adapter...
+CLIENT 5 DONE
+FEDQUANT SERVER — Aggregation Server
+
+[Step 1] Checking client adapters...
+client2: found
+client3: found
+client4: found
+client5: found
+
+[Step 2] Loading all adapters into memory...
+client2: loaded 256 weight tensors
+client3: loaded 256 weight tensors
+client4: loaded 256 weight tensors
+client5: loaded 256 weight tensors
+
+[Step 3] Mixed-Precision Aggregation...
+Target rank: r=8
+Layers successfully averaged: 256 out of 256
+
+[Step 4] Saving aggregated adapter...
+Saved to ./results/aggregated/
+
+[Step 5] Round Summary...
+  Clients aggregated: 4
+  Common layers averaged: 256
+  Client weights used:
+    client2: 0.2 (20%)
+    client3: 0.2 (20%)
+    client4: 0.3 (30%)
+    client5: 0.3 (30%)
+
+==================================================
+SERVER ROUND 1 COMPLETE
+Aggregated adapter saved to ./results/aggregated/
+This adapter can now be sent back to all clients
+==================================================
+CLIENT 2 — Simulated 6GB Phone (Mistral-7B)
+==================================================
+
+[Step 1] Loading data...
+Loaded 30000 examples
+
+[Step 2] Loading Mistral-7B in BF16...
+Loading checkpoint shards:   0%|          | 0/3 [00:00<?, ?it/s]Loading checkpoint shards: 100%|██████████| 3/3 [00:00<00:00, 21.18it/s]Loading checkpoint shards: 100%|██████████| 3/3 [00:00<00:00, 21.15it/s]
+Model loaded
+  GPU RAM used: 13.50 GB
+
+[Step 3] Attaching LoRA adapter...
+Trainable parameters: 6,815,744 out of 7,254,839,296
+  Loaded adapter from round: 6
+
+[Step 4] Preparing training data...
+30000 examples formatted
+
+[Step 5] Training (1 FL round = 100 steps)...
+  Step 1/140 — Loss: 0.4102
+  Step 2/140 — Loss: 0.3185
+  Step 3/140 — Loss: 0.5532
+  Step 4/140 — Loss: 1.1803
+  Step 5/140 — Loss: 0.2280
+  Step 6/140 — Loss: 1.4785
+  Step 7/140 — Loss: 0.5488
+  Step 8/140 — Loss: 0.7203
+  Step 9/140 — Loss: 0.4017
+  Step 10/140 — Loss: 0.8497
+  Step 11/140 — Loss: 0.3300
+  Step 12/140 — Loss: 1.1501
+  Step 13/140 — Loss: 0.6655
+  Step 14/140 — Loss: 0.5736
+  Step 15/140 — Loss: 0.6097
+  Step 16/140 — Loss: 0.4095
+  Step 17/140 — Loss: 0.8708
+  Step 18/140 — Loss: 0.2462
+  Step 19/140 — Loss: 0.1886
+  Step 20/140 — Loss: 0.4759
+  Step 21/140 — Loss: 0.2506
+  Step 22/140 — Loss: 0.3108
+  Step 23/140 — Loss: 0.5105
+  Step 24/140 — Loss: 0.7173
+  Step 25/140 — Loss: 0.4162
+  Step 26/140 — Loss: 0.4189
+  Step 27/140 — Loss: 1.3579
+  Step 28/140 — Loss: 1.3967
+  Step 29/140 — Loss: 0.5049
+  Step 30/140 — Loss: 0.8401
+  Step 31/140 — Loss: 0.9098
+  Step 32/140 — Loss: 0.2717
+  Step 33/140 — Loss: 0.4839
+  Step 34/140 — Loss: 0.6942
+  Step 35/140 — Loss: 0.5842
+  Step 36/140 — Loss: 1.3129
+  Step 37/140 — Loss: 0.7476
+  Step 38/140 — Loss: 0.3218
+  Step 39/140 — Loss: 1.1315
+  Step 40/140 — Loss: 0.3969
+  Step 41/140 — Loss: 0.5801
+  Step 42/140 — Loss: 0.3109
+  Step 43/140 — Loss: 0.8065
+  Step 44/140 — Loss: 0.3838
+  Step 45/140 — Loss: 0.6919
+  Step 46/140 — Loss: 0.3197
+  Step 47/140 — Loss: 2.2476
+  Step 48/140 — Loss: 1.9540
+  Step 49/140 — Loss: 0.2172
+  Step 50/140 — Loss: 0.2591
+  Step 51/140 — Loss: 1.4884
+  Step 52/140 — Loss: 1.8084
+  Step 53/140 — Loss: 0.6985
+  Step 54/140 — Loss: 0.8691
+  Step 55/140 — Loss: 0.4269
+  Step 56/140 — Loss: 0.6125
+  Step 57/140 — Loss: 1.0477
+  Step 58/140 — Loss: 0.4336
+  Step 59/140 — Loss: 0.6434
+  Step 60/140 — Loss: 0.2262
+  Step 61/140 — Loss: 0.8343
+  Step 62/140 — Loss: 1.0371
+  Step 63/140 — Loss: 0.6149
+  Step 64/140 — Loss: 0.9957
+  Step 65/140 — Loss: 0.9176
+  Step 66/140 — Loss: 0.8465
+  Step 67/140 — Loss: 0.9787
+  Step 68/140 — Loss: 0.2743
+  Step 69/140 — Loss: 1.4502
+  Step 70/140 — Loss: 0.8192
+  Step 71/140 — Loss: 0.6121
+  Step 72/140 — Loss: 0.1895
+  Step 73/140 — Loss: 1.6832
+  Step 74/140 — Loss: 0.3004
+  Step 75/140 — Loss: 0.3452
+  Step 76/140 — Loss: 0.7673
+  Step 77/140 — Loss: 0.8672
+  Step 78/140 — Loss: 0.3445
+  Step 79/140 — Loss: 1.4254
+  Step 80/140 — Loss: 0.7342
+  Step 81/140 — Loss: 2.2292
+  Step 82/140 — Loss: 0.9820
+  Step 83/140 — Loss: 2.3560
+  Step 84/140 — Loss: 0.8225
+  Step 85/140 — Loss: 0.4299
+  Step 86/140 — Loss: 0.6058
+  Step 87/140 — Loss: 0.8733
+  Step 88/140 — Loss: 1.0686
+  Step 89/140 — Loss: 0.3804
+  Step 90/140 — Loss: 0.3616
+  Step 91/140 — Loss: 0.6228
+  Step 92/140 — Loss: 0.5210
+  Step 93/140 — Loss: 0.8627
+  Step 94/140 — Loss: 1.8954
+  Step 95/140 — Loss: 1.4248
+  Step 96/140 — Loss: 1.6006
+  Step 97/140 — Loss: 0.3431
+  Step 98/140 — Loss: 2.1128
+  Step 99/140 — Loss: 0.9332
+  Step 100/140 — Loss: 0.6385
+
+[Step 6] Saving LoRA adapter...
+Saved to ./results/adapters/client2
+
+==================================================
+CLIENT 2 DONE — Adapter ready to send to server
+==================================================
+==================================================
+CLIENT 3 — Simulated 6GB Phone (Mistral-7B)
+==================================================
+
+[Step 1] Loading data...
+Loaded 13000 examples
+
+[Step 2] Loading Mistral-7B in BF16...
+Loading checkpoint shards:   0%|          | 0/3 [00:00<?, ?it/s]Loading checkpoint shards:  67%|██████▋   | 2/3 [00:00<00:00, 19.46it/s]Loading checkpoint shards: 100%|██████████| 3/3 [00:00<00:00, 20.50it/s]
+Model loaded — GPU RAM: 13.50 GB
+
+[Step 3] Attaching LoRA adapter...
+Trainable parameters: 6,815,744 out of 7,254,839,296
+  Loaded adapter from round: 6
+
+[Step 4] Preparing training data...
+13000 examples formatted
+
+[Step 5] Training...
+  Step 1/140 — Loss: 0.1798
+  Step 2/140 — Loss: 0.3748
+  Step 3/140 — Loss: 0.1619
+  Step 4/140 — Loss: 0.4158
+  Step 5/140 — Loss: 0.2288
+  Step 6/140 — Loss: 0.3307
+  Step 7/140 — Loss: 0.2881
+  Step 8/140 — Loss: 0.2588
+  Step 9/140 — Loss: 0.2352
+  Step 10/140 — Loss: 0.1812
+  Step 11/140 — Loss: 0.1941
+  Step 12/140 — Loss: 0.1918
+  Step 13/140 — Loss: 0.1951
+  Step 14/140 — Loss: 0.1985
+  Step 15/140 — Loss: 0.2172
+  Step 16/140 — Loss: 0.1578
+  Step 17/140 — Loss: 0.1897
+  Step 18/140 — Loss: 0.3702
+  Step 19/140 — Loss: 0.1919
+  Step 20/140 — Loss: 0.2731
+  Step 21/140 — Loss: 0.1749
+  Step 22/140 — Loss: 0.2082
+  Step 23/140 — Loss: 0.2974
+  Step 24/140 — Loss: 0.2049
+  Step 25/140 — Loss: 0.2405
+  Step 26/140 — Loss: 0.4418
+  Step 27/140 — Loss: 0.1940
+  Step 28/140 — Loss: 0.1843
+  Step 29/140 — Loss: 0.2557
+  Step 30/140 — Loss: 0.1402
+  Step 31/140 — Loss: 0.3308
+  Step 32/140 — Loss: 0.4242
+  Step 33/140 — Loss: 0.2094
+  Step 34/140 — Loss: 0.1604
+  Step 35/140 — Loss: 0.1323
+  Step 36/140 — Loss: 0.1806
+  Step 37/140 — Loss: 0.1954
+  Step 38/140 — Loss: 0.1137
+  Step 39/140 — Loss: 0.2272
+  Step 40/140 — Loss: 0.1854
+  Step 41/140 — Loss: 0.6082
+  Step 42/140 — Loss: 0.1790
+  Step 43/140 — Loss: 0.2120
+  Step 44/140 — Loss: 0.1798
+  Step 45/140 — Loss: 0.1548
+  Step 46/140 — Loss: 0.4267
+  Step 47/140 — Loss: 0.2062
+  Step 48/140 — Loss: 0.1667
+  Step 49/140 — Loss: 0.1840
+  Step 50/140 — Loss: 0.1954
+  Step 51/140 — Loss: 0.1907
+  Step 52/140 — Loss: 0.1763
+  Step 53/140 — Loss: 0.1695
+  Step 54/140 — Loss: 0.2572
+  Step 55/140 — Loss: 0.2019
+  Step 56/140 — Loss: 0.1876
+  Step 57/140 — Loss: 0.1760
+  Step 58/140 — Loss: 0.3339
+  Step 59/140 — Loss: 0.1994
+  Step 60/140 — Loss: 0.3282
+  Step 61/140 — Loss: 0.2578
+  Step 62/140 — Loss: 0.1190
+  Step 63/140 — Loss: 0.1919
+  Step 64/140 — Loss: 0.1702
+  Step 65/140 — Loss: 0.1640
+  Step 66/140 — Loss: 0.1758
+  Step 67/140 — Loss: 0.1632
+  Step 68/140 — Loss: 0.1889
+  Step 69/140 — Loss: 0.1567
+  Step 70/140 — Loss: 0.2016
+  Step 71/140 — Loss: 0.2969
+  Step 72/140 — Loss: 0.1984
+  Step 73/140 — Loss: 0.4878
+  Step 74/140 — Loss: 0.4002
+  Step 75/140 — Loss: 0.2727
+  Step 76/140 — Loss: 0.2184
+  Step 77/140 — Loss: 0.2029
+  Step 78/140 — Loss: 0.5326
+  Step 79/140 — Loss: 0.2374
+  Step 80/140 — Loss: 0.4503
+  Step 81/140 — Loss: 0.3685
+  Step 82/140 — Loss: 0.1796
+  Step 83/140 — Loss: 0.3059
+  Step 84/140 — Loss: 0.3044
+  Step 85/140 — Loss: 0.1577
+  Step 86/140 — Loss: 0.2371
+  Step 87/140 — Loss: 0.1732
+  Step 88/140 — Loss: 0.3390
+  Step 89/140 — Loss: 0.1771
+  Step 90/140 — Loss: 0.3001
+  Step 91/140 — Loss: 0.2563
+  Step 92/140 — Loss: 0.1833
+  Step 93/140 — Loss: 0.4930
+  Step 94/140 — Loss: 0.6252
+  Step 95/140 — Loss: 0.3077
+  Step 96/140 — Loss: 0.2785
+  Step 97/140 — Loss: 0.2844
+  Step 98/140 — Loss: 0.2337
+  Step 99/140 — Loss: 0.2711
+  Step 100/140 — Loss: 0.2317
+
+[Step 6] Saving LoRA adapter...
+CLIENT 3 DONE
+CLIENT 4 — Simulated 8GB Phone (Mistral-7B)
+
+[Step 1] Loading data...
+Loaded 8000 examples
+
+[Step 2] Loading Mistral-7B in BF16...
+Loading checkpoint shards:   0%|          | 0/3 [00:00<?, ?it/s]Loading checkpoint shards:  67%|██████▋   | 2/3 [00:00<00:00, 19.12it/s]Loading checkpoint shards: 100%|██████████| 3/3 [00:00<00:00, 20.13it/s]
+Model loaded — GPU RAM: 13.50 GB
+
+[Step 3] Attaching LoRA adapter r=16...
+Trainable parameters: 13,631,488 out of 7,261,655,040
+  Loaded + padded adapter to r=16
+
+[Step 4] Preparing training data...
+8000 examples formatted
+
+[Step 5] Training...
+  Step 1/140 — Loss: 0.1322
+  Step 2/140 — Loss: 0.2339
+  Step 3/140 — Loss: 0.1699
+  Step 4/140 — Loss: 0.2925
+  Step 5/140 — Loss: 0.1553
+  Step 6/140 — Loss: 0.2150
+  Step 7/140 — Loss: 0.2625
+  Step 8/140 — Loss: 0.1571
+  Step 9/140 — Loss: 0.1634
+  Step 10/140 — Loss: 0.2538
+  Step 11/140 — Loss: 0.1535
+  Step 12/140 — Loss: 0.2363
+  Step 13/140 — Loss: 0.4284
+  Step 14/140 — Loss: 0.1772
+  Step 15/140 — Loss: 0.3761
+  Step 16/140 — Loss: 0.2214
+  Step 17/140 — Loss: 0.1500
+  Step 18/140 — Loss: 0.1504
+  Step 19/140 — Loss: 0.5840
+  Step 20/140 — Loss: 0.1252
+  Step 21/140 — Loss: 0.2562
+  Step 22/140 — Loss: 0.2969
+  Step 23/140 — Loss: 0.1718
+  Step 24/140 — Loss: 0.3041
+  Step 25/140 — Loss: 0.2129
+  Step 26/140 — Loss: 0.2344
+  Step 27/140 — Loss: 0.1927
+  Step 28/140 — Loss: 0.2162
+  Step 29/140 — Loss: 0.2760
+  Step 30/140 — Loss: 0.2092
+  Step 31/140 — Loss: 0.3150
+  Step 32/140 — Loss: 0.2102
+  Step 33/140 — Loss: 0.2782
+  Step 34/140 — Loss: 0.2521
+  Step 35/140 — Loss: 0.2820
+  Step 36/140 — Loss: 0.3135
+  Step 37/140 — Loss: 0.1052
+  Step 38/140 — Loss: 0.2547
+  Step 39/140 — Loss: 0.3594
+  Step 40/140 — Loss: 0.3082
+  Step 41/140 — Loss: 0.1734
+  Step 42/140 — Loss: 0.2106
+  Step 43/140 — Loss: 0.2051
+  Step 44/140 — Loss: 0.1193
+  Step 45/140 — Loss: 0.2357
+  Step 46/140 — Loss: 0.2132
+  Step 47/140 — Loss: 0.2023
+  Step 48/140 — Loss: 0.1804
+  Step 49/140 — Loss: 0.1073
+  Step 50/140 — Loss: 0.1932
+  Step 51/140 — Loss: 0.4575
+  Step 52/140 — Loss: 0.2257
+  Step 53/140 — Loss: 0.3249
+  Step 54/140 — Loss: 0.1733
+  Step 55/140 — Loss: 0.2932
+  Step 56/140 — Loss: 0.3042
+  Step 57/140 — Loss: 0.3483
+  Step 58/140 — Loss: 0.2752
+  Step 59/140 — Loss: 0.1224
+  Step 60/140 — Loss: 0.4442
+  Step 61/140 — Loss: 0.2843
+  Step 62/140 — Loss: 0.1746
+  Step 63/140 — Loss: 0.3586
+  Step 64/140 — Loss: 0.3428
+  Step 65/140 — Loss: 0.4137
+  Step 66/140 — Loss: 0.4104
+  Step 67/140 — Loss: 0.6160
+  Step 68/140 — Loss: 0.4620
+  Step 69/140 — Loss: 0.4057
+  Step 70/140 — Loss: 0.3052
+  Step 71/140 — Loss: 0.1951
+  Step 72/140 — Loss: 0.4310
+  Step 73/140 — Loss: 0.2410
+  Step 74/140 — Loss: 0.3441
+  Step 75/140 — Loss: 0.3852
+  Step 76/140 — Loss: 0.2592
+  Step 77/140 — Loss: 0.2785
+  Step 78/140 — Loss: 0.1876
+  Step 79/140 — Loss: 0.1546
+  Step 80/140 — Loss: 0.3611
+  Step 81/140 — Loss: 0.3881
+  Step 82/140 — Loss: 0.3536
+  Step 83/140 — Loss: 0.2233
+  Step 84/140 — Loss: 0.3159
+  Step 85/140 — Loss: 0.4686
+  Step 86/140 — Loss: 0.2097
+  Step 87/140 — Loss: 0.1871
+  Step 88/140 — Loss: 0.2883
+  Step 89/140 — Loss: 0.2873
+  Step 90/140 — Loss: 0.3702
+  Step 91/140 — Loss: 0.2927
+  Step 92/140 — Loss: 0.2879
+  Step 93/140 — Loss: 0.0941
+  Step 94/140 — Loss: 0.3952
+  Step 95/140 — Loss: 0.3347
+  Step 96/140 — Loss: 0.3806
+  Step 97/140 — Loss: 0.2948
+  Step 98/140 — Loss: 0.5384
+  Step 99/140 — Loss: 0.3941
+  Step 100/140 — Loss: 0.3216
+
+[Step 6] Saving LoRA adapter...
+CLIENT 4 DONE
+CLIENT 5 — Simulated 12GB Phone (Mistral-7B)
+
+[Step 1] Loading data...
+Loaded 13999 examples
+
+[Step 2] Loading Mistral-7B in BF16...
+Loading checkpoint shards:   0%|          | 0/3 [00:00<?, ?it/s]Loading checkpoint shards: 100%|██████████| 3/3 [00:00<00:00, 21.11it/s]Loading checkpoint shards: 100%|██████████| 3/3 [00:00<00:00, 21.09it/s]
+Model loaded — GPU RAM: 13.50 GB
+
+[Step 3] Attaching LoRA adapter r=32...
+Trainable parameters: 27,262,976 out of 7,275,286,528
+  Loaded + padded adapter to r=32
+
+[Step 4] Preparing training data...
+13999 examples formatted
+
+[Step 5] Training...
+  Step 1/140 — Loss: 0.1178
+  Step 2/140 — Loss: 0.1081
+  Step 3/140 — Loss: 0.1074
+  Step 4/140 — Loss: 0.1123
+  Step 5/140 — Loss: 0.0769
+  Step 6/140 — Loss: 0.0659
+  Step 7/140 — Loss: 0.2690
+  Step 8/140 — Loss: 0.1694
+  Step 9/140 — Loss: 0.2270
+  Step 10/140 — Loss: 0.1170
+  Step 11/140 — Loss: 0.1176
+  Step 12/140 — Loss: 0.1395
+  Step 13/140 — Loss: 0.1741
+  Step 14/140 — Loss: 0.1168
+  Step 15/140 — Loss: 0.1331
+  Step 16/140 — Loss: 0.1453
+  Step 17/140 — Loss: 0.1917
+  Step 18/140 — Loss: 0.1117
+  Step 19/140 — Loss: 0.1331
+  Step 20/140 — Loss: 0.1489
+  Step 21/140 — Loss: 0.0976
+  Step 22/140 — Loss: 0.1015
+  Step 23/140 — Loss: 0.1197
+  Step 24/140 — Loss: 0.0923
+  Step 25/140 — Loss: 0.1174
+  Step 26/140 — Loss: 0.1452
+  Step 27/140 — Loss: 0.1124
+  Step 28/140 — Loss: 0.1109
+  Step 29/140 — Loss: 0.0911
+  Step 30/140 — Loss: 0.1137
+  Step 31/140 — Loss: 0.1647
+  Step 32/140 — Loss: 0.1389
+  Step 33/140 — Loss: 0.1417
+  Step 34/140 — Loss: 0.1210
+  Step 35/140 — Loss: 0.1159
+  Step 36/140 — Loss: 0.1044
+  Step 37/140 — Loss: 0.1596
+  Step 38/140 — Loss: 0.1275
+  Step 39/140 — Loss: 0.1516
+  Step 40/140 — Loss: 0.0885
+  Step 41/140 — Loss: 0.1137
+  Step 42/140 — Loss: 0.1012
+  Step 43/140 — Loss: 0.1227
+  Step 44/140 — Loss: 0.0866
+  Step 45/140 — Loss: 0.1397
+  Step 46/140 — Loss: 0.1387
+  Step 47/140 — Loss: 0.0932
+  Step 48/140 — Loss: 0.1562
+  Step 49/140 — Loss: 0.0999
+  Step 50/140 — Loss: 0.1130
+  Step 51/140 — Loss: 0.1054
+  Step 52/140 — Loss: 0.1041
+  Step 53/140 — Loss: 0.0901
+  Step 54/140 — Loss: 0.0847
+  Step 55/140 — Loss: 0.0765
+  Step 56/140 — Loss: 0.0891
+  Step 57/140 — Loss: 0.0981
+  Step 58/140 — Loss: 0.1246
+  Step 59/140 — Loss: 0.1372
+  Step 60/140 — Loss: 0.1121
+  Step 61/140 — Loss: 0.1135
+  Step 62/140 — Loss: 0.0917
+  Step 63/140 — Loss: 0.1042
+  Step 64/140 — Loss: 0.0894
+  Step 65/140 — Loss: 0.1060
+  Step 66/140 — Loss: 0.1151
+  Step 67/140 — Loss: 0.0964
+  Step 68/140 — Loss: 0.1111
+  Step 69/140 — Loss: 0.1144
+  Step 70/140 — Loss: 0.0883
+  Step 71/140 — Loss: 0.0857
+  Step 72/140 — Loss: 0.1030
+  Step 73/140 — Loss: 0.0925
+  Step 74/140 — Loss: 0.0873
+  Step 75/140 — Loss: 0.0860
+  Step 76/140 — Loss: 0.0997
+  Step 77/140 — Loss: 0.0985
+  Step 78/140 — Loss: 0.1223
+  Step 79/140 — Loss: 0.0697
+  Step 80/140 — Loss: 0.0848
+  Step 81/140 — Loss: 0.1191
+  Step 82/140 — Loss: 0.0779
+  Step 83/140 — Loss: 0.1207
+  Step 84/140 — Loss: 0.0977
+  Step 85/140 — Loss: 0.1115
+  Step 86/140 — Loss: 0.1158
+  Step 87/140 — Loss: 0.1257
+  Step 88/140 — Loss: 0.0983
+  Step 89/140 — Loss: 0.0800
+  Step 90/140 — Loss: 0.1756
+  Step 91/140 — Loss: 0.1111
+  Step 92/140 — Loss: 0.0965
+  Step 93/140 — Loss: 0.0993
+  Step 94/140 — Loss: 0.0904
+  Step 95/140 — Loss: 0.1204
+  Step 96/140 — Loss: 0.0844
+  Step 97/140 — Loss: 0.1367
+  Step 98/140 — Loss: 0.1092
+  Step 99/140 — Loss: 0.0770
+  Step 100/140 — Loss: 0.1246
+
+[Step 6] Saving LoRA adapter...
+CLIENT 5 DONE
+FEDQUANT SERVER — Aggregation Server
+
+[Step 1] Checking client adapters...
+client2: found
+client3: found
+client4: found
+client5: found
+
+[Step 2] Loading all adapters into memory...
+client2: loaded 256 weight tensors
+client3: loaded 256 weight tensors
+client4: loaded 256 weight tensors
+client5: loaded 256 weight tensors
+
+[Step 3] Mixed-Precision Aggregation...
+Target rank: r=8
+Layers successfully averaged: 256 out of 256
+
+[Step 4] Saving aggregated adapter...
+Saved to ./results/aggregated/
+
+[Step 5] Round Summary...
+  Clients aggregated: 4
+  Common layers averaged: 256
+  Client weights used:
+    client2: 0.2 (20%)
+    client3: 0.2 (20%)
+    client4: 0.3 (30%)
+    client5: 0.3 (30%)
+
+==================================================
+SERVER ROUND 1 COMPLETE
+Aggregated adapter saved to ./results/aggregated/
+This adapter can now be sent back to all clients
+==================================================
+CLIENT 2 — Simulated 6GB Phone (Mistral-7B)
+==================================================
+
+[Step 1] Loading data...
+Loaded 30000 examples
+
+[Step 2] Loading Mistral-7B in BF16...
+Loading checkpoint shards:   0%|          | 0/3 [00:00<?, ?it/s]Loading checkpoint shards:  67%|██████▋   | 2/3 [00:00<00:00, 13.31it/s]Loading checkpoint shards: 100%|██████████| 3/3 [00:00<00:00, 14.05it/s]
+Model loaded
+  GPU RAM used: 13.50 GB
+
+[Step 3] Attaching LoRA adapter...
+Trainable parameters: 6,815,744 out of 7,254,839,296
+  Loaded adapter from round: 7
+
+[Step 4] Preparing training data...
+30000 examples formatted
+
+[Step 5] Training (1 FL round = 100 steps)...
+  Step 1/140 — Loss: 0.2996
+  Step 2/140 — Loss: 0.2231
+  Step 3/140 — Loss: 0.4489
+  Step 4/140 — Loss: 1.0734
+  Step 5/140 — Loss: 0.1790
+  Step 6/140 — Loss: 1.3202
+  Step 7/140 — Loss: 0.4422
+  Step 8/140 — Loss: 0.7429
+  Step 9/140 — Loss: 0.3893
+  Step 10/140 — Loss: 0.8060
+  Step 11/140 — Loss: 0.3137
+  Step 12/140 — Loss: 1.0018
+  Step 13/140 — Loss: 0.5469
+  Step 14/140 — Loss: 0.4891
+  Step 15/140 — Loss: 0.5007
+  Step 16/140 — Loss: 0.4101
+  Step 17/140 — Loss: 0.7972
+  Step 18/140 — Loss: 0.2087
+  Step 19/140 — Loss: 0.1973
+  Step 20/140 — Loss: 0.4325
+  Step 21/140 — Loss: 0.2435
+  Step 22/140 — Loss: 0.3264
+  Step 23/140 — Loss: 0.4596
+  Step 24/140 — Loss: 0.6230
+  Step 25/140 — Loss: 0.5626
+  Step 26/140 — Loss: 0.3715
+  Step 27/140 — Loss: 1.2765
+  Step 28/140 — Loss: 1.3031
+  Step 29/140 — Loss: 0.4384
+  Step 30/140 — Loss: 0.7525
+  Step 31/140 — Loss: 0.8429
+  Step 32/140 — Loss: 0.2203
+  Step 33/140 — Loss: 0.3939
+  Step 34/140 — Loss: 0.6953
+  Step 35/140 — Loss: 0.5255
+  Step 36/140 — Loss: 1.2440
+  Step 37/140 — Loss: 0.7378
+  Step 38/140 — Loss: 0.2668
+  Step 39/140 — Loss: 1.1584
+  Step 40/140 — Loss: 0.3681
+  Step 41/140 — Loss: 0.5588
+  Step 42/140 — Loss: 0.3094
+  Step 43/140 — Loss: 0.6973
+  Step 44/140 — Loss: 0.3687
+  Step 45/140 — Loss: 0.6652
+  Step 46/140 — Loss: 0.2785
+  Step 47/140 — Loss: 2.1563
+  Step 48/140 — Loss: 1.9069
+  Step 49/140 — Loss: 0.2096
+  Step 50/140 — Loss: 0.2223
+  Step 51/140 — Loss: 1.4063
+  Step 52/140 — Loss: 1.5830
+  Step 53/140 — Loss: 0.6187
+  Step 54/140 — Loss: 0.7934
+  Step 55/140 — Loss: 0.3082
+  Step 56/140 — Loss: 0.6285
+  Step 57/140 — Loss: 1.0434
+  Step 58/140 — Loss: 0.4468
+  Step 59/140 — Loss: 0.6135
+  Step 60/140 — Loss: 0.2231
+  Step 61/140 — Loss: 0.8071
+  Step 62/140 — Loss: 1.0088
+  Step 63/140 — Loss: 0.5750
+  Step 64/140 — Loss: 0.9522
+  Step 65/140 — Loss: 0.9293
+  Step 66/140 — Loss: 0.8276
+  Step 67/140 — Loss: 0.9408
+  Step 68/140 — Loss: 0.2471
+  Step 69/140 — Loss: 1.3117
+  Step 70/140 — Loss: 0.7803
+  Step 71/140 — Loss: 0.5740
+  Step 72/140 — Loss: 0.1571
+  Step 73/140 — Loss: 1.6885
+  Step 74/140 — Loss: 0.2706
+  Step 75/140 — Loss: 0.3037
+  Step 76/140 — Loss: 0.6564
+  Step 77/140 — Loss: 0.7824
+  Step 78/140 — Loss: 0.3346
+  Step 79/140 — Loss: 1.3278
+  Step 80/140 — Loss: 0.6016
+  Step 81/140 — Loss: 2.1881
+  Step 82/140 — Loss: 0.8875
+  Step 83/140 — Loss: 2.2737
+  Step 84/140 — Loss: 0.6190
+  Step 85/140 — Loss: 0.4242
+  Step 86/140 — Loss: 0.5815
+  Step 87/140 — Loss: 0.7400
+  Step 88/140 — Loss: 0.9668
+  Step 89/140 — Loss: 0.3386
+  Step 90/140 — Loss: 0.3409
+  Step 91/140 — Loss: 0.6395
+  Step 92/140 — Loss: 0.4429
+  Step 93/140 — Loss: 0.7836
+  Step 94/140 — Loss: 1.8433
+  Step 95/140 — Loss: 1.3931
+  Step 96/140 — Loss: 1.5480
+  Step 97/140 — Loss: 0.2567
+  Step 98/140 — Loss: 2.1345
+  Step 99/140 — Loss: 0.9487
+  Step 100/140 — Loss: 0.5679
+
+[Step 6] Saving LoRA adapter...
+Saved to ./results/adapters/client2
+
+==================================================
+CLIENT 2 DONE — Adapter ready to send to server
+==================================================
+==================================================
+CLIENT 3 — Simulated 6GB Phone (Mistral-7B)
+==================================================
+
+[Step 1] Loading data...
+Loaded 13000 examples
+
+[Step 2] Loading Mistral-7B in BF16...
+Loading checkpoint shards:   0%|          | 0/3 [00:00<?, ?it/s]Loading checkpoint shards:  67%|██████▋   | 2/3 [00:00<00:00, 19.24it/s]Loading checkpoint shards: 100%|██████████| 3/3 [00:00<00:00, 20.10it/s]
+Model loaded — GPU RAM: 13.50 GB
+
+[Step 3] Attaching LoRA adapter...
+Trainable parameters: 6,815,744 out of 7,254,839,296
+  Loaded adapter from round: 7
+
+[Step 4] Preparing training data...
+13000 examples formatted
+
+[Step 5] Training...
+  Step 1/140 — Loss: 0.2286
+  Step 2/140 — Loss: 0.2866
+  Step 3/140 — Loss: 0.1740
+  Step 4/140 — Loss: 0.3138
+  Step 5/140 — Loss: 0.2215
+  Step 6/140 — Loss: 0.2669
+  Step 7/140 — Loss: 0.2101
+  Step 8/140 — Loss: 0.2196
+  Step 9/140 — Loss: 0.1721
+  Step 10/140 — Loss: 0.1622
+  Step 11/140 — Loss: 0.1301
+  Step 12/140 — Loss: 0.1888
+  Step 13/140 — Loss: 0.1918
+  Step 14/140 — Loss: 0.2044
+  Step 15/140 — Loss: 0.2100
+  Step 16/140 — Loss: 0.1519
+  Step 17/140 — Loss: 0.1819
+  Step 18/140 — Loss: 0.3328
+  Step 19/140 — Loss: 0.1996
+  Step 20/140 — Loss: 0.2463
+  Step 21/140 — Loss: 0.1584
+  Step 22/140 — Loss: 0.1985
+  Step 23/140 — Loss: 0.2565
+  Step 24/140 — Loss: 0.1759
+  Step 25/140 — Loss: 0.2457
+  Step 26/140 — Loss: 0.4172
+  Step 27/140 — Loss: 0.1842
+  Step 28/140 — Loss: 0.2098
+  Step 29/140 — Loss: 0.2806
+  Step 30/140 — Loss: 0.1435
+  Step 31/140 — Loss: 0.3076
+  Step 32/140 — Loss: 0.3929
+  Step 33/140 — Loss: 0.2026
+  Step 34/140 — Loss: 0.1655
+  Step 35/140 — Loss: 0.1436
+  Step 36/140 — Loss: 0.1655
+  Step 37/140 — Loss: 0.2016
+  Step 38/140 — Loss: 0.0994
+  Step 39/140 — Loss: 0.2031
+  Step 40/140 — Loss: 0.1711
+  Step 41/140 — Loss: 0.5763
+  Step 42/140 — Loss: 0.1667
+  Step 43/140 — Loss: 0.1806
+  Step 44/140 — Loss: 0.1715
+  Step 45/140 — Loss: 0.1538
+  Step 46/140 — Loss: 0.3611
+  Step 47/140 — Loss: 0.1831
+  Step 48/140 — Loss: 0.1181
+  Step 49/140 — Loss: 0.1583
+  Step 50/140 — Loss: 0.1877
+  Step 51/140 — Loss: 0.1938
+  Step 52/140 — Loss: 0.1910
+  Step 53/140 — Loss: 0.1796
+  Step 54/140 — Loss: 0.2107
+  Step 55/140 — Loss: 0.1949
+  Step 56/140 — Loss: 0.1551
+  Step 57/140 — Loss: 0.1856
+  Step 58/140 — Loss: 0.2626
+  Step 59/140 — Loss: 0.2040
+  Step 60/140 — Loss: 0.3543
+  Step 61/140 — Loss: 0.2751
+  Step 62/140 — Loss: 0.1414
+  Step 63/140 — Loss: 0.1486
+  Step 64/140 — Loss: 0.1724
+  Step 65/140 — Loss: 0.1406
+  Step 66/140 — Loss: 0.1685
+  Step 67/140 — Loss: 0.1476
+  Step 68/140 — Loss: 0.1800
+  Step 69/140 — Loss: 0.1722
+  Step 70/140 — Loss: 0.1880
+  Step 71/140 — Loss: 0.2413
+  Step 72/140 — Loss: 0.1438
+  Step 73/140 — Loss: 0.4269
+  Step 74/140 — Loss: 0.3406
+  Step 75/140 — Loss: 0.2616
+  Step 76/140 — Loss: 0.2142
+  Step 77/140 — Loss: 0.2094
+  Step 78/140 — Loss: 0.4527
+  Step 79/140 — Loss: 0.1836
+  Step 80/140 — Loss: 0.3968
+  Step 81/140 — Loss: 0.3355
+  Step 82/140 — Loss: 0.1634
+  Step 83/140 — Loss: 0.2716
+  Step 84/140 — Loss: 0.2807
+  Step 85/140 — Loss: 0.1458
+  Step 86/140 — Loss: 0.2336
+  Step 87/140 — Loss: 0.1588
+  Step 88/140 — Loss: 0.3191
+  Step 89/140 — Loss: 0.1920
+  Step 90/140 — Loss: 0.2294
+  Step 91/140 — Loss: 0.2418
+  Step 92/140 — Loss: 0.1773
+  Step 93/140 — Loss: 0.4166
+  Step 94/140 — Loss: 0.5875
+  Step 95/140 — Loss: 0.2863
+  Step 96/140 — Loss: 0.2089
+  Step 97/140 — Loss: 0.2811
+  Step 98/140 — Loss: 0.2192
+  Step 99/140 — Loss: 0.2938
+  Step 100/140 — Loss: 0.2221
+
+[Step 6] Saving LoRA adapter...
+CLIENT 3 DONE
+CLIENT 4 — Simulated 8GB Phone (Mistral-7B)
+
+[Step 1] Loading data...
+Loaded 8000 examples
+
+[Step 2] Loading Mistral-7B in BF16...
+Loading checkpoint shards:   0%|          | 0/3 [00:00<?, ?it/s]Loading checkpoint shards: 100%|██████████| 3/3 [00:00<00:00, 21.33it/s]Loading checkpoint shards: 100%|██████████| 3/3 [00:00<00:00, 21.30it/s]
+Model loaded — GPU RAM: 13.50 GB
+
+[Step 3] Attaching LoRA adapter r=16...
+Trainable parameters: 13,631,488 out of 7,261,655,040
+  Loaded + padded adapter to r=16
+
+[Step 4] Preparing training data...
+8000 examples formatted
+
+[Step 5] Training...
+  Step 1/140 — Loss: 0.1056
+  Step 2/140 — Loss: 0.2344
+  Step 3/140 — Loss: 0.1390
+  Step 4/140 — Loss: 0.2534
+  Step 5/140 — Loss: 0.1282
+  Step 6/140 — Loss: 0.2179
+  Step 7/140 — Loss: 0.1724
+  Step 8/140 — Loss: 0.1831
+  Step 9/140 — Loss: 0.1016
+  Step 10/140 — Loss: 0.2186
+  Step 11/140 — Loss: 0.1110
+  Step 12/140 — Loss: 0.2557
+  Step 13/140 — Loss: 0.3083
+  Step 14/140 — Loss: 0.1712
+  Step 15/140 — Loss: 0.2933
+  Step 16/140 — Loss: 0.1095
+  Step 17/140 — Loss: 0.1053
+  Step 18/140 — Loss: 0.1379
+  Step 19/140 — Loss: 0.4807
+  Step 20/140 — Loss: 0.1241
+  Step 21/140 — Loss: 0.3030
+  Step 22/140 — Loss: 0.3617
+  Step 23/140 — Loss: 0.2212
+  Step 24/140 — Loss: 0.1407
+  Step 25/140 — Loss: 0.2406
+  Step 26/140 — Loss: 0.1870
+  Step 27/140 — Loss: 0.1936
+  Step 28/140 — Loss: 0.2284
+  Step 29/140 — Loss: 0.2451
+  Step 30/140 — Loss: 0.3283
+  Step 31/140 — Loss: 0.3679
+  Step 32/140 — Loss: 0.2440
+  Step 33/140 — Loss: 0.2671
+  Step 34/140 — Loss: 0.1519
+  Step 35/140 — Loss: 0.2881
+  Step 36/140 — Loss: 0.2738
+  Step 37/140 — Loss: 0.1822
+  Step 38/140 — Loss: 0.1683
+  Step 39/140 — Loss: 0.3544
+  Step 40/140 — Loss: 0.3376
+  Step 41/140 — Loss: 0.1485
+  Step 42/140 — Loss: 0.2460
+  Step 43/140 — Loss: 0.2175
+  Step 44/140 — Loss: 0.1100
+  Step 45/140 — Loss: 0.2224
+  Step 46/140 — Loss: 0.2334
+  Step 47/140 — Loss: 0.1735
+  Step 48/140 — Loss: 0.1604
+  Step 49/140 — Loss: 0.1058
+  Step 50/140 — Loss: 0.2018
+  Step 51/140 — Loss: 0.5350
+  Step 52/140 — Loss: 0.1588
+  Step 53/140 — Loss: 0.5196
+  Step 54/140 — Loss: 0.1432
+  Step 55/140 — Loss: 0.2225
+  Step 56/140 — Loss: 0.2083
+  Step 57/140 — Loss: 0.2558
+  Step 58/140 — Loss: 0.2232
+  Step 59/140 — Loss: 0.1532
+  Step 60/140 — Loss: 0.4150
+  Step 61/140 — Loss: 0.2682
+  Step 62/140 — Loss: 0.1983
+  Step 63/140 — Loss: 0.3134
+  Step 64/140 — Loss: 0.3341
+  Step 65/140 — Loss: 0.2437
+  Step 66/140 — Loss: 0.4514
+  Step 67/140 — Loss: 0.6452
+  Step 68/140 — Loss: 0.2873
+  Step 69/140 — Loss: 0.3853
+  Step 70/140 — Loss: 0.2843
+  Step 71/140 — Loss: 0.2610
+  Step 72/140 — Loss: 0.3057
+  Step 73/140 — Loss: 0.2518
+  Step 74/140 — Loss: 0.2762
+  Step 75/140 — Loss: 0.3183
+  Step 76/140 — Loss: 0.2464
+  Step 77/140 — Loss: 0.2579
+  Step 78/140 — Loss: 0.1646
+  Step 79/140 — Loss: 0.1573
+  Step 80/140 — Loss: 0.3161
+  Step 81/140 — Loss: 0.3383
+  Step 82/140 — Loss: 0.3524
+  Step 83/140 — Loss: 0.2355
+  Step 84/140 — Loss: 0.1887
+  Step 85/140 — Loss: 0.3454
+  Step 86/140 — Loss: 0.1743
+  Step 87/140 — Loss: 0.2004
+  Step 88/140 — Loss: 0.2800
+  Step 89/140 — Loss: 0.1520
+  Step 90/140 — Loss: 0.3040
+  Step 91/140 — Loss: 0.2699
+  Step 92/140 — Loss: 0.2275
+  Step 93/140 — Loss: 0.0891
+  Step 94/140 — Loss: 0.3997
+  Step 95/140 — Loss: 0.2802
+  Step 96/140 — Loss: 0.2874
+  Step 97/140 — Loss: 0.2790
+  Step 98/140 — Loss: 0.6694
+  Step 99/140 — Loss: 0.2133
+  Step 100/140 — Loss: 0.3174
+
+[Step 6] Saving LoRA adapter...
+CLIENT 4 DONE
+CLIENT 5 — Simulated 12GB Phone (Mistral-7B)
+
+[Step 1] Loading data...
+Loaded 13999 examples
+
+[Step 2] Loading Mistral-7B in BF16...
+Loading checkpoint shards:   0%|          | 0/3 [00:00<?, ?it/s]Loading checkpoint shards:  67%|██████▋   | 2/3 [00:00<00:00, 16.80it/s]Loading checkpoint shards: 100%|██████████| 3/3 [00:00<00:00, 17.50it/s]
+Model loaded — GPU RAM: 13.50 GB
+
+[Step 3] Attaching LoRA adapter r=32...
+Trainable parameters: 27,262,976 out of 7,275,286,528
+  Loaded + padded adapter to r=32
+
+[Step 4] Preparing training data...
+13999 examples formatted
+
+[Step 5] Training...
+  Step 1/140 — Loss: 0.0906
+  Step 2/140 — Loss: 0.0952
+  Step 3/140 — Loss: 0.0942
+  Step 4/140 — Loss: 0.1204
+  Step 5/140 — Loss: 0.0712
+  Step 6/140 — Loss: 0.0477
+  Step 7/140 — Loss: 0.1353
+  Step 8/140 — Loss: 0.1233
+  Step 9/140 — Loss: 0.1162
+  Step 10/140 — Loss: 0.1177
+  Step 11/140 — Loss: 0.0902
+  Step 12/140 — Loss: 0.1505
+  Step 13/140 — Loss: 0.0924
+  Step 14/140 — Loss: 0.1260
+  Step 15/140 — Loss: 0.0961
+  Step 16/140 — Loss: 0.1419
+  Step 17/140 — Loss: 0.1694
+  Step 18/140 — Loss: 0.1317
+  Step 19/140 — Loss: 0.1135
+  Step 20/140 — Loss: 0.0978
+  Step 21/140 — Loss: 0.0924
+  Step 22/140 — Loss: 0.0851
+  Step 23/140 — Loss: 0.1024
+  Step 24/140 — Loss: 0.0831
+  Step 25/140 — Loss: 0.1362
+  Step 26/140 — Loss: 0.1735
+  Step 27/140 — Loss: 0.1315
+  Step 28/140 — Loss: 0.1111
+  Step 29/140 — Loss: 0.0889
+  Step 30/140 — Loss: 0.1095
+  Step 31/140 — Loss: 0.1453
+  Step 32/140 — Loss: 0.1073
+  Step 33/140 — Loss: 0.1386
+  Step 34/140 — Loss: 0.1103
+  Step 35/140 — Loss: 0.1697
+  Step 36/140 — Loss: 0.0935
+  Step 37/140 — Loss: 0.1487
+  Step 38/140 — Loss: 0.1080
+  Step 39/140 — Loss: 0.1488
+  Step 40/140 — Loss: 0.1017
+  Step 41/140 — Loss: 0.1309
+  Step 42/140 — Loss: 0.1004
+  Step 43/140 — Loss: 0.0905
+  Step 44/140 — Loss: 0.0859
+  Step 45/140 — Loss: 0.1507
+  Step 46/140 — Loss: 0.1481
+  Step 47/140 — Loss: 0.1161
+  Step 48/140 — Loss: 0.1414
+  Step 49/140 — Loss: 0.1024
+  Step 50/140 — Loss: 0.1205
+  Step 51/140 — Loss: 0.1136
+  Step 52/140 — Loss: 0.1056
+  Step 53/140 — Loss: 0.1148
+  Step 54/140 — Loss: 0.0934
+  Step 55/140 — Loss: 0.0750
+  Step 56/140 — Loss: 0.0978
+  Step 57/140 — Loss: 0.1215
+  Step 58/140 — Loss: 0.1552
+  Step 59/140 — Loss: 0.1242
+  Step 60/140 — Loss: 0.2184
+  Step 61/140 — Loss: 0.1239
+  Step 62/140 — Loss: 0.0894
+  Step 63/140 — Loss: 0.1207
+  Step 64/140 — Loss: 0.1157
+  Step 65/140 — Loss: 0.1301
+  Step 66/140 — Loss: 0.1141
+  Step 67/140 — Loss: 0.0937
+  Step 68/140 — Loss: 0.1244
+  Step 69/140 — Loss: 0.1051
+  Step 70/140 — Loss: 0.0909
+  Step 71/140 — Loss: 0.0829
+  Step 72/140 — Loss: 0.1004
+  Step 73/140 — Loss: 0.0913
+  Step 74/140 — Loss: 0.0845
+  Step 75/140 — Loss: 0.0822
+  Step 76/140 — Loss: 0.1152
+  Step 77/140 — Loss: 0.0932
+  Step 78/140 — Loss: 0.1076
+  Step 79/140 — Loss: 0.0709
+  Step 80/140 — Loss: 0.0926
+  Step 81/140 — Loss: 0.1107
+  Step 82/140 — Loss: 0.1042
+  Step 83/140 — Loss: 0.2821
+  Step 84/140 — Loss: 0.0970
+  Step 85/140 — Loss: 0.1138
+  Step 86/140 — Loss: 0.1180
+  Step 87/140 — Loss: 0.1156
+  Step 88/140 — Loss: 0.0982
+  Step 89/140 — Loss: 0.0855
+  Step 90/140 — Loss: 0.1823
+  Step 91/140 — Loss: 0.1306
+  Step 92/140 — Loss: 0.0995
+  Step 93/140 — Loss: 0.1020
+  Step 94/140 — Loss: 0.0982
+  Step 95/140 — Loss: 0.1048
+  Step 96/140 — Loss: 0.0840
+  Step 97/140 — Loss: 0.0960
+  Step 98/140 — Loss: 0.1250
+  Step 99/140 — Loss: 0.0873
+  Step 100/140 — Loss: 0.1200
+
+[Step 6] Saving LoRA adapter...
+CLIENT 5 DONE
+FEDQUANT SERVER — Aggregation Server
+
+[Step 1] Checking client adapters...
+client2: found
+client3: found
+client4: found
+client5: found
+
+[Step 2] Loading all adapters into memory...
+client2: loaded 256 weight tensors
+client3: loaded 256 weight tensors
+client4: loaded 256 weight tensors
+client5: loaded 256 weight tensors
+
+[Step 3] Mixed-Precision Aggregation...
+Target rank: r=8
+Layers successfully averaged: 256 out of 256
+
+[Step 4] Saving aggregated adapter...
+Saved to ./results/aggregated/
+
+[Step 5] Round Summary...
+  Clients aggregated: 4
+  Common layers averaged: 256
+  Client weights used:
+    client2: 0.2 (20%)
+    client3: 0.2 (20%)
+    client4: 0.3 (30%)
+    client5: 0.3 (30%)
+
+==================================================
+SERVER ROUND 1 COMPLETE
+Aggregated adapter saved to ./results/aggregated/
+This adapter can now be sent back to all clients
+==================================================
+CLIENT 2 — Simulated 6GB Phone (Mistral-7B)
+==================================================
+
+[Step 1] Loading data...
+Loaded 30000 examples
+
+[Step 2] Loading Mistral-7B in BF16...
+Loading checkpoint shards:   0%|          | 0/3 [00:00<?, ?it/s]Loading checkpoint shards:  67%|██████▋   | 2/3 [00:00<00:00, 17.58it/s]Loading checkpoint shards: 100%|██████████| 3/3 [00:00<00:00, 18.19it/s]
+Model loaded
+  GPU RAM used: 13.50 GB
+
+[Step 3] Attaching LoRA adapter...
+Trainable parameters: 6,815,744 out of 7,254,839,296
+  Loaded adapter from round: 8
+
+[Step 4] Preparing training data...
+30000 examples formatted
+
+[Step 5] Training (1 FL round = 100 steps)...
+  Step 1/140 — Loss: 0.2252
+  Step 2/140 — Loss: 0.2169
+  Step 3/140 — Loss: 0.3754
+  Step 4/140 — Loss: 0.9267
+  Step 5/140 — Loss: 0.1548
+  Step 6/140 — Loss: 1.2158
+  Step 7/140 — Loss: 0.2770
+  Step 8/140 — Loss: 0.5732
+  Step 9/140 — Loss: 0.3384
+  Step 10/140 — Loss: 0.7363
+  Step 11/140 — Loss: 0.2502
+  Step 12/140 — Loss: 0.8661
+  Step 13/140 — Loss: 0.4350
+  Step 14/140 — Loss: 0.4503
+  Step 15/140 — Loss: 0.4835
+  Step 16/140 — Loss: 0.4858
+  Step 17/140 — Loss: 0.6950
+  Step 18/140 — Loss: 0.2248
+  Step 19/140 — Loss: 0.1863
+  Step 20/140 — Loss: 0.4262
+  Step 21/140 — Loss: 0.2441
+  Step 22/140 — Loss: 0.2795
+  Step 23/140 — Loss: 0.4179
+  Step 24/140 — Loss: 0.5916
+  Step 25/140 — Loss: 0.3764
+  Step 26/140 — Loss: 0.2651
+  Step 27/140 — Loss: 1.1800
+  Step 28/140 — Loss: 1.2195
+  Step 29/140 — Loss: 0.3566
+  Step 30/140 — Loss: 0.7267
+  Step 31/140 — Loss: 0.8005
+  Step 32/140 — Loss: 0.3236
+  Step 33/140 — Loss: 0.3917
+  Step 34/140 — Loss: 0.6978
+  Step 35/140 — Loss: 0.5425
+  Step 36/140 — Loss: 1.1643
+  Step 37/140 — Loss: 0.6368
+  Step 38/140 — Loss: 0.2428
+  Step 39/140 — Loss: 1.0936
+  Step 40/140 — Loss: 0.3475
+  Step 41/140 — Loss: 0.5185
+  Step 42/140 — Loss: 0.2825
+  Step 43/140 — Loss: 0.7262
+  Step 44/140 — Loss: 0.3349
+  Step 45/140 — Loss: 0.7017
+  Step 46/140 — Loss: 0.3308
+  Step 47/140 — Loss: 2.0730
+  Step 48/140 — Loss: 1.7971
+  Step 49/140 — Loss: 0.2551
+  Step 50/140 — Loss: 0.2346
+  Step 51/140 — Loss: 1.3182
+  Step 52/140 — Loss: 1.6698
+  Step 53/140 — Loss: 0.6113
+  Step 54/140 — Loss: 0.7245
+  Step 55/140 — Loss: 0.2931
+  Step 56/140 — Loss: 0.4989
+  Step 57/140 — Loss: 0.9080
+  Step 58/140 — Loss: 0.3106
+  Step 59/140 — Loss: 0.6032
+  Step 60/140 — Loss: 0.1954
+  Step 61/140 — Loss: 0.7897
+  Step 62/140 — Loss: 0.9402
+  Step 63/140 — Loss: 0.5989
+  Step 64/140 — Loss: 0.8987
+  Step 65/140 — Loss: 0.7884
+  Step 66/140 — Loss: 0.8440
+  Step 67/140 — Loss: 0.8822
+  Step 68/140 — Loss: 0.2113
+  Step 69/140 — Loss: 1.2523
+  Step 70/140 — Loss: 0.6785
+  Step 71/140 — Loss: 0.4695
+  Step 72/140 — Loss: 0.1744
+  Step 73/140 — Loss: 1.5998
+  Step 74/140 — Loss: 0.2580
+  Step 75/140 — Loss: 0.2845
+  Step 76/140 — Loss: 0.6657
+  Step 77/140 — Loss: 0.7116
+  Step 78/140 — Loss: 0.3422
+  Step 79/140 — Loss: 1.2222
+  Step 80/140 — Loss: 0.5371
+  Step 81/140 — Loss: 2.1924
+  Step 82/140 — Loss: 0.8125
+  Step 83/140 — Loss: 2.2235
+  Step 84/140 — Loss: 0.5505
+  Step 85/140 — Loss: 0.3647
+  Step 86/140 — Loss: 0.4817
+  Step 87/140 — Loss: 0.6421
+  Step 88/140 — Loss: 0.8853
+  Step 89/140 — Loss: 0.3798
+  Step 90/140 — Loss: 0.3478
+  Step 91/140 — Loss: 0.5190
+  Step 92/140 — Loss: 0.5117
+  Step 93/140 — Loss: 0.7590
+  Step 94/140 — Loss: 1.7593
+  Step 95/140 — Loss: 1.3494
+  Step 96/140 — Loss: 1.5245
+  Step 97/140 — Loss: 0.2783
+  Step 98/140 — Loss: 2.1223
+  Step 99/140 — Loss: 1.0018
+  Step 100/140 — Loss: 0.5939
+
+[Step 6] Saving LoRA adapter...
+Saved to ./results/adapters/client2
+
+==================================================
+CLIENT 2 DONE — Adapter ready to send to server
+==================================================
+==================================================
+CLIENT 3 — Simulated 6GB Phone (Mistral-7B)
+==================================================
+
+[Step 1] Loading data...
+Loaded 13000 examples
+
+[Step 2] Loading Mistral-7B in BF16...
+Loading checkpoint shards:   0%|          | 0/3 [00:00<?, ?it/s]Loading checkpoint shards: 100%|██████████| 3/3 [00:00<00:00, 21.10it/s]Loading checkpoint shards: 100%|██████████| 3/3 [00:00<00:00, 21.07it/s]
+Model loaded — GPU RAM: 13.50 GB
+
+[Step 3] Attaching LoRA adapter...
+Trainable parameters: 6,815,744 out of 7,254,839,296
+  Loaded adapter from round: 8
+
+[Step 4] Preparing training data...
+13000 examples formatted
+
+[Step 5] Training...
+  Step 1/140 — Loss: 0.1582
+  Step 2/140 — Loss: 0.2593
+  Step 3/140 — Loss: 0.1197
+  Step 4/140 — Loss: 0.2576
+  Step 5/140 — Loss: 0.2092
+  Step 6/140 — Loss: 0.2232
+  Step 7/140 — Loss: 0.1873
+  Step 8/140 — Loss: 0.1920
+  Step 9/140 — Loss: 0.1367
+  Step 10/140 — Loss: 0.1683
+  Step 11/140 — Loss: 0.1361
+  Step 12/140 — Loss: 0.1840
+  Step 13/140 — Loss: 0.1886
+  Step 14/140 — Loss: 0.2062
+  Step 15/140 — Loss: 0.1769
+  Step 16/140 — Loss: 0.1502
+  Step 17/140 — Loss: 0.1790
+  Step 18/140 — Loss: 0.3019
+  Step 19/140 — Loss: 0.1684
+  Step 20/140 — Loss: 0.2125
+  Step 21/140 — Loss: 0.1507
+  Step 22/140 — Loss: 0.1926
+  Step 23/140 — Loss: 0.2508
+  Step 24/140 — Loss: 0.1647
+  Step 25/140 — Loss: 0.2501
+  Step 26/140 — Loss: 0.4083
+  Step 27/140 — Loss: 0.1662
+  Step 28/140 — Loss: 0.1691
+  Step 29/140 — Loss: 0.2633
+  Step 30/140 — Loss: 0.1181
+  Step 31/140 — Loss: 0.2584
+  Step 32/140 — Loss: 0.3258
+  Step 33/140 — Loss: 0.2006
+  Step 34/140 — Loss: 0.1563
+  Step 35/140 — Loss: 0.1782
+  Step 36/140 — Loss: 0.1949
+  Step 37/140 — Loss: 0.1936
+  Step 38/140 — Loss: 0.1032
+  Step 39/140 — Loss: 0.2110
+  Step 40/140 — Loss: 0.1802
+  Step 41/140 — Loss: 0.5378
+  Step 42/140 — Loss: 0.1593
+  Step 43/140 — Loss: 0.1853
+  Step 44/140 — Loss: 0.1597
+  Step 45/140 — Loss: 0.1454
+  Step 46/140 — Loss: 0.3308
+  Step 47/140 — Loss: 0.2029
+  Step 48/140 — Loss: 0.1299
+  Step 49/140 — Loss: 0.1424
+  Step 50/140 — Loss: 0.1930
+  Step 51/140 — Loss: 0.1751
+  Step 52/140 — Loss: 0.1863
+  Step 53/140 — Loss: 0.1739
+  Step 54/140 — Loss: 0.2195
+  Step 55/140 — Loss: 0.1988
+  Step 56/140 — Loss: 0.1801
+  Step 57/140 — Loss: 0.1795
+  Step 58/140 — Loss: 0.2530
+  Step 59/140 — Loss: 0.1879
+  Step 60/140 — Loss: 0.2919
+  Step 61/140 — Loss: 0.2644
+  Step 62/140 — Loss: 0.1503
+  Step 63/140 — Loss: 0.1814
+  Step 64/140 — Loss: 0.1775
+  Step 65/140 — Loss: 0.1312
+  Step 66/140 — Loss: 0.1585
+  Step 67/140 — Loss: 0.1680
+  Step 68/140 — Loss: 0.1974
+  Step 69/140 — Loss: 0.1692
+  Step 70/140 — Loss: 0.1716
+  Step 71/140 — Loss: 0.2833
+  Step 72/140 — Loss: 0.1380
+  Step 73/140 — Loss: 0.4049
+  Step 74/140 — Loss: 0.3387
+  Step 75/140 — Loss: 0.2548
+  Step 76/140 — Loss: 0.2033
+  Step 77/140 — Loss: 0.2074
+  Step 78/140 — Loss: 0.4273
+  Step 79/140 — Loss: 0.2121
+  Step 80/140 — Loss: 0.3907
+  Step 81/140 — Loss: 0.3336
+  Step 82/140 — Loss: 0.1604
+  Step 83/140 — Loss: 0.2666
+  Step 84/140 — Loss: 0.2666
+  Step 85/140 — Loss: 0.1716
+  Step 86/140 — Loss: 0.2120
+  Step 87/140 — Loss: 0.1704
+  Step 88/140 — Loss: 0.2946
+  Step 89/140 — Loss: 0.1699
+  Step 90/140 — Loss: 0.1911
+  Step 91/140 — Loss: 0.2403
+  Step 92/140 — Loss: 0.1406
+  Step 93/140 — Loss: 0.3874
+  Step 94/140 — Loss: 0.5236
+  Step 95/140 — Loss: 0.2498
+  Step 96/140 — Loss: 0.2417
+  Step 97/140 — Loss: 0.2576
+  Step 98/140 — Loss: 0.1897
+  Step 99/140 — Loss: 0.2993
+  Step 100/140 — Loss: 0.2344
+
+[Step 6] Saving LoRA adapter...
+CLIENT 3 DONE
+CLIENT 4 — Simulated 8GB Phone (Mistral-7B)
+
+[Step 1] Loading data...
+Loaded 8000 examples
+
+[Step 2] Loading Mistral-7B in BF16...
+Loading checkpoint shards:   0%|          | 0/3 [00:00<?, ?it/s]Loading checkpoint shards:  67%|██████▋   | 2/3 [00:00<00:00, 19.50it/s]Loading checkpoint shards: 100%|██████████| 3/3 [00:00<00:00, 20.52it/s]
+Model loaded — GPU RAM: 13.50 GB
+
+[Step 3] Attaching LoRA adapter r=16...
+Trainable parameters: 13,631,488 out of 7,261,655,040
+  Loaded + padded adapter to r=16
+
+[Step 4] Preparing training data...
+8000 examples formatted
+
+[Step 5] Training...
+  Step 1/140 — Loss: 0.1714
+  Step 2/140 — Loss: 0.1965
+  Step 3/140 — Loss: 0.1011
+  Step 4/140 — Loss: 0.2331
+  Step 5/140 — Loss: 0.0937
+  Step 6/140 — Loss: 0.2082
+  Step 7/140 — Loss: 0.1595
+  Step 8/140 — Loss: 0.1998
+  Step 9/140 — Loss: 0.1439
+  Step 10/140 — Loss: 0.1792
+  Step 11/140 — Loss: 0.1146
+  Step 12/140 — Loss: 0.2233
+  Step 13/140 — Loss: 0.3361
+  Step 14/140 — Loss: 0.1199
+  Step 15/140 — Loss: 0.2367
+  Step 16/140 — Loss: 0.1325
+  Step 17/140 — Loss: 0.1232
+  Step 18/140 — Loss: 0.1300
+  Step 19/140 — Loss: 0.4324
+  Step 20/140 — Loss: 0.1088
+  Step 21/140 — Loss: 0.2376
+  Step 22/140 — Loss: 0.3983
+  Step 23/140 — Loss: 0.1701
+  Step 24/140 — Loss: 0.1582
+  Step 25/140 — Loss: 0.1930
+  Step 26/140 — Loss: 0.1410
+  Step 27/140 — Loss: 0.1386
+  Step 28/140 — Loss: 0.2495
+  Step 29/140 — Loss: 0.2525
+  Step 30/140 — Loss: 0.2402
+  Step 31/140 — Loss: 0.3105
+  Step 32/140 — Loss: 0.2504
+  Step 33/140 — Loss: 0.2696
+  Step 34/140 — Loss: 0.1519
+  Step 35/140 — Loss: 0.3290
+  Step 36/140 — Loss: 0.3081
+  Step 37/140 — Loss: 0.1158
+  Step 38/140 — Loss: 0.2127
+  Step 39/140 — Loss: 0.3139
+  Step 40/140 — Loss: 0.2949
+  Step 41/140 — Loss: 0.1194
+  Step 42/140 — Loss: 0.2267
+  Step 43/140 — Loss: 0.2206
+  Step 44/140 — Loss: 0.1110
+  Step 45/140 — Loss: 0.2111
+  Step 46/140 — Loss: 0.1880
+  Step 47/140 — Loss: 0.1902
+  Step 48/140 — Loss: 0.1214
+  Step 49/140 — Loss: 0.1138
+  Step 50/140 — Loss: 0.2280
+  Step 51/140 — Loss: 0.3430
+  Step 52/140 — Loss: 0.1506
+  Step 53/140 — Loss: 0.2454
+  Step 54/140 — Loss: 0.1949
+  Step 55/140 — Loss: 0.2132
+  Step 56/140 — Loss: 0.1694
+  Step 57/140 — Loss: 0.2217
+  Step 58/140 — Loss: 0.1756
+  Step 59/140 — Loss: 0.1066
+  Step 60/140 — Loss: 0.2816
+  Step 61/140 — Loss: 0.2149
+  Step 62/140 — Loss: 0.1497
+  Step 63/140 — Loss: 0.2901
+  Step 64/140 — Loss: 0.3134
+  Step 65/140 — Loss: 0.2475
+  Step 66/140 — Loss: 0.2500
+  Step 67/140 — Loss: 0.4232
+  Step 68/140 — Loss: 0.2704
+  Step 69/140 — Loss: 0.2187
+  Step 70/140 — Loss: 0.2709
+  Step 71/140 — Loss: 0.2746
+  Step 72/140 — Loss: 0.2557
+  Step 73/140 — Loss: 0.2255
+  Step 74/140 — Loss: 0.3058
+  Step 75/140 — Loss: 0.2917
+  Step 76/140 — Loss: 0.2558
+  Step 77/140 — Loss: 0.3230
+  Step 78/140 — Loss: 0.1489
+  Step 79/140 — Loss: 0.2926
+  Step 80/140 — Loss: 0.3017
+  Step 81/140 — Loss: 0.3488
+  Step 82/140 — Loss: 0.3310
+  Step 83/140 — Loss: 0.4353
+  Step 84/140 — Loss: 0.2471
+  Step 85/140 — Loss: 0.3236
+  Step 86/140 — Loss: 0.3365
+  Step 87/140 — Loss: 0.2446
+  Step 88/140 — Loss: 0.2751
+  Step 89/140 — Loss: 0.2242
+  Step 90/140 — Loss: 0.2711
+  Step 91/140 — Loss: 0.2826
+  Step 92/140 — Loss: 0.2876
+  Step 93/140 — Loss: 0.1895
+  Step 94/140 — Loss: 0.3498
+  Step 95/140 — Loss: 0.3050
+  Step 96/140 — Loss: 0.3301
+  Step 97/140 — Loss: 0.2694
+  Step 98/140 — Loss: 0.6037
+  Step 99/140 — Loss: 0.2575
+  Step 100/140 — Loss: 0.3214
+
+[Step 6] Saving LoRA adapter...
+CLIENT 4 DONE
+CLIENT 5 — Simulated 12GB Phone (Mistral-7B)
+
+[Step 1] Loading data...
+Loaded 13999 examples
+
+[Step 2] Loading Mistral-7B in BF16...
+Loading checkpoint shards:   0%|          | 0/3 [00:00<?, ?it/s]Loading checkpoint shards:  67%|██████▋   | 2/3 [00:00<00:00, 17.44it/s]Loading checkpoint shards: 100%|██████████| 3/3 [00:00<00:00, 18.37it/s]
+Model loaded — GPU RAM: 13.50 GB
+
+[Step 3] Attaching LoRA adapter r=32...
+Trainable parameters: 27,262,976 out of 7,275,286,528
+  Loaded + padded adapter to r=32
+
+[Step 4] Preparing training data...
+13999 examples formatted
+
+[Step 5] Training...
+  Step 1/140 — Loss: 0.0734
+  Step 2/140 — Loss: 0.0837
+  Step 3/140 — Loss: 0.0742
+  Step 4/140 — Loss: 0.1073
+  Step 5/140 — Loss: 0.0751
+  Step 6/140 — Loss: 0.0492
+  Step 7/140 — Loss: 0.1182
+  Step 8/140 — Loss: 0.1290
+  Step 9/140 — Loss: 0.1505
+  Step 10/140 — Loss: 0.1408
+  Step 11/140 — Loss: 0.1049
+  Step 12/140 — Loss: 0.1008
+  Step 13/140 — Loss: 0.0738
+  Step 14/140 — Loss: 0.1105
+  Step 15/140 — Loss: 0.0776
+  Step 16/140 — Loss: 0.0943
+  Step 17/140 — Loss: 0.1388
+  Step 18/140 — Loss: 0.1014
+  Step 19/140 — Loss: 0.1011
+  Step 20/140 — Loss: 0.0870
+  Step 21/140 — Loss: 0.0964
+  Step 22/140 — Loss: 0.0881
+  Step 23/140 — Loss: 0.1140
+  Step 24/140 — Loss: 0.1062
+  Step 25/140 — Loss: 0.0917
+  Step 26/140 — Loss: 0.0917
+  Step 27/140 — Loss: 0.1076
+  Step 28/140 — Loss: 0.0968
+  Step 29/140 — Loss: 0.0945
+  Step 30/140 — Loss: 0.1061
+  Step 31/140 — Loss: 0.1241
+  Step 32/140 — Loss: 0.0789
+  Step 33/140 — Loss: 0.1190
+  Step 34/140 — Loss: 0.1045
+  Step 35/140 — Loss: 0.1141
+  Step 36/140 — Loss: 0.1117
+  Step 37/140 — Loss: 0.1109
+  Step 38/140 — Loss: 0.1440
+  Step 39/140 — Loss: 0.1628
+  Step 40/140 — Loss: 0.0779
+  Step 41/140 — Loss: 0.1041
+  Step 42/140 — Loss: 0.0919
+  Step 43/140 — Loss: 0.1085
+  Step 44/140 — Loss: 0.0863
+  Step 45/140 — Loss: 0.1481
+  Step 46/140 — Loss: 0.0907
+  Step 47/140 — Loss: 0.0772
+  Step 48/140 — Loss: 0.1789
+  Step 49/140 — Loss: 0.1009
+  Step 50/140 — Loss: 0.1398
+  Step 51/140 — Loss: 0.1747
+  Step 52/140 — Loss: 0.1463
+  Step 53/140 — Loss: 0.1263
+  Step 54/140 — Loss: 0.0907
+  Step 55/140 — Loss: 0.1091
+  Step 56/140 — Loss: 0.1039
+  Step 57/140 — Loss: 0.1529
+  Step 58/140 — Loss: 0.1753
+  Step 59/140 — Loss: 0.1283
+  Step 60/140 — Loss: 0.1255
+  Step 61/140 — Loss: 0.1207
+  Step 62/140 — Loss: 0.0964
+  Step 63/140 — Loss: 0.0925
+  Step 64/140 — Loss: 0.1063
+  Step 65/140 — Loss: 0.1244
+  Step 66/140 — Loss: 0.1073
+  Step 67/140 — Loss: 0.1007
+  Step 68/140 — Loss: 0.0866
+  Step 69/140 — Loss: 0.1100
+  Step 70/140 — Loss: 0.0903
+  Step 71/140 — Loss: 0.0856
+  Step 72/140 — Loss: 0.1077
+  Step 73/140 — Loss: 0.0930
+  Step 74/140 — Loss: 0.0857
+  Step 75/140 — Loss: 0.0821
+  Step 76/140 — Loss: 0.1170
+  Step 77/140 — Loss: 0.1220
+  Step 78/140 — Loss: 0.1133
+  Step 79/140 — Loss: 0.0691
+  Step 80/140 — Loss: 0.0947
+  Step 81/140 — Loss: 0.1320
+  Step 82/140 — Loss: 0.0845
+  Step 83/140 — Loss: 0.1129
+  Step 84/140 — Loss: 0.0996
+  Step 85/140 — Loss: 0.1070
+  Step 86/140 — Loss: 0.1145
+  Step 87/140 — Loss: 0.1197
+  Step 88/140 — Loss: 0.0841
+  Step 89/140 — Loss: 0.0762
+  Step 90/140 — Loss: 0.1356
+  Step 91/140 — Loss: 0.1087
+  Step 92/140 — Loss: 0.1072
+  Step 93/140 — Loss: 0.1095
+  Step 94/140 — Loss: 0.0860
+  Step 95/140 — Loss: 0.1142
+  Step 96/140 — Loss: 0.1033
+  Step 97/140 — Loss: 0.1073
+  Step 98/140 — Loss: 0.1141
+  Step 99/140 — Loss: 0.0771
+  Step 100/140 — Loss: 0.1098
+
+[Step 6] Saving LoRA adapter...
+CLIENT 5 DONE
+FEDQUANT SERVER — Aggregation Server
+
+[Step 1] Checking client adapters...
+client2: found
+client3: found
+client4: found
+client5: found
+
+[Step 2] Loading all adapters into memory...
+client2: loaded 256 weight tensors
+client3: loaded 256 weight tensors
+client4: loaded 256 weight tensors
+client5: loaded 256 weight tensors
+
+[Step 3] Mixed-Precision Aggregation...
+Target rank: r=8
+Layers successfully averaged: 256 out of 256
+
+[Step 4] Saving aggregated adapter...
+Saved to ./results/aggregated/
+
+[Step 5] Round Summary...
+  Clients aggregated: 4
+  Common layers averaged: 256
+  Client weights used:
+    client2: 0.2 (20%)
+    client3: 0.2 (20%)
+    client4: 0.3 (30%)
+    client5: 0.3 (30%)
+
+==================================================
+SERVER ROUND 1 COMPLETE
+Aggregated adapter saved to ./results/aggregated/
+This adapter can now be sent back to all clients
+==================================================
+CLIENT 2 — Simulated 6GB Phone (Mistral-7B)
+==================================================
+
+[Step 1] Loading data...
+Loaded 30000 examples
+
+[Step 2] Loading Mistral-7B in BF16...
+Loading checkpoint shards:   0%|          | 0/3 [00:00<?, ?it/s]Loading checkpoint shards:  67%|██████▋   | 2/3 [00:00<00:00, 17.06it/s]Loading checkpoint shards: 100%|██████████| 3/3 [00:00<00:00, 18.28it/s]
+Model loaded
+  GPU RAM used: 13.50 GB
+
+[Step 3] Attaching LoRA adapter...
+Trainable parameters: 6,815,744 out of 7,254,839,296
+  Loaded adapter from round: 9
+
+[Step 4] Preparing training data...
+30000 examples formatted
+
+[Step 5] Training (1 FL round = 100 steps)...
+  Step 1/140 — Loss: 0.2127
+  Step 2/140 — Loss: 0.1634
+  Step 3/140 — Loss: 0.3033
+  Step 4/140 — Loss: 0.7716
+  Step 5/140 — Loss: 0.1612
+  Step 6/140 — Loss: 1.0353
+  Step 7/140 — Loss: 0.1819
+  Step 8/140 — Loss: 0.5443
+  Step 9/140 — Loss: 0.3271
+  Step 10/140 — Loss: 0.7235
+  Step 11/140 — Loss: 0.2580
+  Step 12/140 — Loss: 0.6912
+  Step 13/140 — Loss: 0.2748
+  Step 14/140 — Loss: 0.4408
+  Step 15/140 — Loss: 0.4620
+  Step 16/140 — Loss: 0.3328
+  Step 17/140 — Loss: 0.5869
+  Step 18/140 — Loss: 0.2151
+  Step 19/140 — Loss: 0.1978
+  Step 20/140 — Loss: 0.4145
+  Step 21/140 — Loss: 0.2428
+  Step 22/140 — Loss: 0.3120
+  Step 23/140 — Loss: 0.3595
+  Step 24/140 — Loss: 0.5167
+  Step 25/140 — Loss: 0.4312
+  Step 26/140 — Loss: 0.2574
+  Step 27/140 — Loss: 1.0970
+  Step 28/140 — Loss: 1.2039
+  Step 29/140 — Loss: 0.3799
+  Step 30/140 — Loss: 0.6548
+  Step 31/140 — Loss: 0.7049
+  Step 32/140 — Loss: 0.2221
+  Step 33/140 — Loss: 0.4154
+  Step 34/140 — Loss: 0.6193
+  Step 35/140 — Loss: 0.3960
+  Step 36/140 — Loss: 1.0768
+  Step 37/140 — Loss: 0.5985
+  Step 38/140 — Loss: 0.1972
+  Step 39/140 — Loss: 1.0371
+  Step 40/140 — Loss: 0.3263
+  Step 41/140 — Loss: 0.4859
+  Step 42/140 — Loss: 0.2564
+  Step 43/140 — Loss: 0.5562
+  Step 44/140 — Loss: 0.3196
+  Step 45/140 — Loss: 0.6381
+  Step 46/140 — Loss: 0.2204
+  Step 47/140 — Loss: 1.9192
+  Step 48/140 — Loss: 1.6547
+  Step 49/140 — Loss: 0.2019
+  Step 50/140 — Loss: 0.1997
+  Step 51/140 — Loss: 1.2435
+  Step 52/140 — Loss: 1.5090
+  Step 53/140 — Loss: 0.5451
+  Step 54/140 — Loss: 0.6456
+  Step 55/140 — Loss: 0.3065
+  Step 56/140 — Loss: 0.4215
+  Step 57/140 — Loss: 0.8087
+  Step 58/140 — Loss: 0.2598
+  Step 59/140 — Loss: 0.5298
+  Step 60/140 — Loss: 0.1824
+  Step 61/140 — Loss: 0.7543
+  Step 62/140 — Loss: 0.8677
+  Step 63/140 — Loss: 0.5006
+  Step 64/140 — Loss: 0.8814
+  Step 65/140 — Loss: 0.7268
+  Step 66/140 — Loss: 0.8459
+  Step 67/140 — Loss: 0.8310
+  Step 68/140 — Loss: 0.2441
+  Step 69/140 — Loss: 1.1531
+  Step 70/140 — Loss: 0.6644
+  Step 71/140 — Loss: 0.4102
+  Step 72/140 — Loss: 0.1503
+  Step 73/140 — Loss: 1.5126
+  Step 74/140 — Loss: 0.2475
+  Step 75/140 — Loss: 0.2879
+  Step 76/140 — Loss: 0.6053
+  Step 77/140 — Loss: 0.5943
+  Step 78/140 — Loss: 0.2963
+  Step 79/140 — Loss: 1.1161
+  Step 80/140 — Loss: 0.4270
+  Step 81/140 — Loss: 2.1631
+  Step 82/140 — Loss: 0.7123
+  Step 83/140 — Loss: 1.9903
+  Step 84/140 — Loss: 0.4527
+  Step 85/140 — Loss: 0.3352
+  Step 86/140 — Loss: 0.4525
+  Step 87/140 — Loss: 0.5818
+  Step 88/140 — Loss: 0.8424
+  Step 89/140 — Loss: 0.2537
+  Step 90/140 — Loss: 0.2978
+  Step 91/140 — Loss: 0.4774
+  Step 92/140 — Loss: 0.3690
+  Step 93/140 — Loss: 0.7076
+  Step 94/140 — Loss: 1.6712
+  Step 95/140 — Loss: 1.2799
+  Step 96/140 — Loss: 1.5538
+  Step 97/140 — Loss: 0.3327
+  Step 98/140 — Loss: 2.0167
+  Step 99/140 — Loss: 0.9628
+  Step 100/140 — Loss: 0.5175
+
+[Step 6] Saving LoRA adapter...
+Saved to ./results/adapters/client2
+
+==================================================
+CLIENT 2 DONE — Adapter ready to send to server
+==================================================
+==================================================
+CLIENT 3 — Simulated 6GB Phone (Mistral-7B)
+==================================================
+
+[Step 1] Loading data...
+Loaded 13000 examples
+
+[Step 2] Loading Mistral-7B in BF16...
+Loading checkpoint shards:   0%|          | 0/3 [00:00<?, ?it/s]Loading checkpoint shards:  67%|██████▋   | 2/3 [00:00<00:00, 19.25it/s]Loading checkpoint shards: 100%|██████████| 3/3 [00:00<00:00, 18.45it/s]
+Model loaded — GPU RAM: 13.50 GB
+
+[Step 3] Attaching LoRA adapter...
+Trainable parameters: 6,815,744 out of 7,254,839,296
+  Loaded adapter from round: 9
+
+[Step 4] Preparing training data...
+13000 examples formatted
+
+[Step 5] Training...
+  Step 1/140 — Loss: 0.1850
+  Step 2/140 — Loss: 0.2375
+  Step 3/140 — Loss: 0.0987
+  Step 4/140 — Loss: 0.1952
+  Step 5/140 — Loss: 0.1565
+  Step 6/140 — Loss: 0.2091
+  Step 7/140 — Loss: 0.1729
+  Step 8/140 — Loss: 0.1785
+  Step 9/140 — Loss: 0.1400
+  Step 10/140 — Loss: 0.1571
+  Step 11/140 — Loss: 0.0993
+  Step 12/140 — Loss: 0.1756
+  Step 13/140 — Loss: 0.1863
+  Step 14/140 — Loss: 0.1863
+  Step 15/140 — Loss: 0.1651
+  Step 16/140 — Loss: 0.1512
+  Step 17/140 — Loss: 0.1847
+  Step 18/140 — Loss: 0.3277
+  Step 19/140 — Loss: 0.1627
+  Step 20/140 — Loss: 0.2590
+  Step 21/140 — Loss: 0.1434
+  Step 22/140 — Loss: 0.2036
+  Step 23/140 — Loss: 0.2174
+  Step 24/140 — Loss: 0.1714
+  Step 25/140 — Loss: 0.2220
+  Step 26/140 — Loss: 0.3726
+  Step 27/140 — Loss: 0.1389
+  Step 28/140 — Loss: 0.1836
+  Step 29/140 — Loss: 0.2436
+  Step 30/140 — Loss: 0.1198
+  Step 31/140 — Loss: 0.2601
+  Step 32/140 — Loss: 0.3215
+  Step 33/140 — Loss: 0.1823
+  Step 34/140 — Loss: 0.1498
+  Step 35/140 — Loss: 0.1481
+  Step 36/140 — Loss: 0.1685
+  Step 37/140 — Loss: 0.1923
+  Step 38/140 — Loss: 0.0933
+  Step 39/140 — Loss: 0.1866
+  Step 40/140 — Loss: 0.1539
+  Step 41/140 — Loss: 0.5254
+  Step 42/140 — Loss: 0.1561
+  Step 43/140 — Loss: 0.1598
+  Step 44/140 — Loss: 0.1671
+  Step 45/140 — Loss: 0.1367
+  Step 46/140 — Loss: 0.3256
+  Step 47/140 — Loss: 0.1630
+  Step 48/140 — Loss: 0.1516
+  Step 49/140 — Loss: 0.1490
+  Step 50/140 — Loss: 0.1804
+  Step 51/140 — Loss: 0.1724
+  Step 52/140 — Loss: 0.1826
+  Step 53/140 — Loss: 0.1658
+  Step 54/140 — Loss: 0.2139
+  Step 55/140 — Loss: 0.1955
+  Step 56/140 — Loss: 0.1651
+  Step 57/140 — Loss: 0.1753
+  Step 58/140 — Loss: 0.2508
+  Step 59/140 — Loss: 0.1773
+  Step 60/140 — Loss: 0.2887
+  Step 61/140 — Loss: 0.2624
+  Step 62/140 — Loss: 0.1466
+  Step 63/140 — Loss: 0.1407
+  Step 64/140 — Loss: 0.1768
+  Step 65/140 — Loss: 0.1287
+  Step 66/140 — Loss: 0.1346
+  Step 67/140 — Loss: 0.1281
+  Step 68/140 — Loss: 0.1912
+  Step 69/140 — Loss: 0.1722
+  Step 70/140 — Loss: 0.1658
+  Step 71/140 — Loss: 0.2776
+  Step 72/140 — Loss: 0.1231
+  Step 73/140 — Loss: 0.3852
+  Step 74/140 — Loss: 0.3460
+  Step 75/140 — Loss: 0.1943
+  Step 76/140 — Loss: 0.2075
+  Step 77/140 — Loss: 0.1834
+  Step 78/140 — Loss: 0.4025
+  Step 79/140 — Loss: 0.1952
+  Step 80/140 — Loss: 0.3695
+  Step 81/140 — Loss: 0.3281
+  Step 82/140 — Loss: 0.1644
+  Step 83/140 — Loss: 0.2523
+  Step 84/140 — Loss: 0.2392
+  Step 85/140 — Loss: 0.2072
+  Step 86/140 — Loss: 0.2177
+  Step 87/140 — Loss: 0.1729
+  Step 88/140 — Loss: 0.3066
+  Step 89/140 — Loss: 0.1593
+  Step 90/140 — Loss: 0.2062
+  Step 91/140 — Loss: 0.2363
+  Step 92/140 — Loss: 0.1428
+  Step 93/140 — Loss: 0.3999
+  Step 94/140 — Loss: 0.5351
+  Step 95/140 — Loss: 0.2501
+  Step 96/140 — Loss: 0.2018
+  Step 97/140 — Loss: 0.2768
+  Step 98/140 — Loss: 0.2094
+  Step 99/140 — Loss: 0.2613
+  Step 100/140 — Loss: 0.2622
+
+[Step 6] Saving LoRA adapter...
+CLIENT 3 DONE
+CLIENT 4 — Simulated 8GB Phone (Mistral-7B)
+
+[Step 1] Loading data...
+Loaded 8000 examples
+
+[Step 2] Loading Mistral-7B in BF16...
+Loading checkpoint shards:   0%|          | 0/3 [00:00<?, ?it/s]Loading checkpoint shards: 100%|██████████| 3/3 [00:00<00:00, 21.09it/s]Loading checkpoint shards: 100%|██████████| 3/3 [00:00<00:00, 21.06it/s]
+Model loaded — GPU RAM: 13.50 GB
+
+[Step 3] Attaching LoRA adapter r=16...
+Trainable parameters: 13,631,488 out of 7,261,655,040
+  Loaded + padded adapter to r=16
+
+[Step 4] Preparing training data...
+8000 examples formatted
+
+[Step 5] Training...
+  Step 1/140 — Loss: 0.1126
+  Step 2/140 — Loss: 0.1927
+  Step 3/140 — Loss: 0.0861
+  Step 4/140 — Loss: 0.2104
+  Step 5/140 — Loss: 0.1221
+  Step 6/140 — Loss: 0.1030
+  Step 7/140 — Loss: 0.1012
+  Step 8/140 — Loss: 0.1662
+  Step 9/140 — Loss: 0.1621
+  Step 10/140 — Loss: 0.1997
+  Step 11/140 — Loss: 0.1408
+  Step 12/140 — Loss: 0.2298
+  Step 13/140 — Loss: 0.3925
+  Step 14/140 — Loss: 0.1112
+  Step 15/140 — Loss: 0.3408
+  Step 16/140 — Loss: 0.1089
+  Step 17/140 — Loss: 0.0991
+  Step 18/140 — Loss: 0.1150
+  Step 19/140 — Loss: 0.4471
+  Step 20/140 — Loss: 0.1265
+  Step 21/140 — Loss: 0.2961
+  Step 22/140 — Loss: 0.3044
+  Step 23/140 — Loss: 0.1910
+  Step 24/140 — Loss: 0.1549
+  Step 25/140 — Loss: 0.1256
+  Step 26/140 — Loss: 0.1549
+  Step 27/140 — Loss: 0.1534
+  Step 28/140 — Loss: 0.1935
+  Step 29/140 — Loss: 0.2077
+  Step 30/140 — Loss: 0.1795
+  Step 31/140 — Loss: 0.3088
+  Step 32/140 — Loss: 0.2636
+  Step 33/140 — Loss: 0.2825
+  Step 34/140 — Loss: 0.1208
+  Step 35/140 — Loss: 0.3698
+  Step 36/140 — Loss: 0.3015
+  Step 37/140 — Loss: 0.1212
+  Step 38/140 — Loss: 0.1504
+  Step 39/140 — Loss: 0.3231
+  Step 40/140 — Loss: 0.3166
+  Step 41/140 — Loss: 0.1525
+  Step 42/140 — Loss: 0.2403
+  Step 43/140 — Loss: 0.1919
+  Step 44/140 — Loss: 0.1274
+  Step 45/140 — Loss: 0.1385
+  Step 46/140 — Loss: 0.1792
+  Step 47/140 — Loss: 0.1424
+  Step 48/140 — Loss: 0.1195
+  Step 49/140 — Loss: 0.1044
+  Step 50/140 — Loss: 0.1961
+  Step 51/140 — Loss: 0.2937
+  Step 52/140 — Loss: 0.1544
+  Step 53/140 — Loss: 0.3689
+  Step 54/140 — Loss: 0.1245
+  Step 55/140 — Loss: 0.3160
+  Step 56/140 — Loss: 0.2428
+  Step 57/140 — Loss: 0.1971
+  Step 58/140 — Loss: 0.2381
+  Step 59/140 — Loss: 0.1301
+  Step 60/140 — Loss: 0.3004
+  Step 61/140 — Loss: 0.2475
+  Step 62/140 — Loss: 0.1491
+  Step 63/140 — Loss: 0.2962
+  Step 64/140 — Loss: 0.2559
+  Step 65/140 — Loss: 0.2397
+  Step 66/140 — Loss: 0.1514
+  Step 67/140 — Loss: 0.4650
+  Step 68/140 — Loss: 0.2811
+  Step 69/140 — Loss: 0.2050
+  Step 70/140 — Loss: 0.2733
+  Step 71/140 — Loss: 0.1759
+  Step 72/140 — Loss: 0.2690
+  Step 73/140 — Loss: 0.3021
+  Step 74/140 — Loss: 0.2885
+  Step 75/140 — Loss: 0.2462
+  Step 76/140 — Loss: 0.2108
+  Step 77/140 — Loss: 0.1954
+  Step 78/140 — Loss: 0.1612
+  Step 79/140 — Loss: 0.1361
+  Step 80/140 — Loss: 0.2857
+  Step 81/140 — Loss: 0.3281
+  Step 82/140 — Loss: 0.3015
+  Step 83/140 — Loss: 0.2934
+  Step 84/140 — Loss: 0.2031
+  Step 85/140 — Loss: 0.7103
+  Step 86/140 — Loss: 0.1879
+  Step 87/140 — Loss: 0.1528
+  Step 88/140 — Loss: 0.2724
+  Step 89/140 — Loss: 0.1595
+  Step 90/140 — Loss: 0.3421
+  Step 91/140 — Loss: 0.3791
+  Step 92/140 — Loss: 0.2409
+  Step 93/140 — Loss: 0.1064
+  Step 94/140 — Loss: 0.4223
+  Step 95/140 — Loss: 0.2927
+  Step 96/140 — Loss: 0.6485
+  Step 97/140 — Loss: 0.2446
+  Step 98/140 — Loss: 0.7276
+  Step 99/140 — Loss: 0.1709
+  Step 100/140 — Loss: 0.3306
+
+[Step 6] Saving LoRA adapter...
+CLIENT 4 DONE
+CLIENT 5 — Simulated 12GB Phone (Mistral-7B)
+
+[Step 1] Loading data...
+Loaded 13999 examples
+
+[Step 2] Loading Mistral-7B in BF16...
+Loading checkpoint shards:   0%|          | 0/3 [00:00<?, ?it/s]Loading checkpoint shards:  67%|██████▋   | 2/3 [00:00<00:00, 18.45it/s]Loading checkpoint shards: 100%|██████████| 3/3 [00:00<00:00, 18.94it/s]
+Model loaded — GPU RAM: 13.50 GB
+
+[Step 3] Attaching LoRA adapter r=32...
+Trainable parameters: 27,262,976 out of 7,275,286,528
+  Loaded + padded adapter to r=32
+
+[Step 4] Preparing training data...
+13999 examples formatted
+
+[Step 5] Training...
+  Step 1/140 — Loss: 0.0628
+  Step 2/140 — Loss: 0.0731
+  Step 3/140 — Loss: 0.0691
+  Step 4/140 — Loss: 0.0652
+  Step 5/140 — Loss: 0.0509
+  Step 6/140 — Loss: 0.0412
+  Step 7/140 — Loss: 0.1363
+  Step 8/140 — Loss: 0.1956
+  Step 9/140 — Loss: 0.1150
+  Step 10/140 — Loss: 0.2236
+  Step 11/140 — Loss: 0.1001
+  Step 12/140 — Loss: 0.0908
+  Step 13/140 — Loss: 0.0994
+  Step 14/140 — Loss: 0.1150
+  Step 15/140 — Loss: 0.0779
+  Step 16/140 — Loss: 0.1044
+  Step 17/140 — Loss: 0.1365
+  Step 18/140 — Loss: 0.0954
+  Step 19/140 — Loss: 0.0974
+  Step 20/140 — Loss: 0.0912
+  Step 21/140 — Loss: 0.0859
+  Step 22/140 — Loss: 0.0867
+  Step 23/140 — Loss: 0.1084
+  Step 24/140 — Loss: 0.0926
+  Step 25/140 — Loss: 0.0919
+  Step 26/140 — Loss: 0.1039
+  Step 27/140 — Loss: 0.1253
+  Step 28/140 — Loss: 0.0805
+  Step 29/140 — Loss: 0.0840
+  Step 30/140 — Loss: 0.1041
+  Step 31/140 — Loss: 0.0927
+  Step 32/140 — Loss: 0.0786
+  Step 33/140 — Loss: 0.0831
+  Step 34/140 — Loss: 0.0766
+  Step 35/140 — Loss: 0.1181
+  Step 36/140 — Loss: 0.0968
+  Step 37/140 — Loss: 0.1077
+  Step 38/140 — Loss: 0.1116
+  Step 39/140 — Loss: 0.1344
+  Step 40/140 — Loss: 0.0600
+  Step 41/140 — Loss: 0.1049
+  Step 42/140 — Loss: 0.0836
+  Step 43/140 — Loss: 0.0979
+  Step 44/140 — Loss: 0.0903
+  Step 45/140 — Loss: 0.1103
+  Step 46/140 — Loss: 0.1004
+  Step 47/140 — Loss: 0.0858
+  Step 48/140 — Loss: 0.1217
+  Step 49/140 — Loss: 0.1094
+  Step 50/140 — Loss: 0.1090
+  Step 51/140 — Loss: 0.1063
+  Step 52/140 — Loss: 0.0992
+  Step 53/140 — Loss: 0.0825
+  Step 54/140 — Loss: 0.0803
+  Step 55/140 — Loss: 0.0809
+  Step 56/140 — Loss: 0.0945
+  Step 57/140 — Loss: 0.0940
+  Step 58/140 — Loss: 0.1294
+  Step 59/140 — Loss: 0.0912
+  Step 60/140 — Loss: 0.0976
+  Step 61/140 — Loss: 0.1205
+  Step 62/140 — Loss: 0.1023
+  Step 63/140 — Loss: 0.0815
+  Step 64/140 — Loss: 0.0687
+  Step 65/140 — Loss: 0.1034
+  Step 66/140 — Loss: 0.0946
+  Step 67/140 — Loss: 0.0929
+  Step 68/140 — Loss: 0.0848
+  Step 69/140 — Loss: 0.0885
+  Step 70/140 — Loss: 0.0865
+  Step 71/140 — Loss: 0.0801
+  Step 72/140 — Loss: 0.0857
+  Step 73/140 — Loss: 0.0970
+  Step 74/140 — Loss: 0.0877
+  Step 75/140 — Loss: 0.0997
+  Step 76/140 — Loss: 0.1258
+  Step 77/140 — Loss: 0.0814
+  Step 78/140 — Loss: 0.1073
+  Step 79/140 — Loss: 0.0714
+  Step 80/140 — Loss: 0.0914
+  Step 81/140 — Loss: 0.1145
+  Step 82/140 — Loss: 0.0788
+  Step 83/140 — Loss: 0.1154
+  Step 84/140 — Loss: 0.0914
+  Step 85/140 — Loss: 0.1048
+  Step 86/140 — Loss: 0.1108
+  Step 87/140 — Loss: 0.1398
+  Step 88/140 — Loss: 0.1574
+  Step 89/140 — Loss: 0.0904
+  Step 90/140 — Loss: 0.1184
+  Step 91/140 — Loss: 0.1249
+  Step 92/140 — Loss: 0.1037
+  Step 93/140 — Loss: 0.1196
+  Step 94/140 — Loss: 0.1027
+  Step 95/140 — Loss: 0.1384
+  Step 96/140 — Loss: 0.1403
+  Step 97/140 — Loss: 0.1296
+  Step 98/140 — Loss: 0.1158
+  Step 99/140 — Loss: 0.0945
+  Step 100/140 — Loss: 0.1083
+
+[Step 6] Saving LoRA adapter...
+CLIENT 5 DONE
+FEDQUANT SERVER — Aggregation Server
+
+[Step 1] Checking client adapters...
+client2: found
+client3: found
+client4: found
+client5: found
+
+[Step 2] Loading all adapters into memory...
+client2: loaded 256 weight tensors
+client3: loaded 256 weight tensors
+client4: loaded 256 weight tensors
+client5: loaded 256 weight tensors
+
+[Step 3] Mixed-Precision Aggregation...
+Target rank: r=8
+Layers successfully averaged: 256 out of 256
+
+[Step 4] Saving aggregated adapter...
+Saved to ./results/aggregated/
+
+[Step 5] Round Summary...
+  Clients aggregated: 4
+  Common layers averaged: 256
+  Client weights used:
+    client2: 0.2 (20%)
+    client3: 0.2 (20%)
+    client4: 0.3 (30%)
+    client5: 0.3 (30%)
+
+==================================================
+SERVER ROUND 1 COMPLETE
+Aggregated adapter saved to ./results/aggregated/
+This adapter can now be sent back to all clients
+==================================================
+CLIENT 2 — Simulated 6GB Phone (Mistral-7B)
+==================================================
+
+[Step 1] Loading data...
+Loaded 30000 examples
+
+[Step 2] Loading Mistral-7B in BF16...
+Loading checkpoint shards:   0%|          | 0/3 [00:00<?, ?it/s]Loading checkpoint shards: 100%|██████████| 3/3 [00:00<00:00, 21.09it/s]Loading checkpoint shards: 100%|██████████| 3/3 [00:00<00:00, 21.06it/s]
+Model loaded
+  GPU RAM used: 13.50 GB
+
+[Step 3] Attaching LoRA adapter...
+Trainable parameters: 6,815,744 out of 7,254,839,296
+  Loaded adapter from round: 10
+
+[Step 4] Preparing training data...
+30000 examples formatted
+
+[Step 5] Training (1 FL round = 100 steps)...
+  Step 1/140 — Loss: 0.1573
+  Step 2/140 — Loss: 0.1619
+  Step 3/140 — Loss: 0.2625
+  Step 4/140 — Loss: 0.6000
+  Step 5/140 — Loss: 0.1340
+  Step 6/140 — Loss: 0.8509
+  Step 7/140 — Loss: 0.1896
+  Step 8/140 — Loss: 0.4217
+  Step 9/140 — Loss: 0.3082
+  Step 10/140 — Loss: 0.5227
+  Step 11/140 — Loss: 0.2232
+  Step 12/140 — Loss: 0.6221
+  Step 13/140 — Loss: 0.1924
+  Step 14/140 — Loss: 0.3816
+  Step 15/140 — Loss: 0.4101
+  Step 16/140 — Loss: 0.3397
+  Step 17/140 — Loss: 0.5128
+  Step 18/140 — Loss: 0.1843
+  Step 19/140 — Loss: 0.1855
+  Step 20/140 — Loss: 0.3366
+  Step 21/140 — Loss: 0.2215
+  Step 22/140 — Loss: 0.2560
+  Step 23/140 — Loss: 0.3723
+  Step 24/140 — Loss: 0.5140
+  Step 25/140 — Loss: 0.4146
+  Step 26/140 — Loss: 0.2656
+  Step 27/140 — Loss: 1.1716
+  Step 28/140 — Loss: 1.1766
+  Step 29/140 — Loss: 0.3742
+  Step 30/140 — Loss: 0.6522
+  Step 31/140 — Loss: 0.7046
+  Step 32/140 — Loss: 0.1901
+  Step 33/140 — Loss: 0.3624
+  Step 34/140 — Loss: 0.6222
+  Step 35/140 — Loss: 0.4158
+  Step 36/140 — Loss: 1.0434
+  Step 37/140 — Loss: 0.5366
+  Step 38/140 — Loss: 0.2100
+  Step 39/140 — Loss: 0.8925
+  Step 40/140 — Loss: 0.3073
+  Step 41/140 — Loss: 0.4065
+  Step 42/140 — Loss: 0.1929
+  Step 43/140 — Loss: 0.4913
+  Step 44/140 — Loss: 0.3028
+  Step 45/140 — Loss: 0.5186
+  Step 46/140 — Loss: 0.1990
+  Step 47/140 — Loss: 1.8896
+  Step 48/140 — Loss: 1.6087
+  Step 49/140 — Loss: 0.1987
+  Step 50/140 — Loss: 0.2040
+  Step 51/140 — Loss: 1.0862
+  Step 52/140 — Loss: 1.3843
+  Step 53/140 — Loss: 0.5266
+  Step 54/140 — Loss: 0.5944
+  Step 55/140 — Loss: 0.2972
+  Step 56/140 — Loss: 0.4477
+  Step 57/140 — Loss: 0.7668
+  Step 58/140 — Loss: 0.2584
+  Step 59/140 — Loss: 0.5274
+  Step 60/140 — Loss: 0.1901
+  Step 61/140 — Loss: 0.5836
+  Step 62/140 — Loss: 0.8339
+  Step 63/140 — Loss: 0.4749
+  Step 64/140 — Loss: 0.8449
+  Step 65/140 — Loss: 0.6041
+  Step 66/140 — Loss: 0.7746
+  Step 67/140 — Loss: 0.8456
+  Step 68/140 — Loss: 0.2146
+  Step 69/140 — Loss: 1.1189
+  Step 70/140 — Loss: 0.6444
+  Step 71/140 — Loss: 0.4214
+  Step 72/140 — Loss: 0.1484
+  Step 73/140 — Loss: 1.4667
+  Step 74/140 — Loss: 0.2671
+  Step 75/140 — Loss: 0.3227
+  Step 76/140 — Loss: 0.5668
+  Step 77/140 — Loss: 0.6090
+  Step 78/140 — Loss: 0.2863
+  Step 79/140 — Loss: 1.1657
+  Step 80/140 — Loss: 0.4925
+  Step 81/140 — Loss: 2.1098
+  Step 82/140 — Loss: 0.6697
+  Step 83/140 — Loss: 1.9013
+  Step 84/140 — Loss: 0.4087
+  Step 85/140 — Loss: 0.3035
+  Step 86/140 — Loss: 0.4275
+  Step 87/140 — Loss: 0.6096
+  Step 88/140 — Loss: 0.8011
+  Step 89/140 — Loss: 0.2911
+  Step 90/140 — Loss: 0.3060
+  Step 91/140 — Loss: 0.4354
+  Step 92/140 — Loss: 0.3640
+  Step 93/140 — Loss: 0.6728
+  Step 94/140 — Loss: 1.7096
+  Step 95/140 — Loss: 1.2114
+  Step 96/140 — Loss: 1.4414
+  Step 97/140 — Loss: 0.2557
+  Step 98/140 — Loss: 2.0103
+  Step 99/140 — Loss: 0.9188
+  Step 100/140 — Loss: 0.5340
+
+[Step 6] Saving LoRA adapter...
+Saved to ./results/adapters/client2
+
+==================================================
+CLIENT 2 DONE — Adapter ready to send to server
+==================================================
+==================================================
+CLIENT 3 — Simulated 6GB Phone (Mistral-7B)
+==================================================
+
+[Step 1] Loading data...
+Loaded 13000 examples
+
+[Step 2] Loading Mistral-7B in BF16...
+Loading checkpoint shards:   0%|          | 0/3 [00:00<?, ?it/s]Loading checkpoint shards: 100%|██████████| 3/3 [00:00<00:00, 21.17it/s]Loading checkpoint shards: 100%|██████████| 3/3 [00:00<00:00, 21.13it/s]
+Model loaded — GPU RAM: 13.50 GB
+
+[Step 3] Attaching LoRA adapter...
+Trainable parameters: 6,815,744 out of 7,254,839,296
+  Loaded adapter from round: 10
+
+[Step 4] Preparing training data...
+13000 examples formatted
+
+[Step 5] Training...
+  Step 1/140 — Loss: 0.1479
+  Step 2/140 — Loss: 0.1697
+  Step 3/140 — Loss: 0.1021
+  Step 4/140 — Loss: 0.1449
+  Step 5/140 — Loss: 0.1456
+  Step 6/140 — Loss: 0.2281
+  Step 7/140 — Loss: 0.1513
+  Step 8/140 — Loss: 0.2138
+  Step 9/140 — Loss: 0.1210
+  Step 10/140 — Loss: 0.1661
+  Step 11/140 — Loss: 0.0743
+  Step 12/140 — Loss: 0.1740
+  Step 13/140 — Loss: 0.1670
+  Step 14/140 — Loss: 0.1856
+  Step 15/140 — Loss: 0.1887
+  Step 16/140 — Loss: 0.1433
+  Step 17/140 — Loss: 0.1638
+  Step 18/140 — Loss: 0.2758
+  Step 19/140 — Loss: 0.1427
+  Step 20/140 — Loss: 0.2408
+  Step 21/140 — Loss: 0.1216
+  Step 22/140 — Loss: 0.1789
+  Step 23/140 — Loss: 0.2084
+  Step 24/140 — Loss: 0.1327
+  Step 25/140 — Loss: 0.2159
+  Step 26/140 — Loss: 0.3878
+  Step 27/140 — Loss: 0.1418
+  Step 28/140 — Loss: 0.1609
+  Step 29/140 — Loss: 0.2538
+  Step 30/140 — Loss: 0.1346
+  Step 31/140 — Loss: 0.2671
+  Step 32/140 — Loss: 0.2895
+  Step 33/140 — Loss: 0.1797
+  Step 34/140 — Loss: 0.1410
+  Step 35/140 — Loss: 0.1301
+  Step 36/140 — Loss: 0.1661
+  Step 37/140 — Loss: 0.1977
+  Step 38/140 — Loss: 0.0957
+  Step 39/140 — Loss: 0.1694
+  Step 40/140 — Loss: 0.1507
+  Step 41/140 — Loss: 0.4425
+  Step 42/140 — Loss: 0.1540
+  Step 43/140 — Loss: 0.1637
+  Step 44/140 — Loss: 0.1529
+  Step 45/140 — Loss: 0.1526
+  Step 46/140 — Loss: 0.2931
+  Step 47/140 — Loss: 0.1670
+  Step 48/140 — Loss: 0.1162
+  Step 49/140 — Loss: 0.1462
+  Step 50/140 — Loss: 0.1817
+  Step 51/140 — Loss: 0.1759
+  Step 52/140 — Loss: 0.1831
+  Step 53/140 — Loss: 0.1689
+  Step 54/140 — Loss: 0.1740
+  Step 55/140 — Loss: 0.1882
+  Step 56/140 — Loss: 0.1410
+  Step 57/140 — Loss: 0.1792
+  Step 58/140 — Loss: 0.2455
+  Step 59/140 — Loss: 0.1725
+  Step 60/140 — Loss: 0.3127
+  Step 61/140 — Loss: 0.2363
+  Step 62/140 — Loss: 0.1634
+  Step 63/140 — Loss: 0.1269
+  Step 64/140 — Loss: 0.1803
+  Step 65/140 — Loss: 0.1253
+  Step 66/140 — Loss: 0.1818
+  Step 67/140 — Loss: 0.1375
+  Step 68/140 — Loss: 0.1900
+  Step 69/140 — Loss: 0.1674
+  Step 70/140 — Loss: 0.1595
+  Step 71/140 — Loss: 0.2406
+  Step 72/140 — Loss: 0.1313
+  Step 73/140 — Loss: 0.3586
+  Step 74/140 — Loss: 0.3114
+  Step 75/140 — Loss: 0.2335
+  Step 76/140 — Loss: 0.1916
+  Step 77/140 — Loss: 0.1851
+  Step 78/140 — Loss: 0.3506
+  Step 79/140 — Loss: 0.1672
+  Step 80/140 — Loss: 0.3202
+  Step 81/140 — Loss: 0.2938
+  Step 82/140 — Loss: 0.1653
+  Step 83/140 — Loss: 0.2349
+  Step 84/140 — Loss: 0.2153
+  Step 85/140 — Loss: 0.1513
+  Step 86/140 — Loss: 0.2345
+  Step 87/140 — Loss: 0.1682
+  Step 88/140 — Loss: 0.2800
+  Step 89/140 — Loss: 0.1602
+  Step 90/140 — Loss: 0.1956
+  Step 91/140 — Loss: 0.2103
+  Step 92/140 — Loss: 0.1525
+  Step 93/140 — Loss: 0.3988
+  Step 94/140 — Loss: 0.4756
+  Step 95/140 — Loss: 0.2549
+  Step 96/140 — Loss: 0.2058
+  Step 97/140 — Loss: 0.2460
+  Step 98/140 — Loss: 0.1964
+  Step 99/140 — Loss: 0.2539
+  Step 100/140 — Loss: 0.2589
+
+[Step 6] Saving LoRA adapter...
+CLIENT 3 DONE
+CLIENT 4 — Simulated 8GB Phone (Mistral-7B)
+
+[Step 1] Loading data...
+Loaded 8000 examples
+
+[Step 2] Loading Mistral-7B in BF16...
+Loading checkpoint shards:   0%|          | 0/3 [00:00<?, ?it/s]Loading checkpoint shards:  67%|██████▋   | 2/3 [00:00<00:00, 19.92it/s]Loading checkpoint shards: 100%|██████████| 3/3 [00:00<00:00, 20.91it/s]
+Model loaded — GPU RAM: 13.50 GB
+
+[Step 3] Attaching LoRA adapter r=16...
+Trainable parameters: 13,631,488 out of 7,261,655,040
+  Loaded + padded adapter to r=16
+
+[Step 4] Preparing training data...
+8000 examples formatted
+
+[Step 5] Training...
+  Step 1/140 — Loss: 0.0944
+  Step 2/140 — Loss: 0.2231
+  Step 3/140 — Loss: 0.0706
+  Step 4/140 — Loss: 0.1711
+  Step 5/140 — Loss: 0.1169
+  Step 6/140 — Loss: 0.1973
+  Step 7/140 — Loss: 0.0758
+  Step 8/140 — Loss: 0.1592
+  Step 9/140 — Loss: 0.0969
+  Step 10/140 — Loss: 0.1741
+  Step 11/140 — Loss: 0.0840
+  Step 12/140 — Loss: 0.2431
+  Step 13/140 — Loss: 0.3276
+  Step 14/140 — Loss: 0.1286
+  Step 15/140 — Loss: 0.2750
+  Step 16/140 — Loss: 0.1137
+  Step 17/140 — Loss: 0.0788
+  Step 18/140 — Loss: 0.0695
+  Step 19/140 — Loss: 0.3417
+  Step 20/140 — Loss: 0.0837
+  Step 21/140 — Loss: 0.1872
+  Step 22/140 — Loss: 0.3183
+  Step 23/140 — Loss: 0.1791
+  Step 24/140 — Loss: 0.1573
+  Step 25/140 — Loss: 0.1173
+  Step 26/140 — Loss: 0.1857
+  Step 27/140 — Loss: 0.1506
+  Step 28/140 — Loss: 0.1430
+  Step 29/140 — Loss: 0.3599
+  Step 30/140 — Loss: 0.1579
+  Step 31/140 — Loss: 0.2557
+  Step 32/140 — Loss: 0.2854
+  Step 33/140 — Loss: 0.2651
+  Step 34/140 — Loss: 0.0980
+  Step 35/140 — Loss: 0.3128
+  Step 36/140 — Loss: 0.2346
+  Step 37/140 — Loss: 0.0788
+  Step 38/140 — Loss: 0.1868
+  Step 39/140 — Loss: 0.3400
+  Step 40/140 — Loss: 0.2829
+  Step 41/140 — Loss: 0.1317
+  Step 42/140 — Loss: 0.2487
+  Step 43/140 — Loss: 0.2461
+  Step 44/140 — Loss: 0.1271
+  Step 45/140 — Loss: 0.1280
+  Step 46/140 — Loss: 0.1658
+  Step 47/140 — Loss: 0.1585
+  Step 48/140 — Loss: 0.1407
+  Step 49/140 — Loss: 0.1185
+  Step 50/140 — Loss: 0.1846
+  Step 51/140 — Loss: 0.2373
+  Step 52/140 — Loss: 0.2611
+  Step 53/140 — Loss: 0.2533
+  Step 54/140 — Loss: 0.1098
+  Step 55/140 — Loss: 0.1656
+  Step 56/140 — Loss: 0.1602
+  Step 57/140 — Loss: 0.1535
+  Step 58/140 — Loss: 0.1275
+  Step 59/140 — Loss: 0.0976
+  Step 60/140 — Loss: 0.3179
+  Step 61/140 — Loss: 0.2649
+  Step 62/140 — Loss: 0.1324
+  Step 63/140 — Loss: 0.2940
+  Step 64/140 — Loss: 0.1935
+  Step 65/140 — Loss: 0.2292
+  Step 66/140 — Loss: 0.1637
+  Step 67/140 — Loss: 0.3632
+  Step 68/140 — Loss: 0.2565
+  Step 69/140 — Loss: 0.1382
+  Step 70/140 — Loss: 0.3053
+  Step 71/140 — Loss: 0.1275
+  Step 72/140 — Loss: 0.1420
+  Step 73/140 — Loss: 0.2568
+  Step 74/140 — Loss: 0.2240
+  Step 75/140 — Loss: 0.2570
+  Step 76/140 — Loss: 0.2325
+  Step 77/140 — Loss: 0.1633
+  Step 78/140 — Loss: 0.1274
+  Step 79/140 — Loss: 0.1222
+  Step 80/140 — Loss: 0.2814
+  Step 81/140 — Loss: 0.3275
+  Step 82/140 — Loss: 0.3091
+  Step 83/140 — Loss: 0.2531
+  Step 84/140 — Loss: 0.1436
+  Step 85/140 — Loss: 0.3200
+  Step 86/140 — Loss: 0.1737
+  Step 87/140 — Loss: 0.2702
+  Step 88/140 — Loss: 0.2756
+  Step 89/140 — Loss: 0.1876
+  Step 90/140 — Loss: 0.2654
+  Step 91/140 — Loss: 0.2909
+  Step 92/140 — Loss: 0.1881
+  Step 93/140 — Loss: 0.1006
+  Step 94/140 — Loss: 0.4030
+  Step 95/140 — Loss: 0.2983
+  Step 96/140 — Loss: 0.2460
+  Step 97/140 — Loss: 0.2447
+  Step 98/140 — Loss: 0.6245
+  Step 99/140 — Loss: 0.1637
+  Step 100/140 — Loss: 0.3415
+
+[Step 6] Saving LoRA adapter...
+CLIENT 4 DONE
+CLIENT 5 — Simulated 12GB Phone (Mistral-7B)
+
+[Step 1] Loading data...
+Loaded 13999 examples
+
+[Step 2] Loading Mistral-7B in BF16...
+Loading checkpoint shards:   0%|          | 0/3 [00:00<?, ?it/s]Loading checkpoint shards: 100%|██████████| 3/3 [00:00<00:00, 21.11it/s]Loading checkpoint shards: 100%|██████████| 3/3 [00:00<00:00, 21.09it/s]
+Model loaded — GPU RAM: 13.50 GB
+
+[Step 3] Attaching LoRA adapter r=32...
+Trainable parameters: 27,262,976 out of 7,275,286,528
+  Loaded + padded adapter to r=32
+
+[Step 4] Preparing training data...
+13999 examples formatted
+
+[Step 5] Training...
+  Step 1/140 — Loss: 0.0584
+  Step 2/140 — Loss: 0.0850
+  Step 3/140 — Loss: 0.0612
+  Step 4/140 — Loss: 0.0435
+  Step 5/140 — Loss: 0.0468
+  Step 6/140 — Loss: 0.0293
+  Step 7/140 — Loss: 0.0624
+  Step 8/140 — Loss: 0.1786
+  Step 9/140 — Loss: 0.0625
+  Step 10/140 — Loss: 0.1044
+  Step 11/140 — Loss: 0.1325
+  Step 12/140 — Loss: 0.1063
+  Step 13/140 — Loss: 0.1099
+  Step 14/140 — Loss: 0.1004
+  Step 15/140 — Loss: 0.0718
+  Step 16/140 — Loss: 0.1089
+  Step 17/140 — Loss: 0.1193
+  Step 18/140 — Loss: 0.1377
+  Step 19/140 — Loss: 0.0908
+  Step 20/140 — Loss: 0.0754
+  Step 21/140 — Loss: 0.0864
+  Step 22/140 — Loss: 0.0865
+  Step 23/140 — Loss: 0.1226
+  Step 24/140 — Loss: 0.0867
+  Step 25/140 — Loss: 0.1036
+  Step 26/140 — Loss: 0.1189
+  Step 27/140 — Loss: 0.1069
+  Step 28/140 — Loss: 0.0803
+  Step 29/140 — Loss: 0.0848
+  Step 30/140 — Loss: 0.0901
+  Step 31/140 — Loss: 0.0834
+  Step 32/140 — Loss: 0.0765
+  Step 33/140 — Loss: 0.0856
+  Step 34/140 — Loss: 0.0872
+  Step 35/140 — Loss: 0.1047
+  Step 36/140 — Loss: 0.1392
+  Step 37/140 — Loss: 0.0962
+  Step 38/140 — Loss: 0.0950
+  Step 39/140 — Loss: 0.1200
+  Step 40/140 — Loss: 0.0751
+  Step 41/140 — Loss: 0.1087
+  Step 42/140 — Loss: 0.0826
+  Step 43/140 — Loss: 0.1010
+  Step 44/140 — Loss: 0.0870
+  Step 45/140 — Loss: 0.1211
+  Step 46/140 — Loss: 0.0876
+  Step 47/140 — Loss: 0.0953
+  Step 48/140 — Loss: 0.1178
+  Step 49/140 — Loss: 0.0936
+  Step 50/140 — Loss: 0.1255
+  Step 51/140 — Loss: 0.1114
+  Step 52/140 — Loss: 0.1019
+  Step 53/140 — Loss: 0.1002
+  Step 54/140 — Loss: 0.1135
+  Step 55/140 — Loss: 0.0666
+  Step 56/140 — Loss: 0.0947
+  Step 57/140 — Loss: 0.1292
+  Step 58/140 — Loss: 0.1145
+  Step 59/140 — Loss: 0.0816
+  Step 60/140 — Loss: 0.0978
+  Step 61/140 — Loss: 0.1119
+  Step 62/140 — Loss: 0.1007
+  Step 63/140 — Loss: 0.0751
+  Step 64/140 — Loss: 0.0769
+  Step 65/140 — Loss: 0.0977
+  Step 66/140 — Loss: 0.0947
+  Step 67/140 — Loss: 0.0905
+  Step 68/140 — Loss: 0.0872
+  Step 69/140 — Loss: 0.1046
+  Step 70/140 — Loss: 0.0812
+  Step 71/140 — Loss: 0.0853
+  Step 72/140 — Loss: 0.0833
+  Step 73/140 — Loss: 0.0896
+  Step 74/140 — Loss: 0.0850
+  Step 75/140 — Loss: 0.0989
+  Step 76/140 — Loss: 0.1045
+  Step 77/140 — Loss: 0.0908
+  Step 78/140 — Loss: 0.1142
+  Step 79/140 — Loss: 0.0729
+  Step 80/140 — Loss: 0.0879
+  Step 81/140 — Loss: 0.1028
+  Step 82/140 — Loss: 0.0783
+  Step 83/140 — Loss: 0.0867
+  Step 84/140 — Loss: 0.0925
+  Step 85/140 — Loss: 0.1048
+  Step 86/140 — Loss: 0.1378
+  Step 87/140 — Loss: 0.1112
+  Step 88/140 — Loss: 0.0926
+  Step 89/140 — Loss: 0.0775
+  Step 90/140 — Loss: 0.1054
+  Step 91/140 — Loss: 0.1111
+  Step 92/140 — Loss: 0.0990
+  Step 93/140 — Loss: 0.1124
+  Step 94/140 — Loss: 0.1102
+  Step 95/140 — Loss: 0.1035
+  Step 96/140 — Loss: 0.0840
+  Step 97/140 — Loss: 0.1115
+  Step 98/140 — Loss: 0.1070
+  Step 99/140 — Loss: 0.0894
+  Step 100/140 — Loss: 0.1178
+
+[Step 6] Saving LoRA adapter...
+CLIENT 5 DONE
+FEDQUANT SERVER — Aggregation Server
+
+[Step 1] Checking client adapters...
+client2: found
+client3: found
+client4: found
+client5: found
+
+[Step 2] Loading all adapters into memory...
+client2: loaded 256 weight tensors
+client3: loaded 256 weight tensors
+client4: loaded 256 weight tensors
+client5: loaded 256 weight tensors
+
+[Step 3] Mixed-Precision Aggregation...
+Target rank: r=8
+Layers successfully averaged: 256 out of 256
+
+[Step 4] Saving aggregated adapter...
+Saved to ./results/aggregated/
+
+[Step 5] Round Summary...
+  Clients aggregated: 4
+  Common layers averaged: 256
+  Client weights used:
+    client2: 0.2 (20%)
+    client3: 0.2 (20%)
+    client4: 0.3 (30%)
+    client5: 0.3 (30%)
+
+==================================================
+SERVER ROUND 1 COMPLETE
+Aggregated adapter saved to ./results/aggregated/
+This adapter can now be sent back to all clients
+==================================================
+CLIENT 2 — Simulated 6GB Phone (Mistral-7B)
+==================================================
+
+[Step 1] Loading data...
+Loaded 30000 examples
+
+[Step 2] Loading Mistral-7B in BF16...
+Loading checkpoint shards:   0%|          | 0/3 [00:00<?, ?it/s]Loading checkpoint shards:  67%|██████▋   | 2/3 [00:00<00:00, 15.95it/s]Loading checkpoint shards: 100%|██████████| 3/3 [00:00<00:00, 15.53it/s]
+Model loaded
+  GPU RAM used: 13.50 GB
+
+[Step 3] Attaching LoRA adapter...
+Trainable parameters: 6,815,744 out of 7,254,839,296
+  Loaded adapter from round: 11
+
+[Step 4] Preparing training data...
+30000 examples formatted
+
+[Step 5] Training (1 FL round = 100 steps)...
+  Step 1/140 — Loss: 0.1195
+  Step 2/140 — Loss: 0.1226
+  Step 3/140 — Loss: 0.2398
+  Step 4/140 — Loss: 0.4967
+  Step 5/140 — Loss: 0.1165
+  Step 6/140 — Loss: 0.7092
+  Step 7/140 — Loss: 0.1571
+  Step 8/140 — Loss: 0.3873
+  Step 9/140 — Loss: 0.2263
+  Step 10/140 — Loss: 0.4588
+  Step 11/140 — Loss: 0.2028
+  Step 12/140 — Loss: 0.4587
+  Step 13/140 — Loss: 0.1884
+  Step 14/140 — Loss: 0.3824
+  Step 15/140 — Loss: 0.3378
+  Step 16/140 — Loss: 0.1875
+  Step 17/140 — Loss: 0.3252
+  Step 18/140 — Loss: 0.2122
+  Step 19/140 — Loss: 0.1365
+  Step 20/140 — Loss: 0.3227
+  Step 21/140 — Loss: 0.2299
+  Step 22/140 — Loss: 0.2196
+  Step 23/140 — Loss: 0.3494
+  Step 24/140 — Loss: 0.3812
+  Step 25/140 — Loss: 0.3922
+  Step 26/140 — Loss: 0.2328
+  Step 27/140 — Loss: 0.9867
+  Step 28/140 — Loss: 1.0397
+  Step 29/140 — Loss: 0.3264
+  Step 30/140 — Loss: 0.6158
+  Step 31/140 — Loss: 0.6337
+  Step 32/140 — Loss: 0.1957
+  Step 33/140 — Loss: 0.2942
+  Step 34/140 — Loss: 0.5267
+  Step 35/140 — Loss: 0.3637
+  Step 36/140 — Loss: 0.9573
+  Step 37/140 — Loss: 0.5264
+  Step 38/140 — Loss: 0.1614
+  Step 39/140 — Loss: 0.8217
+  Step 40/140 — Loss: 0.2756
+  Step 41/140 — Loss: 0.3680
+  Step 42/140 — Loss: 0.1908
+  Step 43/140 — Loss: 0.4368
+  Step 44/140 — Loss: 0.2008
+  Step 45/140 — Loss: 0.4822
+  Step 46/140 — Loss: 0.2004
+  Step 47/140 — Loss: 1.6976
+  Step 48/140 — Loss: 1.4612
+  Step 49/140 — Loss: 0.1827
+  Step 50/140 — Loss: 0.1618
+  Step 51/140 — Loss: 0.9570
+  Step 52/140 — Loss: 1.3243
+  Step 53/140 — Loss: 0.4743
+  Step 54/140 — Loss: 0.5156
+  Step 55/140 — Loss: 0.2772
+  Step 56/140 — Loss: 0.3467
+  Step 57/140 — Loss: 0.6955
+  Step 58/140 — Loss: 0.2422
+  Step 59/140 — Loss: 0.4954
+  Step 60/140 — Loss: 0.1273
+  Step 61/140 — Loss: 0.5365
+  Step 62/140 — Loss: 0.7416
+  Step 63/140 — Loss: 0.4088
+  Step 64/140 — Loss: 0.7724
+  Step 65/140 — Loss: 0.5497
+  Step 66/140 — Loss: 0.7072
+  Step 67/140 — Loss: 0.7677
+  Step 68/140 — Loss: 0.1568
+  Step 69/140 — Loss: 0.9584
+  Step 70/140 — Loss: 0.5745
+  Step 71/140 — Loss: 0.3172
+  Step 72/140 — Loss: 0.1577
+  Step 73/140 — Loss: 1.3959
+  Step 74/140 — Loss: 0.2682
+  Step 75/140 — Loss: 0.2450
+  Step 76/140 — Loss: 0.5142
+  Step 77/140 — Loss: 0.5669
+  Step 78/140 — Loss: 0.2956
+  Step 79/140 — Loss: 1.0587
+  Step 80/140 — Loss: 0.4241
+  Step 81/140 — Loss: 2.0666
+  Step 82/140 — Loss: 0.6717
+  Step 83/140 — Loss: 1.8181
+  Step 84/140 — Loss: 0.3132
+  Step 85/140 — Loss: 0.2734
+  Step 86/140 — Loss: 0.4183
+  Step 87/140 — Loss: 0.5264
+  Step 88/140 — Loss: 0.8772
+  Step 89/140 — Loss: 0.2950
+  Step 90/140 — Loss: 0.2485
+  Step 91/140 — Loss: 0.4237
+  Step 92/140 — Loss: 0.3915
+  Step 93/140 — Loss: 0.6611
+  Step 94/140 — Loss: 1.7127
+  Step 95/140 — Loss: 1.3440
+  Step 96/140 — Loss: 1.3798
+  Step 97/140 — Loss: 0.2680
+  Step 98/140 — Loss: 1.9019
+  Step 99/140 — Loss: 0.9499
+  Step 100/140 — Loss: 0.5178
+
+[Step 6] Saving LoRA adapter...
+Saved to ./results/adapters/client2
+
+==================================================
+CLIENT 2 DONE — Adapter ready to send to server
+==================================================
+==================================================
+CLIENT 3 — Simulated 6GB Phone (Mistral-7B)
+==================================================
+
+[Step 1] Loading data...
+Loaded 13000 examples
+
+[Step 2] Loading Mistral-7B in BF16...
+Loading checkpoint shards:   0%|          | 0/3 [00:00<?, ?it/s]Loading checkpoint shards:  67%|██████▋   | 2/3 [00:00<00:00, 19.94it/s]Loading checkpoint shards: 100%|██████████| 3/3 [00:00<00:00, 18.80it/s]
+Model loaded — GPU RAM: 13.50 GB
+
+[Step 3] Attaching LoRA adapter...
+Trainable parameters: 6,815,744 out of 7,254,839,296
+  Loaded adapter from round: 11
+
+[Step 4] Preparing training data...
+13000 examples formatted
+
+[Step 5] Training...
+  Step 1/140 — Loss: 0.1609
+  Step 2/140 — Loss: 0.1333
+  Step 3/140 — Loss: 0.0953
+  Step 4/140 — Loss: 0.1671
+  Step 5/140 — Loss: 0.1102
+  Step 6/140 — Loss: 0.1707
+  Step 7/140 — Loss: 0.1140
+  Step 8/140 — Loss: 0.1450
+  Step 9/140 — Loss: 0.1001
+  Step 10/140 — Loss: 0.1524
+  Step 11/140 — Loss: 0.1051
+  Step 12/140 — Loss: 0.1541
+  Step 13/140 — Loss: 0.1642
+  Step 14/140 — Loss: 0.1822
+  Step 15/140 — Loss: 0.1724
+  Step 16/140 — Loss: 0.1502
+  Step 17/140 — Loss: 0.1643
+  Step 18/140 — Loss: 0.2861
+  Step 19/140 — Loss: 0.1113
+  Step 20/140 — Loss: 0.2201
+  Step 21/140 — Loss: 0.1213
+  Step 22/140 — Loss: 0.1580
+  Step 23/140 — Loss: 0.2259
+  Step 24/140 — Loss: 0.1383
+  Step 25/140 — Loss: 0.2146
+  Step 26/140 — Loss: 0.3680
+  Step 27/140 — Loss: 0.1476
+  Step 28/140 — Loss: 0.1488
+  Step 29/140 — Loss: 0.2320
+  Step 30/140 — Loss: 0.1161
+  Step 31/140 — Loss: 0.2404
+  Step 32/140 — Loss: 0.2663
+  Step 33/140 — Loss: 0.1810
+  Step 34/140 — Loss: 0.1451
+  Step 35/140 — Loss: 0.1466
+  Step 36/140 — Loss: 0.1704
+  Step 37/140 — Loss: 0.1897
+  Step 38/140 — Loss: 0.0919
+  Step 39/140 — Loss: 0.1539
+  Step 40/140 — Loss: 0.1811
+  Step 41/140 — Loss: 0.4417
+  Step 42/140 — Loss: 0.1509
+  Step 43/140 — Loss: 0.1302
+  Step 44/140 — Loss: 0.1286
+  Step 45/140 — Loss: 0.1448
+  Step 46/140 — Loss: 0.2708
+  Step 47/140 — Loss: 0.1490
+  Step 48/140 — Loss: 0.0950
+  Step 49/140 — Loss: 0.1817
+  Step 50/140 — Loss: 0.1806
+  Step 51/140 — Loss: 0.1579
+  Step 52/140 — Loss: 0.1729
+  Step 53/140 — Loss: 0.1615
+  Step 54/140 — Loss: 0.1886
+  Step 55/140 — Loss: 0.2282
+  Step 56/140 — Loss: 0.1377
+  Step 57/140 — Loss: 0.1762
+  Step 58/140 — Loss: 0.2187
+  Step 59/140 — Loss: 0.1619
+  Step 60/140 — Loss: 0.2737
+  Step 61/140 — Loss: 0.2424
+  Step 62/140 — Loss: 0.1557
+  Step 63/140 — Loss: 0.1338
+  Step 64/140 — Loss: 0.1900
+  Step 65/140 — Loss: 0.1158
+  Step 66/140 — Loss: 0.1409
+  Step 67/140 — Loss: 0.1258
+  Step 68/140 — Loss: 0.1926
+  Step 69/140 — Loss: 0.1645
+  Step 70/140 — Loss: 0.1456
+  Step 71/140 — Loss: 0.2126
+  Step 72/140 — Loss: 0.1172
+  Step 73/140 — Loss: 0.3625
+  Step 74/140 — Loss: 0.3108
+  Step 75/140 — Loss: 0.2159
+  Step 76/140 — Loss: 0.1597
+  Step 77/140 — Loss: 0.2002
+  Step 78/140 — Loss: 0.3546
+  Step 79/140 — Loss: 0.1830
+  Step 80/140 — Loss: 0.3101
+  Step 81/140 — Loss: 0.3169
+  Step 82/140 — Loss: 0.1651
+  Step 83/140 — Loss: 0.2213
+  Step 84/140 — Loss: 0.1990
+  Step 85/140 — Loss: 0.1186
+  Step 86/140 — Loss: 0.2382
+  Step 87/140 — Loss: 0.1346
+  Step 88/140 — Loss: 0.2475
+  Step 89/140 — Loss: 0.1594
+  Step 90/140 — Loss: 0.1959
+  Step 91/140 — Loss: 0.2260
+  Step 92/140 — Loss: 0.1404
+  Step 93/140 — Loss: 0.3462
+  Step 94/140 — Loss: 0.4679
+  Step 95/140 — Loss: 0.2254
+  Step 96/140 — Loss: 0.1795
+  Step 97/140 — Loss: 0.2615
+  Step 98/140 — Loss: 0.1921
+  Step 99/140 — Loss: 0.2642
+  Step 100/140 — Loss: 0.2464
+
+[Step 6] Saving LoRA adapter...
+CLIENT 3 DONE
+CLIENT 4 — Simulated 8GB Phone (Mistral-7B)
+
+[Step 1] Loading data...
+Loaded 8000 examples
+
+[Step 2] Loading Mistral-7B in BF16...
+Loading checkpoint shards:   0%|          | 0/3 [00:00<?, ?it/s]Loading checkpoint shards:  67%|██████▋   | 2/3 [00:00<00:00, 16.67it/s]Loading checkpoint shards: 100%|██████████| 3/3 [00:00<00:00, 18.36it/s]
+Model loaded — GPU RAM: 13.50 GB
+
+[Step 3] Attaching LoRA adapter r=16...
+Trainable parameters: 13,631,488 out of 7,261,655,040
+  Loaded + padded adapter to r=16
+
+[Step 4] Preparing training data...
+8000 examples formatted
+
+[Step 5] Training...
+  Step 1/140 — Loss: 0.1065
+  Step 2/140 — Loss: 0.1499
+  Step 3/140 — Loss: 0.0618
+  Step 4/140 — Loss: 0.1323
+  Step 5/140 — Loss: 0.0796
+  Step 6/140 — Loss: 0.0790
+  Step 7/140 — Loss: 0.1342
+  Step 8/140 — Loss: 0.1833
+  Step 9/140 — Loss: 0.0836
+  Step 10/140 — Loss: 0.1597
+  Step 11/140 — Loss: 0.0800
+  Step 12/140 — Loss: 0.1330
+  Step 13/140 — Loss: 0.3191
+  Step 14/140 — Loss: 0.0688
+  Step 15/140 — Loss: 0.2483
+  Step 16/140 — Loss: 0.1047
+  Step 17/140 — Loss: 0.0867
+  Step 18/140 — Loss: 0.0966
+  Step 19/140 — Loss: 0.2582
+  Step 20/140 — Loss: 0.0824
+  Step 21/140 — Loss: 0.3010
+  Step 22/140 — Loss: 0.3059
+  Step 23/140 — Loss: 0.1565
+  Step 24/140 — Loss: 0.1788
+  Step 25/140 — Loss: 0.1296
+  Step 26/140 — Loss: 0.1204
+  Step 27/140 — Loss: 0.1266
+  Step 28/140 — Loss: 0.2967
+  Step 29/140 — Loss: 0.3302
+  Step 30/140 — Loss: 0.1993
+  Step 31/140 — Loss: 0.2620
+  Step 32/140 — Loss: 0.2476
+  Step 33/140 — Loss: 0.2280
+  Step 34/140 — Loss: 0.1113
+  Step 35/140 — Loss: 0.3242
+  Step 36/140 — Loss: 0.2011
+  Step 37/140 — Loss: 0.0868
+  Step 38/140 — Loss: 0.1503
+  Step 39/140 — Loss: 0.3146
+  Step 40/140 — Loss: 0.3087
+  Step 41/140 — Loss: 0.1157
+  Step 42/140 — Loss: 0.2328
+  Step 43/140 — Loss: 0.1891
+  Step 44/140 — Loss: 0.1126
+  Step 45/140 — Loss: 0.1560
+  Step 46/140 — Loss: 0.2025
+  Step 47/140 — Loss: 0.1295
+  Step 48/140 — Loss: 0.1304
+  Step 49/140 — Loss: 0.1059
+  Step 50/140 — Loss: 0.1854
+  Step 51/140 — Loss: 0.1886
+  Step 52/140 — Loss: 0.1678
+  Step 53/140 — Loss: 0.2710
+  Step 54/140 — Loss: 0.1241
+  Step 55/140 — Loss: 0.1862
+  Step 56/140 — Loss: 0.1437
+  Step 57/140 — Loss: 0.1412
+  Step 58/140 — Loss: 0.2631
+  Step 59/140 — Loss: 0.0898
+  Step 60/140 — Loss: 0.2937
+  Step 61/140 — Loss: 0.1511
+  Step 62/140 — Loss: 0.1196
+  Step 63/140 — Loss: 0.2849
+  Step 64/140 — Loss: 0.1713
+  Step 65/140 — Loss: 0.1383
+  Step 66/140 — Loss: 0.1653
+  Step 67/140 — Loss: 0.4368
+  Step 68/140 — Loss: 0.2678
+  Step 69/140 — Loss: 0.2021
+  Step 70/140 — Loss: 0.2844
+  Step 71/140 — Loss: 0.2687
+  Step 72/140 — Loss: 0.1302
+  Step 73/140 — Loss: 0.1685
+  Step 74/140 — Loss: 0.2461
+  Step 75/140 — Loss: 0.3357
+  Step 76/140 — Loss: 0.2026
+  Step 77/140 — Loss: 0.1317
+  Step 78/140 — Loss: 0.1112
+  Step 79/140 — Loss: 0.1145
+  Step 80/140 — Loss: 0.2892
+  Step 81/140 — Loss: 0.2765
+  Step 82/140 — Loss: 0.2309
+  Step 83/140 — Loss: 0.2041
+  Step 84/140 — Loss: 0.1382
+  Step 85/140 — Loss: 0.1626
+  Step 86/140 — Loss: 0.2129
+  Step 87/140 — Loss: 0.1263
+  Step 88/140 — Loss: 0.2841
+  Step 89/140 — Loss: 0.1643
+  Step 90/140 — Loss: 0.2149
+  Step 91/140 — Loss: 0.2796
+  Step 92/140 — Loss: 0.1739
+  Step 93/140 — Loss: 0.1132
+  Step 94/140 — Loss: 0.3994
+  Step 95/140 — Loss: 0.3072
+  Step 96/140 — Loss: 0.2063
+  Step 97/140 — Loss: 0.1973
+  Step 98/140 — Loss: 0.4512
+  Step 99/140 — Loss: 0.1544
+  Step 100/140 — Loss: 0.3267
+
+[Step 6] Saving LoRA adapter...
+CLIENT 4 DONE
+CLIENT 5 — Simulated 12GB Phone (Mistral-7B)
+
+[Step 1] Loading data...
+Loaded 13999 examples
+
+[Step 2] Loading Mistral-7B in BF16...
+Loading checkpoint shards:   0%|          | 0/3 [00:00<?, ?it/s]Loading checkpoint shards:  67%|██████▋   | 2/3 [00:00<00:00, 19.76it/s]Loading checkpoint shards: 100%|██████████| 3/3 [00:00<00:00, 20.60it/s]
+Model loaded — GPU RAM: 13.50 GB
+
+[Step 3] Attaching LoRA adapter r=32...
+Trainable parameters: 27,262,976 out of 7,275,286,528
+  Loaded + padded adapter to r=32
+
+[Step 4] Preparing training data...
+13999 examples formatted
+
+[Step 5] Training...
+  Step 1/140 — Loss: 0.0484
+  Step 2/140 — Loss: 0.0656
+  Step 3/140 — Loss: 0.0468
+  Step 4/140 — Loss: 0.0507
+  Step 5/140 — Loss: 0.0310
+  Step 6/140 — Loss: 0.0406
+  Step 7/140 — Loss: 0.0577
+  Step 8/140 — Loss: 0.0876
+  Step 9/140 — Loss: 0.0820
+  Step 10/140 — Loss: 0.0729
+  Step 11/140 — Loss: 0.0719
+  Step 12/140 — Loss: 0.0561
+  Step 13/140 — Loss: 0.1038
+  Step 14/140 — Loss: 0.1006
+  Step 15/140 — Loss: 0.0634
+  Step 16/140 — Loss: 0.1142
+  Step 17/140 — Loss: 0.1732
+  Step 18/140 — Loss: 0.1098
+  Step 19/140 — Loss: 0.1329
+  Step 20/140 — Loss: 0.1320
+  Step 21/140 — Loss: 0.1120
+  Step 22/140 — Loss: 0.0682
+  Step 23/140 — Loss: 0.0985
+  Step 24/140 — Loss: 0.0915
+  Step 25/140 — Loss: 0.0844
+  Step 26/140 — Loss: 0.1281
+  Step 27/140 — Loss: 0.1158
+  Step 28/140 — Loss: 0.0871
+  Step 29/140 — Loss: 0.0842
+  Step 30/140 — Loss: 0.0957
+  Step 31/140 — Loss: 0.0778
+  Step 32/140 — Loss: 0.0812
+  Step 33/140 — Loss: 0.0855
+  Step 34/140 — Loss: 0.1196
+  Step 35/140 — Loss: 0.1233
+  Step 36/140 — Loss: 0.0899
+  Step 37/140 — Loss: 0.1050
+  Step 38/140 — Loss: 0.0811
+  Step 39/140 — Loss: 0.1542
+  Step 40/140 — Loss: 0.0604
+  Step 41/140 — Loss: 0.0922
+  Step 42/140 — Loss: 0.0718
+  Step 43/140 — Loss: 0.0934
+  Step 44/140 — Loss: 0.0808
+  Step 45/140 — Loss: 0.1140
+  Step 46/140 — Loss: 0.0881
+  Step 47/140 — Loss: 0.0760
+  Step 48/140 — Loss: 0.1260
+  Step 49/140 — Loss: 0.1005
+  Step 50/140 — Loss: 0.0939
+  Step 51/140 — Loss: 0.1096
+  Step 52/140 — Loss: 0.0871
+  Step 53/140 — Loss: 0.0855
+  Step 54/140 — Loss: 0.0831
+  Step 55/140 — Loss: 0.0767
+  Step 56/140 — Loss: 0.1056
+  Step 57/140 — Loss: 0.0880
+  Step 58/140 — Loss: 0.1171
+  Step 59/140 — Loss: 0.0969
+  Step 60/140 — Loss: 0.1049
+  Step 61/140 — Loss: 0.1144
+  Step 62/140 — Loss: 0.0992
+  Step 63/140 — Loss: 0.0843
+  Step 64/140 — Loss: 0.0694
+  Step 65/140 — Loss: 0.0981
+  Step 66/140 — Loss: 0.0830
+  Step 67/140 — Loss: 0.0943
+  Step 68/140 — Loss: 0.0868
+  Step 69/140 — Loss: 0.0833
+  Step 70/140 — Loss: 0.0817
+  Step 71/140 — Loss: 0.0806
+  Step 72/140 — Loss: 0.0881
+  Step 73/140 — Loss: 0.0886
+  Step 74/140 — Loss: 0.0866
+  Step 75/140 — Loss: 0.1488
+  Step 76/140 — Loss: 0.1057
+  Step 77/140 — Loss: 0.0817
+  Step 78/140 — Loss: 0.1254
+  Step 79/140 — Loss: 0.1001
+  Step 80/140 — Loss: 0.0925
+  Step 81/140 — Loss: 0.1201
+  Step 82/140 — Loss: 0.0744
+  Step 83/140 — Loss: 0.0933
+  Step 84/140 — Loss: 0.0878
+  Step 85/140 — Loss: 0.1092
+  Step 86/140 — Loss: 0.0995
+  Step 87/140 — Loss: 0.1917
+  Step 88/140 — Loss: 0.0842
+  Step 89/140 — Loss: 0.0811
+  Step 90/140 — Loss: 0.1153
+  Step 91/140 — Loss: 0.1185
+  Step 92/140 — Loss: 0.1022
+  Step 93/140 — Loss: 0.1117
+  Step 94/140 — Loss: 0.1059
+  Step 95/140 — Loss: 0.1134
+  Step 96/140 — Loss: 0.1018
+  Step 97/140 — Loss: 0.1000
+  Step 98/140 — Loss: 0.1161
+  Step 99/140 — Loss: 0.0896
+  Step 100/140 — Loss: 0.1161
+
+[Step 6] Saving LoRA adapter...
+CLIENT 5 DONE
+FEDQUANT SERVER — Aggregation Server
+
+[Step 1] Checking client adapters...
+client2: found
+client3: found
+client4: found
+client5: found
+
+[Step 2] Loading all adapters into memory...
+client2: loaded 256 weight tensors
+client3: loaded 256 weight tensors
+client4: loaded 256 weight tensors
+client5: loaded 256 weight tensors
+
+[Step 3] Mixed-Precision Aggregation...
+Target rank: r=8
+Layers successfully averaged: 256 out of 256
+
+[Step 4] Saving aggregated adapter...
+Saved to ./results/aggregated/
+
+[Step 5] Round Summary...
+  Clients aggregated: 4
+  Common layers averaged: 256
+  Client weights used:
+    client2: 0.2 (20%)
+    client3: 0.2 (20%)
+    client4: 0.3 (30%)
+    client5: 0.3 (30%)
+
+==================================================
+SERVER ROUND 1 COMPLETE
+Aggregated adapter saved to ./results/aggregated/
+This adapter can now be sent back to all clients
+==================================================
+CLIENT 2 — Simulated 6GB Phone (Mistral-7B)
+==================================================
+
+[Step 1] Loading data...
+Loaded 30000 examples
+
+[Step 2] Loading Mistral-7B in BF16...
+Loading checkpoint shards:   0%|          | 0/3 [00:00<?, ?it/s]Loading checkpoint shards:  67%|██████▋   | 2/3 [00:00<00:00, 16.82it/s]Loading checkpoint shards: 100%|██████████| 3/3 [00:00<00:00, 17.51it/s]
+Model loaded
+  GPU RAM used: 13.50 GB
+
+[Step 3] Attaching LoRA adapter...
+Trainable parameters: 6,815,744 out of 7,254,839,296
+  Loaded adapter from round: 12
+
+[Step 4] Preparing training data...
+30000 examples formatted
+
+[Step 5] Training (1 FL round = 100 steps)...
+  Step 1/140 — Loss: 0.1885
+  Step 2/140 — Loss: 0.1115
+  Step 3/140 — Loss: 0.2378
+  Step 4/140 — Loss: 0.3587
+  Step 5/140 — Loss: 0.1092
+  Step 6/140 — Loss: 0.4857
+  Step 7/140 — Loss: 0.1343
+  Step 8/140 — Loss: 0.3210
+  Step 9/140 — Loss: 0.2880
+  Step 10/140 — Loss: 0.3809
+  Step 11/140 — Loss: 0.2520
+  Step 12/140 — Loss: 0.4155
+  Step 13/140 — Loss: 0.1262
+  Step 14/140 — Loss: 0.2405
+  Step 15/140 — Loss: 0.2295
+  Step 16/140 — Loss: 0.1712
+  Step 17/140 — Loss: 0.2848
+  Step 18/140 — Loss: 0.2096
+  Step 19/140 — Loss: 0.1287
+  Step 20/140 — Loss: 0.3336
+  Step 21/140 — Loss: 0.2041
+  Step 22/140 — Loss: 0.2265
+  Step 23/140 — Loss: 0.3123
+  Step 24/140 — Loss: 0.3643
+  Step 25/140 — Loss: 0.3063
+  Step 26/140 — Loss: 0.2473
+  Step 27/140 — Loss: 1.0224
+  Step 28/140 — Loss: 0.9421
+  Step 29/140 — Loss: 0.2755
+  Step 30/140 — Loss: 0.5239
+  Step 31/140 — Loss: 0.6073
+  Step 32/140 — Loss: 0.1907
+  Step 33/140 — Loss: 0.2846
+  Step 34/140 — Loss: 0.5490
+  Step 35/140 — Loss: 0.3311
+  Step 36/140 — Loss: 0.8752
+  Step 37/140 — Loss: 0.4947
+  Step 38/140 — Loss: 0.1853
+  Step 39/140 — Loss: 0.7659
+  Step 40/140 — Loss: 0.2604
+  Step 41/140 — Loss: 0.3642
+  Step 42/140 — Loss: 0.1989
+  Step 43/140 — Loss: 0.3547
+  Step 44/140 — Loss: 0.1820
+  Step 45/140 — Loss: 0.3978
+  Step 46/140 — Loss: 0.1812
+  Step 47/140 — Loss: 1.5879
+  Step 48/140 — Loss: 1.3433
+  Step 49/140 — Loss: 0.1732
+  Step 50/140 — Loss: 0.1698
+  Step 51/140 — Loss: 0.9412
+  Step 52/140 — Loss: 1.3443
+  Step 53/140 — Loss: 0.4325
+  Step 54/140 — Loss: 0.3963
+  Step 55/140 — Loss: 0.2479
+  Step 56/140 — Loss: 0.2918
+  Step 57/140 — Loss: 0.6440
+  Step 58/140 — Loss: 0.2291
+  Step 59/140 — Loss: 0.5142
+  Step 60/140 — Loss: 0.1481
+  Step 61/140 — Loss: 0.6093
+  Step 62/140 — Loss: 0.7147
+  Step 63/140 — Loss: 0.3819
+  Step 64/140 — Loss: 0.7551
+  Step 65/140 — Loss: 0.5010
+  Step 66/140 — Loss: 0.6351
+  Step 67/140 — Loss: 0.6837
+  Step 68/140 — Loss: 0.1752
+  Step 69/140 — Loss: 0.9330
+  Step 70/140 — Loss: 0.5073
+  Step 71/140 — Loss: 0.2786
+  Step 72/140 — Loss: 0.1325
+  Step 73/140 — Loss: 1.2993
+  Step 74/140 — Loss: 0.2734
+  Step 75/140 — Loss: 0.2382
+  Step 76/140 — Loss: 0.5058
+  Step 77/140 — Loss: 0.5484
+  Step 78/140 — Loss: 0.2663
+  Step 79/140 — Loss: 1.0228
+  Step 80/140 — Loss: 0.3919
+  Step 81/140 — Loss: 2.0265
+  Step 82/140 — Loss: 0.6903
+  Step 83/140 — Loss: 1.7411
+  Step 84/140 — Loss: 0.3324
+  Step 85/140 — Loss: 0.3158
+  Step 86/140 — Loss: 0.3618
+  Step 87/140 — Loss: 0.5470
+  Step 88/140 — Loss: 0.7016
+  Step 89/140 — Loss: 0.1913
+  Step 90/140 — Loss: 0.3119
+  Step 91/140 — Loss: 0.3682
+  Step 92/140 — Loss: 0.2475
+  Step 93/140 — Loss: 0.5694
+  Step 94/140 — Loss: 1.7073
+  Step 95/140 — Loss: 1.1853
+  Step 96/140 — Loss: 1.4375
+  Step 97/140 — Loss: 0.2324
+  Step 98/140 — Loss: 1.8431
+  Step 99/140 — Loss: 0.9963
+  Step 100/140 — Loss: 0.5374
+
+[Step 6] Saving LoRA adapter...
+Saved to ./results/adapters/client2
+
+==================================================
+CLIENT 2 DONE — Adapter ready to send to server
+==================================================
+==================================================
+CLIENT 3 — Simulated 6GB Phone (Mistral-7B)
+==================================================
+
+[Step 1] Loading data...
+Loaded 13000 examples
+
+[Step 2] Loading Mistral-7B in BF16...
+Loading checkpoint shards:   0%|          | 0/3 [00:00<?, ?it/s]Loading checkpoint shards:  67%|██████▋   | 2/3 [00:00<00:00, 19.25it/s]Loading checkpoint shards: 100%|██████████| 3/3 [00:00<00:00, 19.27it/s]
+Model loaded — GPU RAM: 13.50 GB
+
+[Step 3] Attaching LoRA adapter...
+Trainable parameters: 6,815,744 out of 7,254,839,296
+  Loaded adapter from round: 12
+
+[Step 4] Preparing training data...
+13000 examples formatted
+
+[Step 5] Training...
+  Step 1/140 — Loss: 0.1257
+  Step 2/140 — Loss: 0.1007
+  Step 3/140 — Loss: 0.1153
+  Step 4/140 — Loss: 0.1457
+  Step 5/140 — Loss: 0.1050
+  Step 6/140 — Loss: 0.1417
+  Step 7/140 — Loss: 0.0926
+  Step 8/140 — Loss: 0.1167
+  Step 9/140 — Loss: 0.1026
+  Step 10/140 — Loss: 0.1880
+  Step 11/140 — Loss: 0.0879
+  Step 12/140 — Loss: 0.1604
+  Step 13/140 — Loss: 0.1446
+  Step 14/140 — Loss: 0.1499
+  Step 15/140 — Loss: 0.1811
+  Step 16/140 — Loss: 0.1512
+  Step 17/140 — Loss: 0.1277
+  Step 18/140 — Loss: 0.2371
+  Step 19/140 — Loss: 0.1025
+  Step 20/140 — Loss: 0.2108
+  Step 21/140 — Loss: 0.1014
+  Step 22/140 — Loss: 0.1681
+  Step 23/140 — Loss: 0.2034
+  Step 24/140 — Loss: 0.1100
+  Step 25/140 — Loss: 0.2170
+  Step 26/140 — Loss: 0.3144
+  Step 27/140 — Loss: 0.1229
+  Step 28/140 — Loss: 0.1413
+  Step 29/140 — Loss: 0.2387
+  Step 30/140 — Loss: 0.1059
+  Step 31/140 — Loss: 0.1950
+  Step 32/140 — Loss: 0.2390
+  Step 33/140 — Loss: 0.1940
+  Step 34/140 — Loss: 0.1471
+  Step 35/140 — Loss: 0.1948
+  Step 36/140 — Loss: 0.1605
+  Step 37/140 — Loss: 0.1821
+  Step 38/140 — Loss: 0.0842
+  Step 39/140 — Loss: 0.1427
+  Step 40/140 — Loss: 0.1208
+  Step 41/140 — Loss: 0.4054
+  Step 42/140 — Loss: 0.1547
+  Step 43/140 — Loss: 0.1461
+  Step 44/140 — Loss: 0.1545
+  Step 45/140 — Loss: 0.1464
+  Step 46/140 — Loss: 0.2754
+  Step 47/140 — Loss: 0.1384
+  Step 48/140 — Loss: 0.0971
+  Step 49/140 — Loss: 0.1109
+  Step 50/140 — Loss: 0.1964
+  Step 51/140 — Loss: 0.1613
+  Step 52/140 — Loss: 0.1980
+  Step 53/140 — Loss: 0.1973
+  Step 54/140 — Loss: 0.1879
+  Step 55/140 — Loss: 0.1297
+  Step 56/140 — Loss: 0.1252
+  Step 57/140 — Loss: 0.1609
+  Step 58/140 — Loss: 0.1805
+  Step 59/140 — Loss: 0.1800
+  Step 60/140 — Loss: 0.2797
+  Step 61/140 — Loss: 0.2440
+  Step 62/140 — Loss: 0.1392
+  Step 63/140 — Loss: 0.1420
+  Step 64/140 — Loss: 0.1689
+  Step 65/140 — Loss: 0.1407
+  Step 66/140 — Loss: 0.1115
+  Step 67/140 — Loss: 0.1450
+  Step 68/140 — Loss: 0.1952
+  Step 69/140 — Loss: 0.1626
+  Step 70/140 — Loss: 0.1929
+  Step 71/140 — Loss: 0.2586
+  Step 72/140 — Loss: 0.1215
+  Step 73/140 — Loss: 0.3279
+  Step 74/140 — Loss: 0.2780
+  Step 75/140 — Loss: 0.2068
+  Step 76/140 — Loss: 0.1815
+  Step 77/140 — Loss: 0.1584
+  Step 78/140 — Loss: 0.3067
+  Step 79/140 — Loss: 0.1668
+  Step 80/140 — Loss: 0.2804
+  Step 81/140 — Loss: 0.2751
+  Step 82/140 — Loss: 0.1587
+  Step 83/140 — Loss: 0.2235
+  Step 84/140 — Loss: 0.2040
+  Step 85/140 — Loss: 0.1167
+  Step 86/140 — Loss: 0.2759
+  Step 87/140 — Loss: 0.1453
+  Step 88/140 — Loss: 0.2728
+  Step 89/140 — Loss: 0.1434
+  Step 90/140 — Loss: 0.1450
+  Step 91/140 — Loss: 0.2183
+  Step 92/140 — Loss: 0.1423
+  Step 93/140 — Loss: 0.3394
+  Step 94/140 — Loss: 0.4233
+  Step 95/140 — Loss: 0.1857
+  Step 96/140 — Loss: 0.2250
+  Step 97/140 — Loss: 0.2057
+  Step 98/140 — Loss: 0.1883
+  Step 99/140 — Loss: 0.2815
+  Step 100/140 — Loss: 0.2336
+
+[Step 6] Saving LoRA adapter...
+CLIENT 3 DONE
+CLIENT 4 — Simulated 8GB Phone (Mistral-7B)
+
+[Step 1] Loading data...
+Loaded 8000 examples
+
+[Step 2] Loading Mistral-7B in BF16...
+Loading checkpoint shards:   0%|          | 0/3 [00:00<?, ?it/s]Loading checkpoint shards:  67%|██████▋   | 2/3 [00:00<00:00, 19.30it/s]Loading checkpoint shards: 100%|██████████| 3/3 [00:00<00:00, 20.08it/s]
+Model loaded — GPU RAM: 13.50 GB
+
+[Step 3] Attaching LoRA adapter r=16...
+Trainable parameters: 13,631,488 out of 7,261,655,040
+  Loaded + padded adapter to r=16
+
+[Step 4] Preparing training data...
+8000 examples formatted
+
+[Step 5] Training...
+  Step 1/140 — Loss: 0.0845
+  Step 2/140 — Loss: 0.1079
+  Step 3/140 — Loss: 0.1025
+  Step 4/140 — Loss: 0.1472
+  Step 5/140 — Loss: 0.1011
+  Step 6/140 — Loss: 0.1610
+  Step 7/140 — Loss: 0.0721
+  Step 8/140 — Loss: 0.1454
+  Step 9/140 — Loss: 0.0911
+  Step 10/140 — Loss: 0.1357
+  Step 11/140 — Loss: 0.0818
+  Step 12/140 — Loss: 0.1440
+  Step 13/140 — Loss: 0.2760
+  Step 14/140 — Loss: 0.0561
+  Step 15/140 — Loss: 0.2590
+  Step 16/140 — Loss: 0.1678
+  Step 17/140 — Loss: 0.0749
+  Step 18/140 — Loss: 0.0938
+  Step 19/140 — Loss: 0.2700
+  Step 20/140 — Loss: 0.0862
+  Step 21/140 — Loss: 0.1200
+  Step 22/140 — Loss: 0.2087
+  Step 23/140 — Loss: 0.1287
+  Step 24/140 — Loss: 0.0989
+  Step 25/140 — Loss: 0.0650
+  Step 26/140 — Loss: 0.0801
+  Step 27/140 — Loss: 0.1092
+  Step 28/140 — Loss: 0.1532
+  Step 29/140 — Loss: 0.2604
+  Step 30/140 — Loss: 0.1527
+  Step 31/140 — Loss: 0.2290
+  Step 32/140 — Loss: 0.2448
+  Step 33/140 — Loss: 0.1950
+  Step 34/140 — Loss: 0.1900
+  Step 35/140 — Loss: 0.3930
+  Step 36/140 — Loss: 0.1975
+  Step 37/140 — Loss: 0.1363
+  Step 38/140 — Loss: 0.1456
+  Step 39/140 — Loss: 0.3229
+  Step 40/140 — Loss: 0.3503
+  Step 41/140 — Loss: 0.1089
+  Step 42/140 — Loss: 0.1894
+  Step 43/140 — Loss: 0.2250
+  Step 44/140 — Loss: 0.1019
+  Step 45/140 — Loss: 0.1189
+  Step 46/140 — Loss: 0.1747
+  Step 47/140 — Loss: 0.1364
+  Step 48/140 — Loss: 0.0997
+  Step 49/140 — Loss: 0.0948
+  Step 50/140 — Loss: 0.1331
+  Step 51/140 — Loss: 0.2285
+  Step 52/140 — Loss: 0.1107
+  Step 53/140 — Loss: 0.2791
+  Step 54/140 — Loss: 0.1308
+  Step 55/140 — Loss: 0.1496
+  Step 56/140 — Loss: 0.1407
+  Step 57/140 — Loss: 0.1548
+  Step 58/140 — Loss: 0.1238
+  Step 59/140 — Loss: 0.0980
+  Step 60/140 — Loss: 0.2924
+  Step 61/140 — Loss: 0.1495
+  Step 62/140 — Loss: 0.1682
+  Step 63/140 — Loss: 0.3037
+  Step 64/140 — Loss: 0.1535
+  Step 65/140 — Loss: 0.1421
+  Step 66/140 — Loss: 0.1590
+  Step 67/140 — Loss: 0.2827
+  Step 68/140 — Loss: 0.2649
+  Step 69/140 — Loss: 0.1674
+  Step 70/140 — Loss: 0.3079
+  Step 71/140 — Loss: 0.2268
+  Step 72/140 — Loss: 0.1280
+  Step 73/140 — Loss: 0.1484
+  Step 74/140 — Loss: 0.1612
+  Step 75/140 — Loss: 0.2236
+  Step 76/140 — Loss: 0.1794
+  Step 77/140 — Loss: 0.1134
+  Step 78/140 — Loss: 0.1125
+  Step 79/140 — Loss: 0.1287
+  Step 80/140 — Loss: 0.2725
+  Step 81/140 — Loss: 0.3165
+  Step 82/140 — Loss: 0.1502
+  Step 83/140 — Loss: 0.2441
+  Step 84/140 — Loss: 0.2039
+  Step 85/140 — Loss: 0.1764
+  Step 86/140 — Loss: 0.1659
+  Step 87/140 — Loss: 0.1023
+  Step 88/140 — Loss: 0.2386
+  Step 89/140 — Loss: 0.1842
+  Step 90/140 — Loss: 0.2652
+  Step 91/140 — Loss: 0.3304
+  Step 92/140 — Loss: 0.2455
+  Step 93/140 — Loss: 0.1219
+  Step 94/140 — Loss: 0.3699
+  Step 95/140 — Loss: 0.3187
+  Step 96/140 — Loss: 0.1885
+  Step 97/140 — Loss: 0.3621
+  Step 98/140 — Loss: 0.4532
+  Step 99/140 — Loss: 0.1566
+  Step 100/140 — Loss: 0.3461
+
+[Step 6] Saving LoRA adapter...
+CLIENT 4 DONE
+CLIENT 5 — Simulated 12GB Phone (Mistral-7B)
+
+[Step 1] Loading data...
+Loaded 13999 examples
+
+[Step 2] Loading Mistral-7B in BF16...
+Loading checkpoint shards:   0%|          | 0/3 [00:00<?, ?it/s]Loading checkpoint shards:  67%|██████▋   | 2/3 [00:00<00:00, 17.22it/s]Loading checkpoint shards: 100%|██████████| 3/3 [00:00<00:00, 18.85it/s]
+Model loaded — GPU RAM: 13.50 GB
+
+[Step 3] Attaching LoRA adapter r=32...
+Trainable parameters: 27,262,976 out of 7,275,286,528
+  Loaded + padded adapter to r=32
+
+[Step 4] Preparing training data...
+13999 examples formatted
+
+[Step 5] Training...
+  Step 1/140 — Loss: 0.0426
+  Step 2/140 — Loss: 0.0580
+  Step 3/140 — Loss: 0.0375
+  Step 4/140 — Loss: 0.0460
+  Step 5/140 — Loss: 0.0223
+  Step 6/140 — Loss: 0.0297
+  Step 7/140 — Loss: 0.0479
+  Step 8/140 — Loss: 0.0438
+  Step 9/140 — Loss: 0.0612
+  Step 10/140 — Loss: 0.0750
+  Step 11/140 — Loss: 0.0801
+  Step 12/140 — Loss: 0.1063
+  Step 13/140 — Loss: 0.0709
+  Step 14/140 — Loss: 0.1129
+  Step 15/140 — Loss: 0.0660
+  Step 16/140 — Loss: 0.0727
+  Step 17/140 — Loss: 0.1111
+  Step 18/140 — Loss: 0.1041
+  Step 19/140 — Loss: 0.0893
+  Step 20/140 — Loss: 0.0922
+  Step 21/140 — Loss: 0.1286
+  Step 22/140 — Loss: 0.0867
+  Step 23/140 — Loss: 0.0947
+  Step 24/140 — Loss: 0.1009
+  Step 25/140 — Loss: 0.0963
+  Step 26/140 — Loss: 0.1292
+  Step 27/140 — Loss: 0.1001
+  Step 28/140 — Loss: 0.1087
+  Step 29/140 — Loss: 0.0724
+  Step 30/140 — Loss: 0.1144
+  Step 31/140 — Loss: 0.0819
+  Step 32/140 — Loss: 0.0686
+  Step 33/140 — Loss: 0.1128
+  Step 34/140 — Loss: 0.0788
+  Step 35/140 — Loss: 0.0713
+  Step 36/140 — Loss: 0.0764
+  Step 37/140 — Loss: 0.1119
+  Step 38/140 — Loss: 0.0956
+  Step 39/140 — Loss: 0.1400
+  Step 40/140 — Loss: 0.0649
+  Step 41/140 — Loss: 0.1041
+  Step 42/140 — Loss: 0.0824
+  Step 43/140 — Loss: 0.0943
+  Step 44/140 — Loss: 0.0746
+  Step 45/140 — Loss: 0.1060
+  Step 46/140 — Loss: 0.0863
+  Step 47/140 — Loss: 0.1048
+  Step 48/140 — Loss: 0.1225
+  Step 49/140 — Loss: 0.1094
+  Step 50/140 — Loss: 0.0953
+  Step 51/140 — Loss: 0.1281
+  Step 52/140 — Loss: 0.1207
+  Step 53/140 — Loss: 0.0821
+  Step 54/140 — Loss: 0.0851
+  Step 55/140 — Loss: 0.0777
+  Step 56/140 — Loss: 0.0931
+  Step 57/140 — Loss: 0.0926
+  Step 58/140 — Loss: 0.1271
+  Step 59/140 — Loss: 0.0953
+  Step 60/140 — Loss: 0.1067
+  Step 61/140 — Loss: 0.1123
+  Step 62/140 — Loss: 0.0946
+  Step 63/140 — Loss: 0.0980
+  Step 64/140 — Loss: 0.0734
+  Step 65/140 — Loss: 0.1072
+  Step 66/140 — Loss: 0.0786
+  Step 67/140 — Loss: 0.0787
+  Step 68/140 — Loss: 0.0862
+  Step 69/140 — Loss: 0.1023
+  Step 70/140 — Loss: 0.0747
+  Step 71/140 — Loss: 0.0767
+  Step 72/140 — Loss: 0.0857
+  Step 73/140 — Loss: 0.0834
+  Step 74/140 — Loss: 0.0893
+  Step 75/140 — Loss: 0.0772
+  Step 76/140 — Loss: 0.0913
+  Step 77/140 — Loss: 0.0778
+  Step 78/140 — Loss: 0.1149
+  Step 79/140 — Loss: 0.0614
+  Step 80/140 — Loss: 0.0985
+  Step 81/140 — Loss: 0.1293
+  Step 82/140 — Loss: 0.0705
+  Step 83/140 — Loss: 0.0861
+  Step 84/140 — Loss: 0.0834
+  Step 85/140 — Loss: 0.1151
+  Step 86/140 — Loss: 0.1136
+  Step 87/140 — Loss: 0.1012
+  Step 88/140 — Loss: 0.0689
+  Step 89/140 — Loss: 0.0814
+  Step 90/140 — Loss: 0.1031
+  Step 91/140 — Loss: 0.1080
+  Step 92/140 — Loss: 0.1242
+  Step 93/140 — Loss: 0.1003
+  Step 94/140 — Loss: 0.0964
+  Step 95/140 — Loss: 0.1056
+  Step 96/140 — Loss: 0.0803
+  Step 97/140 — Loss: 0.1224
+  Step 98/140 — Loss: 0.1127
+  Step 99/140 — Loss: 0.0981
+  Step 100/140 — Loss: 0.1184
+
+[Step 6] Saving LoRA adapter...
+CLIENT 5 DONE
+FEDQUANT SERVER — Aggregation Server
+
+[Step 1] Checking client adapters...
+client2: found
+client3: found
+client4: found
+client5: found
+
+[Step 2] Loading all adapters into memory...
+client2: loaded 256 weight tensors
+client3: loaded 256 weight tensors
+client4: loaded 256 weight tensors
+client5: loaded 256 weight tensors
+
+[Step 3] Mixed-Precision Aggregation...
+Target rank: r=8
+Layers successfully averaged: 256 out of 256
+
+[Step 4] Saving aggregated adapter...
+Saved to ./results/aggregated/
+
+[Step 5] Round Summary...
+  Clients aggregated: 4
+  Common layers averaged: 256
+  Client weights used:
+    client2: 0.2 (20%)
+    client3: 0.2 (20%)
+    client4: 0.3 (30%)
+    client5: 0.3 (30%)
+
+==================================================
+SERVER ROUND 1 COMPLETE
+Aggregated adapter saved to ./results/aggregated/
+This adapter can now be sent back to all clients
+============================================================
+FEDQUANT — 20 Round Federated Training
+============================================================
+
+============================================================
+ROUND 1 / 12
+============================================================
+
+[Round 1] Running client2_sim_6gb...
+ client2_sim_6gb took: 0.3 minutes
+
+[Round 1] Running client3_sim_6gb...
+ client3_sim_6gb took: 0.3 minutes
+
+[Round 1] Running client4_sim_8gb...
+ client4_sim_8gb took: 0.3 minutes
+
+[Round 1] Running client5_sim_12gb...
+ client5_sim_12gb took: 0.3 minutes
+
+[Round 1] Running aggregation server...
+
+ Round 1 complete!
+  Round time: 1.3 minutes
+  Total elapsed: 0.02 hours
+  Estimated remaining: 0.24 hours
+
+============================================================
+ROUND 2 / 12
+============================================================
+
+[Round 2] Running client2_sim_6gb...
+ client2_sim_6gb took: 0.3 minutes
+
+[Round 2] Running client3_sim_6gb...
+ client3_sim_6gb took: 0.3 minutes
+
+[Round 2] Running client4_sim_8gb...
+ client4_sim_8gb took: 0.3 minutes
+
+[Round 2] Running client5_sim_12gb...
+ client5_sim_12gb took: 0.3 minutes
+
+[Round 2] Running aggregation server...
+
+ Round 2 complete!
+  Round time: 1.3 minutes
+  Total elapsed: 0.04 hours
+  Estimated remaining: 0.22 hours
+
+============================================================
+ROUND 3 / 12
+============================================================
+
+[Round 3] Running client2_sim_6gb...
+ client2_sim_6gb took: 0.3 minutes
+
+[Round 3] Running client3_sim_6gb...
+ client3_sim_6gb took: 0.3 minutes
+
+[Round 3] Running client4_sim_8gb...
+ client4_sim_8gb took: 0.3 minutes
+
+[Round 3] Running client5_sim_12gb...
+ client5_sim_12gb took: 0.3 minutes
+
+[Round 3] Running aggregation server...
+
+ Round 3 complete!
+  Round time: 1.3 minutes
+  Total elapsed: 0.07 hours
+  Estimated remaining: 0.20 hours
+
+============================================================
+ROUND 4 / 12
+============================================================
+
+[Round 4] Running client2_sim_6gb...
+ client2_sim_6gb took: 0.3 minutes
+
+[Round 4] Running client3_sim_6gb...
+ client3_sim_6gb took: 0.3 minutes
+
+[Round 4] Running client4_sim_8gb...
+ client4_sim_8gb took: 0.3 minutes
+
+[Round 4] Running client5_sim_12gb...
+ client5_sim_12gb took: 0.3 minutes
+
+[Round 4] Running aggregation server...
+
+ Round 4 complete!
+  Round time: 1.3 minutes
+  Total elapsed: 0.09 hours
+  Estimated remaining: 0.18 hours
+
+============================================================
+ROUND 5 / 12
+============================================================
+
+[Round 5] Running client2_sim_6gb...
+ client2_sim_6gb took: 0.3 minutes
+
+[Round 5] Running client3_sim_6gb...
+ client3_sim_6gb took: 0.3 minutes
+
+[Round 5] Running client4_sim_8gb...
+ client4_sim_8gb took: 0.3 minutes
+
+[Round 5] Running client5_sim_12gb...
+ client5_sim_12gb took: 0.3 minutes
+
+[Round 5] Running aggregation server...
+
+ Round 5 complete!
+  Round time: 1.3 minutes
+  Total elapsed: 0.11 hours
+  Estimated remaining: 0.16 hours
+
+============================================================
+ROUND 6 / 12
+============================================================
+
+[Round 6] Running client2_sim_6gb...
+ client2_sim_6gb took: 0.3 minutes
+
+[Round 6] Running client3_sim_6gb...
+ client3_sim_6gb took: 0.3 minutes
+
+[Round 6] Running client4_sim_8gb...
+ client4_sim_8gb took: 0.3 minutes
+
+[Round 6] Running client5_sim_12gb...
+ client5_sim_12gb took: 0.3 minutes
+
+[Round 6] Running aggregation server...
+
+ Round 6 complete!
+  Round time: 1.3 minutes
+  Total elapsed: 0.13 hours
+  Estimated remaining: 0.13 hours
+
+============================================================
+ROUND 7 / 12
+============================================================
+
+[Round 7] Running client2_sim_6gb...
+ client2_sim_6gb took: 0.3 minutes
+
+[Round 7] Running client3_sim_6gb...
+ client3_sim_6gb took: 0.3 minutes
+
+[Round 7] Running client4_sim_8gb...
+ client4_sim_8gb took: 0.3 minutes
+
+[Round 7] Running client5_sim_12gb...
+ client5_sim_12gb took: 0.3 minutes
+
+[Round 7] Running aggregation server...
+
+ Round 7 complete!
+  Round time: 1.3 minutes
+  Total elapsed: 0.15 hours
+  Estimated remaining: 0.11 hours
+
+============================================================
+ROUND 8 / 12
+============================================================
+
+[Round 8] Running client2_sim_6gb...
+ client2_sim_6gb took: 0.3 minutes
+
+[Round 8] Running client3_sim_6gb...
+ client3_sim_6gb took: 0.3 minutes
+
+[Round 8] Running client4_sim_8gb...
+ client4_sim_8gb took: 0.3 minutes
+
+[Round 8] Running client5_sim_12gb...
+ client5_sim_12gb took: 0.3 minutes
+
+[Round 8] Running aggregation server...
+
+ Round 8 complete!
+  Round time: 1.3 minutes
+  Total elapsed: 0.18 hours
+  Estimated remaining: 0.09 hours
+
+============================================================
+ROUND 9 / 12
+============================================================
+
+[Round 9] Running client2_sim_6gb...
+ client2_sim_6gb took: 0.3 minutes
+
+[Round 9] Running client3_sim_6gb...
+ client3_sim_6gb took: 0.3 minutes
+
+[Round 9] Running client4_sim_8gb...
+ client4_sim_8gb took: 0.3 minutes
+
+[Round 9] Running client5_sim_12gb...
+ client5_sim_12gb took: 0.3 minutes
+
+[Round 9] Running aggregation server...
+
+ Round 9 complete!
+  Round time: 1.3 minutes
+  Total elapsed: 0.20 hours
+  Estimated remaining: 0.07 hours
+
+============================================================
+ROUND 10 / 12
+============================================================
+
+[Round 10] Running client2_sim_6gb...
+ client2_sim_6gb took: 0.3 minutes
+
+[Round 10] Running client3_sim_6gb...
+ client3_sim_6gb took: 0.3 minutes
+
+[Round 10] Running client4_sim_8gb...
+ client4_sim_8gb took: 0.3 minutes
+
+[Round 10] Running client5_sim_12gb...
+ client5_sim_12gb took: 0.3 minutes
+
+[Round 10] Running aggregation server...
+
+ Round 10 complete!
+  Round time: 1.4 minutes
+  Total elapsed: 0.22 hours
+  Estimated remaining: 0.05 hours
+
+============================================================
+ROUND 11 / 12
+============================================================
+
+[Round 11] Running client2_sim_6gb...
+ client2_sim_6gb took: 0.3 minutes
+
+[Round 11] Running client3_sim_6gb...
+ client3_sim_6gb took: 0.3 minutes
+
+[Round 11] Running client4_sim_8gb...
+ client4_sim_8gb took: 0.3 minutes
+
+[Round 11] Running client5_sim_12gb...
+ client5_sim_12gb took: 0.3 minutes
+
+[Round 11] Running aggregation server...
+
+ Round 11 complete!
+  Round time: 1.3 minutes
+  Total elapsed: 0.24 hours
+  Estimated remaining: 0.02 hours
+
+============================================================
+ROUND 12 / 12
+============================================================
+
+[Round 12] Running client2_sim_6gb...
+ client2_sim_6gb took: 0.3 minutes
+
+[Round 12] Running client3_sim_6gb...
+ client3_sim_6gb took: 0.3 minutes
+
+[Round 12] Running client4_sim_8gb...
+ client4_sim_8gb took: 0.3 minutes
+
+[Round 12] Running client5_sim_12gb...
+ client5_sim_12gb took: 0.3 minutes
+
+[Round 12] Running aggregation server...
+
+ Round 12 complete!
+  Round time: 1.3 minutes
+  Total elapsed: 0.27 hours
+  Estimated remaining: 0.00 hours
+
+============================================================
+ALL 12 ROUNDS COMPLETE
+Total training time: 0.27 hours
+Average time per round: 1.3 minutes
+============================================================
+===============================
+Mistral training complete!
+===============================

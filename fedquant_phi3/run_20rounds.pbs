@@ -1,0 +1,33 @@
+#!/bin/bash
+#PBS -N fedquant_20rounds
+#PBS -l select=1:ncpus=2:mem=8gb
+#PBS -l walltime=24:00:00
+#PBS -j oe
+#PBS -o /Data2/ds_24901720/Nadeem/fedquant/output_20rounds_$PBS_JOBID.log
+
+cd /Data2/ds_24901720/Nadeem/fedquant
+
+source /apps/compilers/anaconda3/etc/profile.d/conda.sh
+conda activate fedquant
+
+export CUDA_VISIBLE_DEVICES=MIG-4d38d5cf-c802-5308-80b8-251f3cec7480
+
+# Log GPU stats every 60 seconds in background
+nvidia-smi --query-gpu=timestamp,utilization.gpu,memory.used,memory.free,temperature.gpu \
+    --format=csv -l 60 > gpu_stats_$PBS_JOBID.log &
+GPU_MONITOR_PID=$!
+
+echo "==============================="
+echo "Starting 20-round FedQuant training..."
+echo "GPU monitoring started (PID: $GPU_MONITOR_PID)"
+echo "==============================="
+
+python3 run_20rounds.py
+
+# Stop GPU monitoring
+kill $GPU_MONITOR_PID 2>/dev/null
+
+echo "==============================="
+echo "Training complete!"
+echo "GPU stats saved to gpu_stats_$PBS_JOBID.log"
+echo "==============================="
