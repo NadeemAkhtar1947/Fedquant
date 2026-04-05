@@ -1,0 +1,15 @@
+#!/bin/bash
+#PBS -N fedquant_analysis
+#PBS -l select=1:ncpus=2:mem=4gb
+#PBS -l walltime=00:10:00
+#PBS -j oe
+#PBS -o /Data2/ds_24901720/Nadeem/fedquant/output_analysis_$PBS_JOBID.log
+
+cd /Data2/ds_24901720/Nadeem/fedquant
+
+source /apps/compilers/anaconda3/etc/profile.d/conda.sh
+conda activate fedquant
+
+pip install matplotlib -q
+
+python3 extract_results.py

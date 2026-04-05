@@ -1,0 +1,25 @@
+=== Step 1: Convert to F16 GGUF ===
+usage: convert_hf_to_gguf.py [-h] [--vocab-only] [--outfile OUTFILE]
+                             [--outtype {f32,f16,bf16,q8_0,tq1_0,tq2_0,auto}]
+                             [--bigendian] [--use-temp-file] [--no-lazy]
+                             [--model-name MODEL_NAME] [--verbose]
+                             [--split-max-tensors SPLIT_MAX_TENSORS]
+                             [--split-max-size SPLIT_MAX_SIZE] [--dry-run]
+                             [--no-tensor-first-split] [--metadata METADATA]
+                             [--print-supported-models] [--remote] [--mmproj]
+                             [--mistral-format]
+                             [--disable-mistral-community-chat-template]
+                             [--sentence-transformers-dense-modules]
+                             [--fuse-gate-up-exps]
+                             [model]
+convert_hf_to_gguf.py: error: the following arguments are required: model
+/var/spool/pbs/mom_priv/jobs/15988.master.SC: line 25: /Data2/ds_24901720/Nadeem/fedquant/merged_model: Is a directory
+/var/spool/pbs/mom_priv/jobs/15988.master.SC: line 26: --outfile: command not found
+/var/spool/pbs/mom_priv/jobs/15988.master.SC: line 28: --outtype: command not found
+=== Step 2: Quantize to INT4 ===
+/var/spool/pbs/mom_priv/jobs/15988.master.SC: line 33: ./build/bin/llama-quantize: No such file or directory
+/var/spool/pbs/mom_priv/jobs/15988.master.SC: line 35: /Data2/ds_24901720/Nadeem/fedquant/phi3-fedquant-f16.gguf: No such file or directory
+/var/spool/pbs/mom_priv/jobs/15988.master.SC: line 37: /Data2/ds_24901720/Nadeem/fedquant/phi3-fedquant-q4.gguf: No such file or directory
+/var/spool/pbs/mom_priv/jobs/15988.master.SC: line 38: Q4_K_M: command not found
+=== Done! ===
+ls: cannot access '/Data2/ds_24901720/Nadeem/fedquant/phi3-fedquant-q4.gguf': No such file or directory

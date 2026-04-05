@@ -1,0 +1,12 @@
+#!/bin/bash
+#PBS -N download_mistral
+#PBS -l select=1:ncpus=2:mem=8gb
+#PBS -l walltime=01:00:00
+#PBS -j oe
+#PBS -o /Data2/ds_24901720/Nadeem/fedquant_mistral/download_mistral_$PBS_JOBID.log
+
+cd /Data2/ds_24901720/Nadeem/fedquant_mistral
+source /apps/compilers/anaconda3/etc/profile.d/conda.sh
+conda activate fedquant
+
+python3 download_mistral.py

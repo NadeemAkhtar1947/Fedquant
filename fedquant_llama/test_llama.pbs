@@ -1,0 +1,15 @@
+#!/bin/bash
+#PBS -N test_llama
+#PBS -l select=1:ncpus=2:mem=8gb
+#PBS -l walltime=00:30:00
+#PBS -j oe
+#PBS -o /Data2/ds_24901720/Nadeem/fedquant_llama/test_llama_$PBS_JOBID.log
+
+cd /Data2/ds_24901720/Nadeem/fedquant_llama
+
+source /apps/compilers/anaconda3/etc/profile.d/conda.sh
+conda activate fedquant
+
+export CUDA_VISIBLE_DEVICES=MIG-9b919b48-2562-5791-8778-080ddb153351
+
+python3 clients/client2_sim_6gb.py

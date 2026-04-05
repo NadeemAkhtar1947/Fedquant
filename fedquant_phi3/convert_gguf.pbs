@@ -1,0 +1,43 @@
+
+#!/bin/bash
+
+#PBS -N convert_gguf
+
+#PBS -l select=1:ncpus=4:mem=32gb
+
+#PBS -l walltime=01:00:00
+
+#PBS -j oe
+
+#PBS -o /Data2/ds_24901720/Nadeem/fedquant/convert_gguf_$PBS_JOBID.log
+
+cd /Data2/ds_24901720/Nadeem/llama.cpp
+
+source /apps/compilers/anaconda3/etc/profile.d/conda.sh
+
+conda activate fedquant
+
+echo "=== Step 1: Convert to F16 GGUF ==="
+
+python3 convert_hf_to_gguf.py \
+
+    /Data2/ds_24901720/Nadeem/fedquant/merged_model \
+
+    --outfile /Data2/ds_24901720/Nadeem/fedquant/phi3-fedquant-f16.gguf \
+
+    --outtype f16
+
+echo "=== Step 2: Quantize to INT4 ==="
+
+./build/bin/llama-quantize \
+
+    /Data2/ds_24901720/Nadeem/fedquant/phi3-fedquant-f16.gguf \
+
+    /Data2/ds_24901720/Nadeem/fedquant/phi3-fedquant-q4.gguf \
+
+    Q4_K_M
+
+echo "=== Done! ==="
+
+ls -lh /Data2/ds_24901720/Nadeem/fedquant/phi3-fedquant-q4.gguf
+

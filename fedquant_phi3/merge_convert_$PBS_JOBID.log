@@ -1,0 +1,35 @@
+=== Step 1: Merging adapter ===
+`flash-attention` package not found, consider installing for better performance: No module named 'flash_attn'.
+Current `flash-attention` does not support `window_size`. Either upgrade or use `attn_implementation='eager'`.
+Step 1: Loading base model...
+Loading checkpoint shards:   0%|          | 0/2 [00:00<?, ?it/s]Loading checkpoint shards: 100%|██████████| 2/2 [00:00<00:00, 12.53it/s]Loading checkpoint shards: 100%|██████████| 2/2 [00:00<00:00, 12.52it/s]
+  Base model loaded
+Step 2: Loading adapter...
+  Adapter loaded
+Step 3: Merging...
+  Merged successfully
+Step 4: Saving merged model...
+  Saved to ./merged_model
+Done!
+=== Step 2: Cloning llama.cpp ===
+Cloning into 'llama.cpp'...
+ERROR: pip's dependency resolver does not currently take into account all the packages that are installed. This behaviour is the source of the following dependency conflicts.
+flwr 1.27.0 requires protobuf<7.0.0,>=5.28.0, but you have protobuf 4.25.8 which is incompatible.
+grpcio-health-checking 1.78.0 requires protobuf<7.0.0,>=6.31.1, but you have protobuf 4.25.8 which is incompatible.
+=== Step 3: Converting to GGUF ===
+usage: convert_hf_to_gguf.py [-h] [--vocab-only] [--outfile OUTFILE]
+                             [--outtype {f32,f16,bf16,q8_0,tq1_0,tq2_0,auto}]
+                             [--bigendian] [--use-temp-file] [--no-lazy]
+                             [--model-name MODEL_NAME] [--verbose]
+                             [--split-max-tensors SPLIT_MAX_TENSORS]
+                             [--split-max-size SPLIT_MAX_SIZE] [--dry-run]
+                             [--no-tensor-first-split] [--metadata METADATA]
+                             [--print-supported-models] [--remote] [--mmproj]
+                             [--mistral-format]
+                             [--disable-mistral-community-chat-template]
+                             [--sentence-transformers-dense-modules]
+                             [--fuse-gate-up-exps]
+                             [model]
+convert_hf_to_gguf.py: error: argument --outtype: invalid choice: 'q4_0' (choose from 'f32', 'f16', 'bf16', 'q8_0', 'tq1_0', 'tq2_0', 'auto')
+=== Done! ===
+ls: cannot access '/Data2/ds_24901720/Nadeem/fedquant/phi3-fedquant.gguf': No such file or directory

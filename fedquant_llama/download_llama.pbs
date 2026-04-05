@@ -1,0 +1,12 @@
+#!/bin/bash
+#PBS -N download_llama
+#PBS -l select=1:ncpus=2:mem=8gb
+#PBS -l walltime=01:00:00
+#PBS -j oe
+#PBS -o /Data2/ds_24901720/Nadeem/fedquant_llama/download_llama_$PBS_JOBID.log
+
+cd /Data2/ds_24901720/Nadeem/fedquant_llama
+source /apps/compilers/anaconda3/etc/profile.d/conda.sh
+conda activate fedquant
+
+python3 download_llama.py

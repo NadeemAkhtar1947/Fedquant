@@ -1,0 +1,29 @@
+#!/bin/bash
+#PBS -N llama_12rounds
+#PBS -l select=1:ncpus=2:mem=8gb
+#PBS -l walltime=24:00:00
+#PBS -j oe
+#PBS -o /Data2/ds_24901720/Nadeem/fedquant_llama/output_20rounds_$PBS_JOBID.log
+
+cd /Data2/ds_24901720/Nadeem/fedquant_llama
+
+source /apps/compilers/anaconda3/etc/profile.d/conda.sh
+conda activate fedquant
+
+export CUDA_VISIBLE_DEVICES=MIG-9b919b48-2562-5791-8778-080ddb153351
+
+nvidia-smi --query-gpu=timestamp,utilization.gpu,memory.used,memory.free,temperature.gpu \
+    --format=csv -l 60 > gpu_stats_$PBS_JOBID.log &
+GPU_MONITOR_PID=$!
+
+echo "==============================="
+echo "Starting LLaMA 3.1 8B 12-round FedQuant training..."
+echo "==============================="
+
+python3 run_20rounds.py
+
+kill $GPU_MONITOR_PID 2>/dev/null
+
+echo "==============================="
+echo "LLaMA training complete!"
+echo "==============================="

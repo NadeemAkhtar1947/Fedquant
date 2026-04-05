@@ -1,0 +1,14 @@
+#!/bin/bash
+#PBS -N check_mistral
+#PBS -l select=1:ncpus=2:mem=8gb
+#PBS -l walltime=00:15:00
+#PBS -j oe
+#PBS -o /Data2/ds_24901720/Nadeem/fedquant_mistral/check_layers_$PBS_JOBID.log
+
+cd /Data2/ds_24901720/Nadeem/fedquant_mistral
+source /apps/compilers/anaconda3/etc/profile.d/conda.sh
+conda activate fedquant
+
+export CUDA_VISIBLE_DEVICES=MIG-4d38d5cf-c802-5308-80b8-251f3cec7480
+
+python3 check_mistral_layers.py

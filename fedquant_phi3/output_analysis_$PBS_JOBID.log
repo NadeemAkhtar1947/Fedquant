@@ -1,0 +1,14 @@
+Reading log file...
+  Total lines: 14701
+Rounds found per client:
+  client2_sim_6gb: 20 rounds [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20], final loss = 0.6073
+  client3_sim_6gb: 20 rounds [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20], final loss = 0.1642
+  client4_sim_8gb: 20 rounds [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20], final loss = 0.1740
+  client5_sim_12gb: 19 rounds [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19], final loss = 0.0859
+  Filled round 20 for client5_sim_12gb using round 19
+Loss data saved
+Plot saved: loss_curves.png
+Plot saved: final_loss_comparison.png
+Plot saved: timing_curves.png
+
+All analysis complete!
